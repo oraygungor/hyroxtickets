@@ -40,7 +40,7 @@
     /* MAIN CONTAINER */
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
-    /* --- SEARCH BOX STYLES (NEW) --- */
+    /* --- SEARCH BOX STYLES --- */
     .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
     
     .search-wrapper { position: relative; min-width: 300px; flex: 1; }
@@ -123,8 +123,8 @@
 
 <header>
   <div class="header-inner">
-    <div class="brand">HYROX <span>GLOBAL SPOT TRACKER</span></div>
-    <div style="font-size: 12px; color: #666;" id="lastUpdate">v2.2 EN</div>
+    <div class="brand">HYROX <span>PRO</span></div>
+    <div style="font-size: 12px; color: #666;" id="lastUpdate">v2.3 EN</div>
   </div>
   <div class="header-inner">
     <div class="tabs">
@@ -167,7 +167,10 @@
 
     <div id="eventDashboard" class="hidden">
       <div class="chart-section">
-        <div class="chart-header">📈 Stock Trend Over Time</div>
+        <div class="chart-header">
+            <span>📈 Stock Trend Over Time</span>
+            <span style="font-size:12px; color:#666; font-weight:400;">(Breakdown by Type)</span>
+        </div>
         <div class="chart-box"><canvas id="chartHistory"></canvas></div>
       </div>
       <div class="chart-section">
@@ -240,11 +243,9 @@ async function init() {
   }
 }
 
-// Helper: Parse DD.MM.YYYY to Date Object
 function parseDate(dateStr) {
-  if(!dateStr) return new Date(8640000000000000); // Far future if no date
+  if(!dateStr) return new Date(8640000000000000); 
   const parts = dateStr.split('.');
-  // Note: Month is 0-indexed in JS
   return new Date(parts[2], parts[1] - 1, parts[0]);
 }
 
@@ -253,7 +254,6 @@ function setupSearch() {
   const input = document.getElementById('eventSearch');
   const resultsBox = document.getElementById('searchResults');
 
-  // Render Function
   const renderList = (list) => {
     resultsBox.innerHTML = '';
     if(list.length === 0) {
@@ -276,7 +276,6 @@ function setupSearch() {
     });
   };
 
-  // Event Listeners
   input.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     const filtered = EVENTS.filter(evt => evt.name.toLowerCase().includes(term));
@@ -285,11 +284,10 @@ function setupSearch() {
   });
 
   input.addEventListener('focus', () => {
-    renderList(EVENTS); // Show all (sorted) on click
+    renderList(EVENTS); 
     resultsBox.classList.add('show');
   });
 
-  // Close when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-wrapper')) {
       resultsBox.classList.remove('show');
@@ -300,7 +298,6 @@ function setupSearch() {
 function selectEvent(evt) {
   CURRENT_EVENT_INFO = evt;
   
-  // Update Header UI
   const infoBox = document.getElementById('selectedEventInfo');
   infoBox.classList.remove('hidden');
   document.getElementById('sehName').textContent = evt.name;
@@ -374,42 +371,103 @@ window.setEventFilter = (filter, btn) => {
 function renderEventCharts() {
   if(!EVENT_DATA) return;
 
-  const filterTickets = (tickets) => {
-    if(EVENT_FILTER === 'ALL') return tickets;
-    return tickets.filter(t => t.ticket.toUpperCase().includes(EVENT_FILTER));
-  };
-
-  // --- CHART 1: History Line ---
-  const labels = EVENT_DATA.map(d => d.date.split('-').slice(1).reverse().join('.')); // 07.02
-  const dataPoints = EVENT_DATA.map(d => {
-    const filtered = filterTickets(d.tickets);
-    return filtered.reduce((sum, t) => sum + t.stock, 0);
-  });
-
   const ctxH = document.getElementById('chartHistory').getContext('2d');
+  const labels = EVENT_DATA.map(d => d.date.split('-').slice(1).reverse().join('.')); // 07.02
+  
+  let datasets = [];
+
+  // --- LOGIC: CREATE MULTIPLE DATASETS BASED ON FILTER ---
+  
+  // 1. If Filter is 'ALL', show Major Groups (Men, Women, Doubles)
+  if (EVENT_FILTER === 'ALL') {
+      const groups = [
+          { name: 'MEN', color: '#3b82f6', check: (n) => n.includes('MEN') && !n.includes('WOMEN') && !n.includes('MIXED') },
+          { name: 'WOMEN', color: '#ec4899', check: (n) => n.includes('WOMEN') },
+          { name: 'DOUBLES', color: '#fbbf24', check: (n) => n.includes('DOUBLES') }
+      ];
+
+      datasets = groups.map(g => {
+          return {
+              label: g.name,
+              borderColor: g.color,
+              backgroundColor: g.color,
+              tension: 0.3,
+              data: EVENT_DATA.map(day => {
+                  return day.tickets
+                      .filter(t => g.check(t.ticket.toUpperCase()))
+                      .reduce((sum, t) => sum + t.stock, 0);
+              })
+          };
+      });
+
+  } else {
+      // 2. If Filter is specific (e.g., 'MEN'), show individual ticket types
+      // First, gather all unique ticket names that match the filter across all history
+      const uniqueTicketNames = new Set();
+      EVENT_DATA.forEach(day => {
+          day.tickets.forEach(t => {
+              if (t.ticket.toUpperCase().includes(EVENT_FILTER)) {
+                  uniqueTicketNames.add(t.ticket);
+              }
+          });
+      });
+
+      const palette = ['#fbbf24', '#3b82f6', '#ef4444', '#10b981', '#f97316', '#8b5cf6', '#a855f7'];
+      let colorIdx = 0;
+
+      uniqueTicketNames.forEach(ticketName => {
+          // Clean name for legend
+          const displayName = ticketName.replace(/HYROX /gi, '').trim();
+          
+          const dataPoints = EVENT_DATA.map(day => {
+              const ticket = day.tickets.find(t => t.ticket === ticketName);
+              return ticket ? ticket.stock : null; // null breaks the line if data missing
+          });
+
+          // Only add if there is at least one data point
+          if (dataPoints.some(d => d !== null)) {
+              const color = palette[colorIdx % palette.length];
+              datasets.push({
+                  label: displayName,
+                  borderColor: color,
+                  backgroundColor: color,
+                  tension: 0.3,
+                  pointRadius: 3,
+                  data: dataPoints
+              });
+              colorIdx++;
+          }
+      });
+  }
+
   if(CHARTS.history) CHARTS.history.destroy();
   CHARTS.history = new Chart(ctxH, {
     type: 'line',
     data: {
       labels: labels,
-      datasets: [{
-        label: 'Total Stock',
-        data: dataPoints,
-        borderColor: '#fbbf24',
-        backgroundColor: 'rgba(251, 191, 36, 0.1)',
-        tension: 0.3, fill: true
-      }]
+      datasets: datasets
     },
     options: { 
       responsive: true, maintainAspectRatio: false, 
-      scales: { y: { beginAtZero: true } },
-      plugins: { legend: { labels: { color: '#9ca3af' } } }
+      scales: { 
+          y: { beginAtZero: true, grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } },
+          x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } }
+      },
+      plugins: { 
+          legend: { labels: { color: '#fff' } },
+          tooltip: { mode: 'index', intersect: false }
+      }
     }
   });
 
-  // --- CHART 2: Current Bar ---
+  // --- CHART 2: Current Bar (Logic remains similar but filtered) ---
   const latest = EVENT_DATA[EVENT_DATA.length - 1];
-  const currentTickets = filterTickets(latest.tickets).sort((a,b) => b.stock - a.stock);
+  let currentTickets = latest.tickets.filter(t => {
+      if(EVENT_FILTER === 'ALL') return true;
+      return t.ticket.toUpperCase().includes(EVENT_FILTER);
+  });
+  
+  currentTickets.sort((a,b) => b.stock - a.stock);
 
   const ctxC = document.getElementById('chartCurrent').getContext('2d');
   if(CHARTS.current) CHARTS.current.destroy();
