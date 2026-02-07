@@ -1,75 +1,181 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import json
-import requests
+import re
+import sys
 import os
+import requests
+from datetime import datetime
+from pathlib import Path
 
-def load_events():
-    """events.json dosyasını okur ve listeyi döndürür."""
-    file_path = 'events.json'
-    
-    if not os.path.exists(file_path):
-        print(f"HATA: {file_path} dosyası bulunamadı! Lütfen dosyanın repoda olduğundan emin ol.")
-        return []
+# Timezone desteği (Python 3.9+)
+try:
+    from zoneinfo import ZoneInfo
+except Exception:
+    ZoneInfo = None
 
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            # Eğer JSON bir liste değilse (örneğin tek bir obje ise) listeye çevir
-            if not isinstance(data, list):
-                print("Uyarı: JSON içeriği bir liste değil, tekil obje olarak işleniyor.")
-                return [data]
-            return data
-    except json.JSONDecodeError:
-        print(f"HATA: {file_path} dosyası geçerli bir JSON formatında değil.")
-        return []
+# Sabitler
+EVENTS_FILE = "events.json"
+DATA_DIR = "data"
+EXCLUDE_KEYWORDS = ["SPECTATOR", "RELAY"]  # İstenmeyen bilet tipleri
 
-def check_tickets():
-    events = load_events()
-    
-    if not events:
-        print("İşlenecek etkinlik bulunamadı.")
-        return
+def now_copenhagen() -> datetime:
+    """Zaman damgası için Kopenhag veya yerel saat döner."""
+    if ZoneInfo is None:
+        return datetime.now()
+    return datetime.now(ZoneInfo("Europe/Copenhagen"))
 
-    print(f"Toplam {len(events)} etkinlik bulundu. Kontrol başlıyor...\n")
+def date_filename(dt: datetime) -> str:
+    """Dosya adı formatı: 07.02.2026.json"""
+    return dt.strftime("%d.%m.%Y") + ".json"
 
+def fetch_html(url: str, timeout: int = 30) -> str:
+    """Verilen URL'den HTML içeriğini çeker."""
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
     }
+    r = requests.get(url, headers=headers, timeout=timeout)
+    r.raise_for_status()
+    return r.text
 
-    for event in events:
-        # JSON dosyasındaki anahtarların (keys) isimleri önemli.
-        # Örnek: {"name": "Istanbul", "url": "https://..."}
-        url = event.get('url')
-        name = event.get('name', 'İsimsiz Etkinlik')
+def extract_next_data(html: str) -> dict:
+    """HTML içindeki __NEXT_DATA__ JSON bloğunu regex ile bulur."""
+    m = re.search(
+        r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>',
+        html,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    if not m:
+        raise ValueError("__NEXT_DATA__ script tag bulunamadı (Sayfa yapısı değişmiş olabilir).")
+    
+    raw = m.group(1).strip()
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"__NEXT_DATA__ JSON parse hatası: {e}") from e
 
-        if not url:
-            print(f"UYARI: '{name}' etkinliği için URL tanımlanmamış, geçiliyor.")
+def build_inventory(next_data: dict) -> dict:
+    """Ham veriden stok ve bilet bilgilerini ayıklar."""
+    props = next_data.get("props", {}).get("pageProps", {})
+    
+    # Bazen 'event' ana objesi doğrudan pageProps altında olmayabilir, kontrol edelim
+    event = props.get("event") or props.get("fallback", {}).get("event", {})
+    
+    if not event:
+        # Event verisi bulunamazsa boş dön
+        return {"tickets": [], "by_parkur": {}}
+
+    tickets = event.get("tickets", []) or []
+    categories = event.get("categories", []) or []
+
+    # Kategori ID -> Kategori İsmi eşleşmesi (örn: Men Open)
+    cat_map = {c.get("ref"): (c.get("name") or "Unknown") for c in categories}
+
+    rows = []
+    for t in tickets:
+        name = (t.get("name") or "").strip()
+        if not name:
             continue
 
-        print(f"kontrol ediliyor: {name}...")
+        upper = name.upper()
+        # İstenmeyen kelimeleri filtrele (Spectator, Relay vb.)
+        if any(k in upper for k in EXCLUDE_KEYWORDS):
+            continue
+
+        active = bool(t.get("active"))
+        stock = int(t.get("v") or 0) # 'v' genelde stok miktarını tutar
+        style = t.get("styleOptions") or {}
+        hidden = bool(style.get("hiddenInSelectionArea"))
+
+        # Aktif, stoğu olan ve gizli olmayan biletleri al
+        if active and stock > 0 and not hidden:
+            parkur = cat_map.get(t.get("categoryRef"), "Unknown")
+            rows.append({"parkur": parkur, "ticket": name, "stock": stock})
+
+    # Özetleme: Parkur -> Ticket -> Toplam Stok
+    by_parkur = {}
+    for r in rows:
+        p = r["parkur"]
+        n = r["ticket"]
+        s = r["stock"]
+        by_parkur.setdefault(p, {})
+        # Aynı isimde birden fazla bilet varsa stoklarını topla
+        by_parkur[p][n] = by_parkur[p].get(n, 0) + s
+
+    return {"tickets": rows, "by_parkur": by_parkur}
+
+def load_events():
+    """events.json dosyasını yükler."""
+    if not os.path.exists(EVENTS_FILE):
+        print(f"HATA: {EVENTS_FILE} bulunamadı.")
+        sys.exit(1)
+    
+    try:
+        with open(EVENTS_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"HATA: {EVENTS_FILE} geçerli bir JSON değil.")
+        sys.exit(1)
+
+def main():
+    events = load_events()
+    dt = now_copenhagen()
+    filename = date_filename(dt)
+
+    print(f"--- Tarama Başladı: {dt.isoformat()} ---")
+
+    for event in events:
+        event_id = event.get('id')
+        event_name = event.get('name')
+        url = event.get('url')
+
+        if not event_id or not url:
+            print(f"ATLANDI: ID veya URL eksik -> {event}")
+            continue
+
+        print(f"\nİşleniyor: {event_name} ({event_id})")
         
         try:
-            response = requests.get(url, headers=headers, timeout=10)
+            # 1. HTML Çek
+            html = fetch_html(url)
             
-            if response.status_code == 200:
-                print(f"✅ {name}: Erişim Başarılı.")
-                
-                # BURADA KONTROL MANTIĞIN OLACAK
-                # Örnek: Eğer sayfada "Sold Out" yazmıyorsa bilet var demektir.
-                page_content = response.text.lower()
-                
-                if "sold out" in page_content or "tükendi" in page_content:
-                    print(f"   ❌ Durum: TÜKENDİ ({name})")
-                else:
-                    print(f"   🎉 Durum: BİLET OLABİLİR! ({name})")
-                    # Burada Telegram/Discord bildirimi gönderme kodu eklenebilir.
+            # 2. Veriyi Ayrıştır
+            next_data = extract_next_data(html)
+            inventory = build_inventory(next_data)
             
-            else:
-                print(f"⚠️ {name}: Sayfaya erişilemedi (Kod: {response.status_code})")
+            # 3. Çıktı Klasörünü Hazırla: data/istanbul-2026/
+            event_dir = Path(DATA_DIR) / event_id
+            event_dir.mkdir(parents=True, exist_ok=True)
+            
+            output_path = event_dir / filename
+
+            # 4. JSON Oluştur
+            payload = {
+                "event_id": event_id,
+                "event_name": event_name,
+                "event_url": url,
+                "fetched_at": dt.isoformat(),
+                **inventory
+            }
+
+            # 5. Dosyaya Yaz
+            output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            
+            # Özet Log
+            total_tickets = sum(len(v) for v in inventory["by_parkur"].values())
+            print(f"✅ BAŞARILI: {output_path} (Kategori sayısı: {len(inventory['by_parkur'])}, Bilet türü: {total_tickets})")
 
         except Exception as e:
-            print(f"❌ {name}: Hata oluştu - {str(e)}")
-        
-        print("-" * 30)
+            print(f"❌ HATA: {event_name} işlenirken sorun oluştu: {str(e)}")
 
 if __name__ == "__main__":
-    check_tickets()
+    main()
