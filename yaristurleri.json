@@ -1,0 +1,44 @@
+[
+  {
+    "id": "MEN_SINGLE",
+    "name": "Men Singles",
+    "include": ["MEN"],
+    "exclude": ["DOUBLES", "PRO"]
+  },
+  {
+    "id": "WOMEN_SINGLE",
+    "name": "Women Singles",
+    "include": ["WOMEN"],
+    "exclude": ["DOUBLES", "PRO"]
+  },
+  {
+    "id": "MEN_PRO",
+    "name": "Men Pro",
+    "include": ["MEN", "PRO"],
+    "exclude": ["DOUBLES", "RELAY"]
+  },
+  {
+    "id": "WOMEN_PRO",
+    "name": "Women Pro",
+    "include": ["WOMEN", "PRO"],
+    "exclude": ["DOUBLES", "RELAY"]
+  },
+  {
+    "id": "DOUBLES_MEN",
+    "name": "Doubles Men",
+    "include": ["DOUBLES", "MEN"],
+    "exclude": ["MIXED"]
+  },
+  {
+    "id": "DOUBLES_WOMEN",
+    "name": "Doubles Women",
+    "include": ["DOUBLES", "WOMEN"],
+    "exclude": ["MIXED"]
+  },
+  {
+    "id": "DOUBLES_MIXED",
+    "name": "Doubles Mixed",
+    "include": ["DOUBLES", "MIXED"],
+    "exclude": []
+  }
+]
