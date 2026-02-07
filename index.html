@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Hyrox Pro - Bilet Takip Sistemi</title>
+  <title>Hyrox Bilet Takip Paneli</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -17,24 +17,29 @@
     }
     body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; padding-bottom: 60px; }
 
+    /* HEADER & DROPDOWN */
     header {
       background: #000; border-bottom: 2px solid var(--accent); padding: 15px 20px;
-      display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50;
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; 
+      position: sticky; top: 0; z-index: 50; gap: 10px;
     }
-    .brand { font-family: 'Teko', sans-serif; font-size: 28px; font-weight: 600; text-transform: uppercase; }
+    .brand { font-family: 'Teko', sans-serif; font-size: 28px; font-weight: 600; text-transform: uppercase; margin-right: 20px;}
     .brand span { color: var(--accent); }
     
-    /* Etkinlik Seçici Stili */
-    #eventSelector {
-      background: #1a1d23; color: #fff; border: 1px solid var(--border);
-      padding: 8px 12px; border-radius: 6px; outline: none; font-family: 'Inter'; cursor: pointer;
+    .header-controls { display: flex; align-items: center; gap: 10px; flex-grow: 1; justify-content: flex-end; }
+    
+    select.event-selector {
+      background: #222; color: #fff; border: 1px solid var(--border); padding: 8px 12px;
+      border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 14px; cursor: pointer;
+      max-width: 300px; width: 100%;
     }
-    #eventSelector:focus { border-color: var(--accent); }
+    select.event-selector:focus { outline: none; border-color: var(--accent); }
 
-    .status { font-size: 12px; color: var(--text-dim); background: #222; padding: 5px 10px; border-radius: 4px; }
+    .status { font-size: 12px; color: var(--text-dim); background: #222; padding: 5px 10px; border-radius: 4px; white-space: nowrap;}
 
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
+    /* LOADER */
     #loader {
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       height: 60vh; text-align: center;
@@ -51,6 +56,7 @@
     
     .hidden { display: none !important; }
 
+    /* FILTERS */
     .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; background: var(--card); padding: 10px; border-radius: 8px; border:1px solid var(--border); }
     .btn {
       flex: 1; background: transparent; border: 1px solid var(--border); color: var(--text-dim); padding: 10px; border-radius: 6px;
@@ -63,6 +69,7 @@
     .chart-header { font-size: 16px; font-weight: 700; margin-bottom: 15px; display: flex; justify-content: space-between; }
     .chart-box { position: relative; height: 350px; width: 100%; }
 
+    /* TABLE */
     .table-container { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th { text-align: left; color: var(--text-dim); padding: 10px; border-bottom: 1px solid var(--border); text-transform: uppercase; font-size: 11px; }
@@ -81,10 +88,13 @@
 
 <header>
   <div class="brand">HYROX <span>PRO</span></div>
-  <select id="eventSelector" onchange="changeEvent(this.value)">
-      <option value="">Yarış Seçiniz...</option>
-  </select>
-  <div class="status" id="dbStatus">Bağlanıyor...</div>
+  
+  <div class="header-controls">
+    <select id="eventSelector" class="event-selector" onchange="loadSelectedEvent()">
+      <option value="" disabled selected>Yarış Yükleniyor...</option>
+    </select>
+    <div class="status" id="dbStatus">Hazır</div>
+  </div>
 </header>
 
 <div class="container">
@@ -92,7 +102,7 @@
   <div id="loader">
     <div class="spinner"></div>
     <div style="font-size: 20px; font-weight: 600; margin-bottom: 5px;">Veriler Analiz Ediliyor</div>
-    <div style="color: var(--text-dim); font-size: 14px;">Seçilen Yarış Verileri Taranıyor...</div>
+    <div style="color: var(--text-dim); font-size: 14px;">Lütfen bekleyin...</div>
   </div>
 
   <div id="dashboardContent" class="hidden">
@@ -145,282 +155,300 @@
 </div>
 
 <script>
-/* --- CONFIG & STATE --- */
-let CONFIG = { dataDir: "", startDate: "" };
-let EVENTS = [];
-let HISTORY = [];
+/* --- YAPILANDIRMA --- */
+const CONFIG = { 
+  eventsFile: "events.json",
+  dataDir: "data" 
+};
+
+let HISTORY = []; // Seçili yarışın tarihçesi buraya yüklenecek
+let EVENTS = [];  // Tüm yarışların listesi
 let FILTER = 'ALL';
 let charts = { history: null, current: null };
 
-/* --- UTILS --- */
-const pad = n => String(n).padStart(2, "0");
-const strToDate = s => { 
-    if(!s) return new Date();
-    const [d,m,y] = s.split(".").map(Number); 
-    return new Date(y, m-1, d); 
+/* --- YARDIMCI FONKSİYONLAR --- */
+const shortDate = s => {
+  if(!s) return "-";
+  // s formatı: 2026-02-07
+  const parts = s.split("-");
+  return `${parts[2]}.${parts[1]}`; // Çıktı: 07.02
 };
-const dateToStr = d => `${pad(d.getDate())}.${pad(d.getMonth()+1)}.${d.getFullYear()}`;
-const shortDate = s => s.substring(0, 5); 
 
-/* --- CORE LOGIC --- */
+/* --- ANA AKIŞ --- */
 
-// 1. events.json'u yükle ve menüyü oluştur
-async function initApp() {
-    try {
-        const res = await fetch(`events.json?t=${Date.now()}`);
-        if(!res.ok) throw new Error("events.json dosyası okunamadı.");
-        
-        EVENTS = await res.json();
-        const selector = document.getElementById("eventSelector");
-        
-        selector.innerHTML = ""; // Temizle
-        EVENTS.forEach(ev => {
-            const opt = document.createElement("option");
-            opt.value = ev.id;
-            opt.textContent = ev.name;
-            selector.appendChild(opt);
-        });
-
-        // İlk yarışı varsayılan olarak yükle
-        if(EVENTS.length > 0) {
-            selector.value = EVENTS[0].id;
-            changeEvent(EVENTS[0].id);
-        }
-    } catch(err) {
-        showError("Başlatma Hatası: " + err.message);
-    }
-}
-
-// 2. Yarış değişince verileri tekrar yükle
-async function changeEvent(eventId) {
-    const ev = EVENTS.find(e => e.id === eventId);
-    if(!ev) return;
-
-    // Ayarları güncelle
-    CONFIG.dataDir = `data/${ev.id}`;
-    CONFIG.startDate = ev.startDate;
-
-    // UI Reset
-    document.getElementById("dashboardContent").classList.add("hidden");
-    document.getElementById("loader").classList.remove("hidden");
-    document.getElementById("errorLog").style.display = "none";
-    document.getElementById("dbStatus").textContent = "Yükleniyor...";
-
-    try {
-        await loadAllData();
-        document.getElementById("loader").classList.add("hidden");
-        document.getElementById("dashboardContent").classList.remove("hidden");
-        setFilter('ALL'); 
-    } catch(err) {
-        showError(err.message);
-    }
-}
-
-async function loadAllData() {
-    const start = strToDate(CONFIG.startDate);
-    const now = new Date(); 
-    const validData = [];
+// 1. Sayfa açıldığında events.json'ı yükle
+async function init() {
+  try {
+    const res = await fetch(`${CONFIG.eventsFile}?t=${Date.now()}`);
+    if(!res.ok) throw new Error("events.json dosyası bulunamadı.");
     
-    let curr = new Date(start);
-    let safety = 0;
+    EVENTS = await res.json();
     
-    // Bugünden 1 gün sonrasına kadar tara (saat farkları için)
-    const endLimit = new Date(now.getTime() + 86400000);
-
-    while(curr <= endLimit && safety < 500) {
-        const dStr = dateToStr(curr);
-        try {
-            const res = await fetch(`${CONFIG.dataDir}/${dStr}.json?t=${Date.now()}`);
-            if(res.ok) {
-                const json = await res.json();
-                if(json.tickets) {
-                    validData.push({
-                        date: dStr,
-                        timestamp: curr.getTime(),
-                        tickets: processTickets(json.tickets)
-                    });
-                }
-            }
-        } catch(e) {}
-        
-        curr.setDate(curr.getDate() + 1);
-        safety++;
-    }
-
-    if(!validData.length) {
-        throw new Error(`'${CONFIG.dataDir}' klasöründe geçerli JSON verisi bulunamadı. Lütfen Python scriptinin çalıştığından emin olun.`);
-    }
-
-    HISTORY = validData.sort((a,b) => a.timestamp - b.timestamp);
+    const selector = document.getElementById("eventSelector");
+    selector.innerHTML = '<option value="" disabled>Bir Yarış Seçin</option>';
     
-    document.getElementById("dbStatus").textContent = 
-        `Veri Aralığı: ${HISTORY[0].date} - ${HISTORY[HISTORY.length-1].date}`;
-}
-
-function processTickets(list) {
-    const filteredList = list.filter(t => !t.ticket.toUpperCase().includes("ADAPTIVE"));
-
-    return filteredList.map(t => {
-        let tags = [];
-        const n = t.ticket.toUpperCase();
-        
-        if (n.includes("DOUBLES")) {
-            tags.push("DOUBLES");
-        } else if (n.includes("WOMEN")) {
-            tags.push("WOMEN");
-        } else if (n.includes("MEN")) {
-            tags.push("MEN");
-        }
-        
-        let cleanName = t.ticket.replace("HYROX ", "");
-        return { id: t.ticket, name: cleanName, stock: t.stock, tags };
+    EVENTS.forEach((evt, index) => {
+      const opt = document.createElement("option");
+      opt.value = evt.id;
+      opt.textContent = evt.name || evt.id;
+      selector.appendChild(opt);
     });
+
+    // İlk yarışı otomatik seç
+    if (EVENTS.length > 0) {
+      selector.selectedIndex = 1; // İlk opsiyon disabled olduğu için 1
+      loadSelectedEvent();
+    } else {
+      showError("Listelenecek yarış bulunamadı.");
+    }
+
+  } catch (err) {
+    showError("Başlangıç hatası: " + err.message);
+  }
+}
+
+// 2. Dropdown değişince çalışır
+async function loadSelectedEvent() {
+  const eventId = document.getElementById("eventSelector").value;
+  if(!eventId) return;
+
+  // UI Sıfırla
+  document.getElementById("loader").classList.remove("hidden");
+  document.getElementById("dashboardContent").classList.add("hidden");
+  document.getElementById("errorLog").style.display = "none";
+  
+  try {
+    // data/{id}.json dosyasını çek
+    const url = `${CONFIG.dataDir}/${eventId}.json?t=${Date.now()}`;
+    const res = await fetch(url);
+    
+    if(!res.ok) throw new Error(`${eventId} için veri dosyası henüz oluşmamış.`);
+    
+    const json = await res.json();
+    
+    if (!json.history || json.history.length === 0) {
+      throw new Error("Bu yarış için geçmiş verisi boş.");
+    }
+
+    // Gelen veriyi işle ve HISTORY değişkenine ata
+    // Yeni JSON yapısı: { history: [ { date: "...", data: { tickets: [...] } } ] }
+    HISTORY = json.history.map(item => {
+      return {
+        date: item.date,
+        tickets: processTickets(item.data.tickets)
+      };
+    });
+
+    // Tarihe göre sırala (Eskiden yeniye)
+    HISTORY.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    // UI Güncelle
+    document.getElementById("dbStatus").textContent = `Son Güncelleme: ${HISTORY[HISTORY.length-1].date}`;
+    document.getElementById("loader").classList.add("hidden");
+    document.getElementById("dashboardContent").classList.remove("hidden");
+
+    // Filtreleri ve grafikleri tetikle
+    setFilter('ALL');
+
+  } catch (err) {
+    document.getElementById("loader").classList.add("hidden");
+    showError(err.message);
+  }
+}
+
+// Bilet verilerini temizle ve etiketle
+function processTickets(list) {
+  if(!list) return [];
+  const filteredList = list.filter(t => !t.ticket.toUpperCase().includes("ADAPTIVE"));
+
+  return filteredList.map(t => {
+    let tags = [];
+    const n = t.ticket.toUpperCase();
+    
+    if (n.includes("DOUBLES")) {
+        tags.push("DOUBLES");
+    } else if (n.includes("WOMEN")) {
+        tags.push("WOMEN");
+    } else if (n.includes("MEN")) {
+        tags.push("MEN");
+    }
+    
+    // "HYROX " kelimesini sil temiz görünsün
+    let cleanName = t.ticket.replace(/HYROX /gi, "").trim();
+    return { id: t.ticket, name: cleanName, stock: t.stock, tags };
+  });
+}
+
+function showError(msg) {
+  const el = document.getElementById("errorLog");
+  el.style.display = "block";
+  el.innerHTML = `<strong>HATA:</strong> ${msg}`;
 }
 
 /* --- UI ACTIONS --- */
 window.setFilter = (f) => {
-    FILTER = f;
-    document.querySelectorAll(".btn").forEach(b => {
-        if (b.getAttribute('data-key') === f) b.classList.add("active");
-        else b.classList.remove("active");
-    });
-    updateHistoryChart();
-    updateCurrentChart();
-    updateTable();
+  FILTER = f;
+  document.querySelectorAll(".btn").forEach(b => {
+    if (b.getAttribute('data-key') === f) b.classList.add("active");
+    else b.classList.remove("active");
+  });
+  updateHistoryChart();
+  updateCurrentChart();
+  updateTable();
 };
 
-/* --- CHARTS --- */
+/* --- GRAFİKLER --- */
 function updateHistoryChart() {
-    const ctx = document.getElementById("chartHistory").getContext("2d");
-    const labels = HISTORY.map(h => shortDate(h.date));
-    let datasets = [];
-    const modeLabel = document.getElementById("chartModeLabel");
+  const ctx = document.getElementById("chartHistory").getContext("2d");
+  const labels = HISTORY.map(h => shortDate(h.date));
+  let datasets = [];
+  const modeLabel = document.getElementById("chartModeLabel");
 
-    if(FILTER === 'ALL') {
-        modeLabel.textContent = "Kategori Toplamları";
-        const groups = ['MEN', 'WOMEN', 'DOUBLES'];
-        const colors = ['#3b82f6', '#ec4899', '#fbbf24']; 
-        
-        datasets = groups.map((g, i) => {
-            return {
-                label: g,
-                data: HISTORY.map(day => {
-                    return day.tickets.filter(t => t.tags.includes(g)).reduce((s, t) => s + t.stock, 0);
-                }),
-                borderColor: colors[i],
-                backgroundColor: colors[i],
-                tension: 0.3, borderWidth: 2
-            };
-        });
-    } else {
-        modeLabel.textContent = FILTER + " Detayları";
-        const ticketNames = new Set();
-        HISTORY.forEach(day => {
-            day.tickets.filter(t => t.tags.includes(FILTER)).forEach(t => ticketNames.add(t.name));
-        });
-
-        const palette = ['#fbbf24', '#3b82f6', '#ef4444', '#10b981', '#f97316', '#8b5cf6'];
-        let colorIdx = 0;
-        ticketNames.forEach(name => {
-            const dataPoints = HISTORY.map(day => {
-                const found = day.tickets.find(t => t.name === name);
-                return found ? found.stock : null;
-            });
-            if(dataPoints.some(x => x !== null)) {
-                datasets.push({
-                    label: name,
-                    data: dataPoints,
-                    borderColor: palette[colorIdx % palette.length],
-                    backgroundColor: palette[colorIdx % palette.length],
-                    tension: 0.2, borderWidth: 2, pointRadius: 4
-                });
-                colorIdx++;
-            }
-        });
-    }
-    if(charts.history) charts.history.destroy();
-    charts.history = new Chart(ctx, {
-        type: 'line',
-        data: { labels, datasets },
-        options: {
-            responsive: true, maintainAspectRatio: false,
-            interaction: { mode: 'index', intersect: false },
-            plugins: {
-                legend: { labels: { color: '#9ca3af' } },
-                tooltip: { backgroundColor: '#161920', titleColor: '#fff', bodyColor:'#ddd', borderColor:'#333', borderWidth:1 }
-            },
-            scales: {
-                x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } },
-                y: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } }
-            }
-        }
+  if(FILTER === 'ALL') {
+    modeLabel.textContent = "Kategori Toplamları";
+    const groups = ['MEN', 'WOMEN', 'DOUBLES'];
+    const colors = ['#3b82f6', '#ec4899', '#fbbf24']; 
+    
+    datasets = groups.map((g, i) => {
+      return {
+        label: g,
+        data: HISTORY.map(day => {
+          return day.tickets.filter(t => t.tags.includes(g)).reduce((s, t) => s + t.stock, 0);
+        }),
+        borderColor: colors[i],
+        backgroundColor: colors[i],
+        tension: 0.3, borderWidth: 2
+      };
     });
+  } else {
+    modeLabel.textContent = FILTER + " Detayları";
+    // Seçili filtredeki tüm benzersiz bilet isimlerini bul
+    const ticketNames = new Set();
+    HISTORY.forEach(day => {
+      day.tickets.filter(t => t.tags.includes(FILTER)).forEach(t => ticketNames.add(t.name));
+    });
+
+    const palette = ['#fbbf24', '#3b82f6', '#ef4444', '#10b981', '#f97316', '#8b5cf6', '#ddd'];
+    let colorIdx = 0;
+    
+    ticketNames.forEach(name => {
+      const dataPoints = HISTORY.map(day => {
+        const found = day.tickets.find(t => t.name === name);
+        return found ? found.stock : null; // Eğer o tarihte o bilet yoksa null
+      });
+      
+      // Sadece verisi olanları çiz
+      if(dataPoints.some(x => x !== null)) {
+        datasets.push({
+          label: name,
+          data: dataPoints,
+          borderColor: palette[colorIdx % palette.length],
+          backgroundColor: palette[colorIdx % palette.length],
+          tension: 0.2, borderWidth: 2, pointRadius: 4
+        });
+        colorIdx++;
+      }
+    });
+  }
+
+  if(charts.history) charts.history.destroy();
+  
+  charts.history = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#9ca3af' } },
+        tooltip: { backgroundColor: '#161920', titleColor: '#fff', bodyColor:'#ddd', borderColor:'#333', borderWidth:1 }
+      },
+      scales: {
+        x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } },
+        y: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } }
+      }
+    }
+  });
 }
 
 function updateCurrentChart() {
-    const ctx = document.getElementById("chartCurrent").getContext("2d");
-    const latest = HISTORY[HISTORY.length - 1];
-    let data = latest.tickets;
-    if(FILTER !== 'ALL') data = data.filter(t => t.tags.includes(FILTER));
-    data.sort((a,b) => b.stock - a.stock);
+  const ctx = document.getElementById("chartCurrent").getContext("2d");
+  const latest = HISTORY[HISTORY.length - 1]; // En son veri
+  
+  if (!latest) return;
 
-    if(charts.current) charts.current.destroy();
-    charts.current = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: data.map(t => t.name),
-            datasets: [{
-                label: 'Adet',
-                data: data.map(t => t.stock),
-                backgroundColor: data.map(t => t.stock < 50 ? '#ef4444' : '#10b981'),
-                borderRadius: 4
-            }]
-        },
-        options: {
-            responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-            plugins: { legend: { display: false } },
-            scales: {
-                x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } },
-                y: { grid: { display:false }, ticks: { color: '#fff', font:{size:11} } }
-            }
-        }
-    });
+  let data = latest.tickets;
+  if(FILTER !== 'ALL') data = data.filter(t => t.tags.includes(FILTER));
+  
+  // Stok adedine göre çoktan aza sırala
+  data.sort((a,b) => b.stock - a.stock);
+
+  if(charts.current) charts.current.destroy();
+  
+  charts.current = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.map(t => t.name),
+      datasets: [{
+        label: 'Adet',
+        data: data.map(t => t.stock),
+        backgroundColor: data.map(t => t.stock < 50 ? '#ef4444' : '#10b981'), // Az kaldıysa kırmızı
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } },
+        y: { grid: { display:false }, ticks: { color: '#fff', font:{size:11} } }
+      }
+    }
+  });
 }
 
 function updateTable() {
-    const tbody = document.querySelector("#diffTable tbody");
-    tbody.innerHTML = "";
-    if(HISTORY.length < 1) return;
-    const currentDay = HISTORY[HISTORY.length - 1];
-    const prevDay = HISTORY.length > 1 ? HISTORY[HISTORY.length - 2] : null;
-    let items = currentDay.tickets;
-    if(FILTER !== 'ALL') items = items.filter(t => t.tags.includes(FILTER));
-    items.sort((a,b) => b.stock - a.stock);
-    items.forEach(curr => {
-        let prevStock = "-";
-        let diff = 0;
-        if(prevDay) {
-            const p = prevDay.tickets.find(x => x.name === curr.name);
-            if(p) { prevStock = p.stock; diff = curr.stock - p.stock; }
-        }
-        const tr = document.createElement("tr");
-        let diffHtml = `<span class="diff-badge diff-neutral">0</span>`;
-        if(diff < 0) diffHtml = `<span class="diff-badge diff-neg">🔻 ${Math.abs(diff)}</span>`;
-        if(diff > 0) diffHtml = `<span class="diff-badge" style="color:#10b981">⬆️ +${diff}</span>`;
-        tr.innerHTML = `<td>${curr.name}</td><td class="stock-val" style="color:#9ca3af">${prevStock}</td><td class="stock-val" style="color:#fff">${curr.stock}</td><td>${diffHtml}</td>`;
-        tbody.appendChild(tr);
-    });
-}
-
-function showError(msg) {
-    document.getElementById("loader").classList.add("hidden");
-    const el = document.getElementById("errorLog");
-    el.style.display = "block";
-    el.innerHTML = `<strong>HATA:</strong> ${msg}`;
+  const tbody = document.querySelector("#diffTable tbody");
+  tbody.innerHTML = "";
+  
+  if(HISTORY.length < 1) return;
+  
+  const currentDay = HISTORY[HISTORY.length - 1];
+  const prevDay = HISTORY.length > 1 ? HISTORY[HISTORY.length - 2] : null;
+  
+  let items = currentDay.tickets;
+  if(FILTER !== 'ALL') items = items.filter(t => t.tags.includes(FILTER));
+  
+  items.sort((a,b) => b.stock - a.stock);
+  
+  items.forEach(curr => {
+    let prevStock = "-";
+    let diff = 0;
+    
+    if(prevDay) {
+      const p = prevDay.tickets.find(x => x.name === curr.name);
+      if(p) { prevStock = p.stock; diff = curr.stock - p.stock; }
+    }
+    
+    const tr = document.createElement("tr");
+    
+    let diffHtml = `<span class="diff-badge diff-neutral">0</span>`;
+    if(diff < 0) diffHtml = `<span class="diff-badge diff-neg">🔻 ${Math.abs(diff)}</span>`; // Stok azalması (Satış)
+    if(diff > 0) diffHtml = `<span class="diff-badge" style="color:#10b981">⬆️ +${diff}</span>`; // Stok artışı (İade/Ekleme)
+    
+    tr.innerHTML = `
+      <td>${curr.name}</td>
+      <td class="stock-val" style="color:#9ca3af">${prevStock}</td>
+      <td class="stock-val" style="color:#fff">${curr.stock}</td>
+      <td>${diffHtml}</td>
+    `;
+    tbody.appendChild(tr);
+  });
 }
 
 // Uygulamayı başlat
-initApp();
+init();
+
 </script>
 </body>
 </html>
