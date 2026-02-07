@@ -1,0 +1,52 @@
+{
+  "event_id": "barcelona-2026",
+  "event_name": "Hyrox Barcelona 2026",
+  "url": "https://spain.hyrox.com/checkout/hyrox-barcelona-season-25-26-copy-9tiy2w",
+  "history": [
+    {
+      "date": "2026-02-07",
+      "fetched_at": "2026-02-07T11:06:44.057948+01:00",
+      "total_stock": 5,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
+            "stock": 279
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Friday",
+            "stock": 156
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 2
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 392
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Thursday",
+            "stock": 249
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN | Saturday": 279
+          },
+          "Singles": {
+            "HYROX PRO WOMEN | Friday": 156,
+            "HYROX ADAPTIVE WOMEN | Sunday": 2,
+            "HYROX WOMEN | Sunday": 392,
+            "HYROX WOMEN | Thursday": 249
+          }
+        }
+      }
+    }
+  ]
+}
