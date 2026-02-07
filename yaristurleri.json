@@ -3,19 +3,19 @@
     "id": "MEN_SINGLE",
     "name": "Men Singles",
     "include": ["MEN"],
-    "exclude": ["DOUBLES", "PRO"]
+    "exclude": ["DOUBLES", "RELAY", "PRO", "WOMEN", "MIXED"]
   },
   {
     "id": "WOMEN_SINGLE",
     "name": "Women Singles",
     "include": ["WOMEN"],
-    "exclude": ["DOUBLES", "PRO"]
+    "exclude": ["DOUBLES", "RELAY", "PRO", "MIXED"]
   },
   {
     "id": "MEN_PRO",
     "name": "Men Pro",
     "include": ["MEN", "PRO"],
-    "exclude": ["DOUBLES", "RELAY"]
+    "exclude": ["DOUBLES", "RELAY", "WOMEN"]
   },
   {
     "id": "WOMEN_PRO",
@@ -27,7 +27,7 @@
     "id": "DOUBLES_MEN",
     "name": "Doubles Men",
     "include": ["DOUBLES", "MEN"],
-    "exclude": ["MIXED"]
+    "exclude": ["MIXED", "WOMEN"]
   },
   {
     "id": "DOUBLES_WOMEN",
