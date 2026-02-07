@@ -14,6 +14,7 @@
       --bg: #0f1115; --card: #161920; --border: #2a2f3a;
       --accent: #fbbf24; --text: #fff; --text-dim: #9ca3af;
       --red: #ef4444; --green: #10b981;
+      --hover: #222;
     }
     body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; padding-bottom: 60px; }
 
@@ -39,13 +40,49 @@
     /* MAIN CONTAINER */
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
-    /* CONTROLS (Dropdowns) */
+    /* --- SEARCH BOX STYLES (NEW) --- */
     .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+    
+    .search-wrapper { position: relative; min-width: 300px; flex: 1; }
+    .search-input {
+      width: 100%; background: #222; border: 1px solid var(--border); color: #fff;
+      padding: 12px 15px; border-radius: 6px; font-size: 14px; box-sizing: border-box;
+      transition: 0.2s;
+    }
+    .search-input:focus { outline: none; border-color: var(--accent); background: #1a1d24; }
+    
+    .search-results {
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: #1a1d24; border: 1px solid var(--border); border-radius: 6px;
+      max-height: 300px; overflow-y: auto; z-index: 100; margin-top: 5px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5); display: none;
+    }
+    .search-results.show { display: block; }
+    
+    .result-item {
+      padding: 10px 15px; cursor: pointer; border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .result-item:last-child { border-bottom: none; }
+    .result-item:hover { background: var(--hover); }
+    .ri-name { font-weight: 600; color: #fff; }
+    .ri-date { font-size: 12px; color: var(--accent); background: rgba(251, 191, 36, 0.1); padding: 2px 6px; border-radius: 4px; }
+
+    /* SELECTED EVENT INFO */
+    .selected-event-header {
+      background: var(--card); border: 1px solid var(--border); padding: 15px; 
+      border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .seh-title { font-size: 20px; font-weight: 700; color: var(--accent); font-family: 'Teko', sans-serif; letter-spacing: 0.5px; }
+    .seh-date { font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 5px;}
+
+    /* DROPDOWN (Category) */
     select.custom-select {
       background: #222; color: #fff; border: 1px solid var(--border); padding: 10px 15px;
       border-radius: 6px; font-size: 14px; cursor: pointer; min-width: 250px;
     }
     select.custom-select:focus { outline: none; border-color: var(--accent); }
+
 
     /* CARDS & CHARTS */
     .chart-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
@@ -60,7 +97,8 @@
     }
     .global-item:hover { border-color: var(--text-dim); }
     .gi-name { font-weight: 600; font-size: 16px; }
-    .gi-date { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+    .gi-date { font-size: 13px; color: var(--accent); margin-bottom: 4px; font-weight: 600;}
+    .gi-update { font-size: 11px; color: var(--text-dim); }
     .gi-stock { text-align: right; }
     .gi-val { font-family: 'Teko', sans-serif; font-size: 24px; font-weight: 600; }
     .gi-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; }
@@ -86,7 +124,7 @@
 <header>
   <div class="header-inner">
     <div class="brand">HYROX <span>PRO</span></div>
-    <div style="font-size: 12px; color: #666;" id="lastUpdate">v2.1 EN</div>
+    <div style="font-size: 12px; color: #666;" id="lastUpdate">v2.2 EN</div>
   </div>
   <div class="header-inner">
     <div class="tabs">
@@ -101,15 +139,28 @@
   <div id="tab-event" class="tab-content">
     
     <div class="top-bar">
-      <select id="eventSelector" class="custom-select" onchange="loadEventData()">
-        <option disabled selected>Select Event...</option>
-      </select>
+      <div class="search-wrapper">
+        <input type="text" id="eventSearch" class="search-input" placeholder="Search for a city (e.g. Istanbul)..." autocomplete="off">
+        <div id="searchResults" class="search-results"></div>
+      </div>
+
       <div class="filter-group">
         <button class="filter-btn active" onclick="setEventFilter('ALL', this)">ALL</button>
         <button class="filter-btn" onclick="setEventFilter('MEN', this)">MEN</button>
         <button class="filter-btn" onclick="setEventFilter('WOMEN', this)">WOMEN</button>
         <button class="filter-btn" onclick="setEventFilter('DOUBLES', this)">DOUBLES</button>
       </div>
+    </div>
+
+    <div id="selectedEventInfo" class="selected-event-header hidden">
+      <div>
+        <div class="seh-title" id="sehName">Select an Event</div>
+        <div class="seh-date">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span id="sehDate">...</span>
+        </div>
+      </div>
+      <div><a href="#" id="sehLink" target="_blank" class="filter-btn active" style="text-decoration:none;">Go to Shop ↗</a></div>
     </div>
 
     <div id="eventLoader" class="hidden"><div class="spinner"></div>Loading Data...</div>
@@ -159,6 +210,7 @@ let EVENTS = [];
 let CATEGORIES = [];
 let EVENT_DATA = null;
 let EVENT_FILTER = 'ALL';
+let CURRENT_EVENT_INFO = null;
 let CHARTS = { history: null, current: null };
 
 /* --- INITIALIZATION --- */
@@ -172,12 +224,15 @@ async function init() {
     if(evRes.ok) EVENTS = await evRes.json();
     if(catRes.ok) CATEGORIES = await catRes.json();
 
-    populateDropdowns();
+    // SORT EVENTS BY DATE (Oldest to Newest)
+    EVENTS.sort((a, b) => parseDate(a.startDate) - parseDate(b.startDate));
 
-    // Auto-select first event if available
+    setupSearch();
+    populateCategoryDropdown();
+
+    // Auto-select first upcoming event if available
     if(EVENTS.length > 0) {
-      document.getElementById('eventSelector').selectedIndex = 1;
-      loadEventData();
+      selectEvent(EVENTS[0]);
     }
 
   } catch (e) {
@@ -185,17 +240,78 @@ async function init() {
   }
 }
 
-function populateDropdowns() {
-  // Tab 1: Event Selector
-  const evSel = document.getElementById('eventSelector');
-  EVENTS.forEach(e => {
-    const opt = document.createElement('option');
-    opt.value = e.id;
-    opt.textContent = e.name;
-    evSel.appendChild(opt);
+// Helper: Parse DD.MM.YYYY to Date Object
+function parseDate(dateStr) {
+  if(!dateStr) return new Date(8640000000000000); // Far future if no date
+  const parts = dateStr.split('.');
+  // Note: Month is 0-indexed in JS
+  return new Date(parts[2], parts[1] - 1, parts[0]);
+}
+
+/* --- SEARCH & SELECTION LOGIC --- */
+function setupSearch() {
+  const input = document.getElementById('eventSearch');
+  const resultsBox = document.getElementById('searchResults');
+
+  // Render Function
+  const renderList = (list) => {
+    resultsBox.innerHTML = '';
+    if(list.length === 0) {
+      resultsBox.innerHTML = '<div style="padding:10px; color:#aaa;">No events found.</div>';
+      return;
+    }
+    list.forEach(evt => {
+      const div = document.createElement('div');
+      div.className = 'result-item';
+      div.innerHTML = `
+        <span class="ri-name">${evt.name}</span>
+        <span class="ri-date">${evt.startDate || 'TBA'}</span>
+      `;
+      div.onclick = () => {
+        selectEvent(evt);
+        input.value = evt.name;
+        resultsBox.classList.remove('show');
+      };
+      resultsBox.appendChild(div);
+    });
+  };
+
+  // Event Listeners
+  input.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    const filtered = EVENTS.filter(evt => evt.name.toLowerCase().includes(term));
+    renderList(filtered);
+    resultsBox.classList.add('show');
   });
 
-  // Tab 2: Category Selector
+  input.addEventListener('focus', () => {
+    renderList(EVENTS); // Show all (sorted) on click
+    resultsBox.classList.add('show');
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search-wrapper')) {
+      resultsBox.classList.remove('show');
+    }
+  });
+}
+
+function selectEvent(evt) {
+  CURRENT_EVENT_INFO = evt;
+  
+  // Update Header UI
+  const infoBox = document.getElementById('selectedEventInfo');
+  infoBox.classList.remove('hidden');
+  document.getElementById('sehName').textContent = evt.name;
+  document.getElementById('sehDate').textContent = evt.startDate || 'Date TBA';
+  document.getElementById('sehLink').href = evt.url;
+  document.getElementById('eventSearch').value = evt.name;
+
+  loadEventData(evt.id);
+}
+
+function populateCategoryDropdown() {
   const catSel = document.getElementById('categorySelector');
   CATEGORIES.forEach(c => {
     const opt = document.createElement('option');
@@ -220,8 +336,7 @@ window.switchTab = (tabId) => {
 /* =================================================================
    LOGIC FOR TAB 1: EVENT ANALYZER
    ================================================================= */
-async function loadEventData() {
-  const eventId = document.getElementById('eventSelector').value;
+async function loadEventData(eventId) {
   if(!eventId) return;
 
   const loader = document.getElementById('eventLoader');
@@ -235,7 +350,6 @@ async function loadEventData() {
     if(!res.ok) throw new Error("Data file not found.");
     const json = await res.json();
     
-    // Sort by date ascending
     EVENT_DATA = json.history.map(h => ({
       date: h.date,
       tickets: h.data.tickets
@@ -246,7 +360,7 @@ async function loadEventData() {
     dash.classList.remove('hidden');
 
   } catch (e) {
-    loader.innerHTML = "No data found for this event yet.";
+    loader.innerHTML = `No tracking data found yet. Scraper will run soon.`;
   }
 }
 
@@ -354,7 +468,6 @@ async function loadGlobalData() {
       const latest = history[history.length - 1];
       
       let totalStock = 0;
-      let availableTypes = 0;
 
       latest.data.tickets.forEach(t => {
         const name = t.ticket.toUpperCase();
@@ -364,21 +477,22 @@ async function loadGlobalData() {
 
         if (matchesInclude && !matchesExclude) {
           totalStock += t.stock;
-          availableTypes++;
         }
       });
 
       if (totalStock > 0) {
         validResults.push({
           eventName: item.event.name,
+          eventDate: item.event.startDate, // Added Date
           url: item.event.url,
           stock: totalStock,
-          date: latest.date
+          lastUpdate: latest.date
         });
       }
     });
 
-    validResults.sort((a,b) => b.stock - a.stock);
+    // SORT BY EVENT DATE (Closest First)
+    validResults.sort((a,b) => parseDate(a.eventDate) - parseDate(b.eventDate));
 
     loader.classList.add('hidden');
     renderGlobalResults(validResults, categoryRule.name);
@@ -393,7 +507,7 @@ function renderGlobalResults(list, catName) {
   const container = document.getElementById('globalResults');
   
   if(list.length === 0) {
-    container.innerHTML = `<div style="text-align:center; padding:20px; color:#aaa;">No tickets found for <strong>${catName}</strong> in any event.</div>`;
+    container.innerHTML = `<div style="text-align:center; padding:20px; color:#aaa;">No tickets found for <strong>${catName}</strong>.</div>`;
     return;
   }
 
@@ -407,8 +521,9 @@ function renderGlobalResults(list, catName) {
 
     el.innerHTML = `
       <div>
+        <div class="gi-date">${item.eventDate}</div>
         <div class="gi-name">${item.eventName}</div>
-        <div class="gi-date">Last Update: ${item.date}</div>
+        <div class="gi-update">Data from: ${item.lastUpdate}</div>
       </div>
       <div class="gi-stock">
         <div class="gi-label">Available</div>
