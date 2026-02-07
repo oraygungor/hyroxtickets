@@ -41,10 +41,12 @@
     /* MAIN CONTAINER */
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
-    /* --- SEARCH BOX STYLES --- */
-    .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start; flex-wrap: wrap; }
+    /* --- SEARCH & FILTERS --- */
+    .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-end; flex-wrap: wrap; }
     
-    .search-wrapper { position: relative; min-width: 300px; flex: 1; }
+    .search-wrapper { position: relative; min-width: 300px; flex: 2; }
+    .filter-wrapper { flex: 1; min-width: 200px; }
+
     .search-input {
       width: 100%; background: #222; border: 1px solid var(--border); color: #fff;
       padding: 12px 15px; border-radius: 6px; font-size: 14px; box-sizing: border-box;
@@ -69,16 +71,7 @@
     .ri-name { font-weight: 600; color: #fff; }
     .ri-date { font-size: 12px; color: var(--accent); background: rgba(251, 191, 36, 0.1); padding: 2px 6px; border-radius: 4px; }
 
-    /* FILTER BUTTONS */
-    .filter-wrapper { display: flex; flex-direction: column; gap:8px;}
-    .filter-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;}
-    .filter-group { display: flex; gap: 5px; flex-wrap: wrap; }
-    .filter-btn { 
-      background: #222; border: 1px solid var(--border); color: #aaa; padding: 8px 12px; 
-      border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; transition: 0.2s;
-    }
-    .filter-btn:hover { border-color: #555; color: #fff; }
-    .filter-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+    .filter-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 5px;}
 
     /* SELECTED EVENT INFO */
     .selected-event-header {
@@ -88,10 +81,13 @@
     .seh-title { font-size: 20px; font-weight: 700; color: var(--accent); font-family: 'Teko', sans-serif; letter-spacing: 0.5px; }
     .seh-date { font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 5px;}
 
-    /* DROPDOWN (Category) */
+    /* DROPDOWN (Custom Select) */
     select.custom-select {
-      background: #222; color: #fff; border: 1px solid var(--border); padding: 10px 15px;
-      border-radius: 6px; font-size: 14px; cursor: pointer; min-width: 250px;
+      width: 100%;
+      background: #222; color: #fff; border: 1px solid var(--border); padding: 12px 15px;
+      border-radius: 6px; font-size: 14px; cursor: pointer; appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;
     }
     select.custom-select:focus { outline: none; border-color: var(--accent); }
 
@@ -129,7 +125,7 @@
 
 <header>
   <div class="header-inner">
-    <div class="brand">HYROX <span>SLOT RADAR</span> <span class="version">v3.0</span></div>
+    <div class="brand">HYROX <span>SLOT RADAR</span> <span class="version">v4.0</span></div>
   </div>
   <div class="header-inner">
     <div class="tabs">
@@ -145,25 +141,25 @@
     
     <div class="top-bar">
       <div class="search-wrapper">
-        <div class="filter-label" style="margin-bottom:5px;">SELECT EVENT</div>
+        <div class="filter-label">SELECT EVENT</div>
         <input type="text" id="eventSearch" class="search-input" placeholder="Search city (e.g. London)..." autocomplete="off">
         <div id="searchResults" class="search-results"></div>
       </div>
 
       <div class="filter-wrapper">
-        <div class="filter-label">FILTERS</div>
-        <div class="filter-group">
-          <button class="filter-btn active" onclick="setEventFilter('ALL', this)">ALL</button>
-          <button class="filter-btn" onclick="setEventFilter('MEN_OPEN', this)">MEN OPEN</button>
-          <button class="filter-btn" onclick="setEventFilter('MEN_PRO', this)">MEN PRO</button>
-          <button class="filter-btn" onclick="setEventFilter('WOMEN_OPEN', this)">WOMEN OPEN</button>
-          <button class="filter-btn" onclick="setEventFilter('WOMEN_PRO', this)">WOMEN PRO</button>
-        </div>
-        <div class="filter-group">
-            <button class="filter-btn" onclick="setEventFilter('DOUBLES_MEN', this)">DBL MEN</button>
-            <button class="filter-btn" onclick="setEventFilter('DOUBLES_WOMEN', this)">DBL WOMEN</button>
-            <button class="filter-btn" onclick="setEventFilter('DOUBLES_MIXED', this)">DBL MIXED</button>
-        </div>
+        <div class="filter-label">FILTER CATEGORY</div>
+        <select id="eventFilterSelect" class="custom-select" onchange="setEventFilter(this.value)">
+            <option value="ALL">SHOW ALL</option>
+            <option disabled>──────────</option>
+            <option value="MEN_OPEN">MEN OPEN</option>
+            <option value="MEN_PRO">MEN PRO</option>
+            <option value="WOMEN_OPEN">WOMEN OPEN</option>
+            <option value="WOMEN_PRO">WOMEN PRO</option>
+            <option disabled>──────────</option>
+            <option value="DOUBLES_MEN">DOUBLES MEN</option>
+            <option value="DOUBLES_WOMEN">DOUBLES WOMEN</option>
+            <option value="DOUBLES_MIXED">DOUBLES MIXED</option>
+        </select>
       </div>
     </div>
 
@@ -175,7 +171,7 @@
           <span id="sehDate">...</span>
         </div>
       </div>
-      <div><a href="#" id="sehLink" target="_blank" class="filter-btn active" style="text-decoration:none;">Go to Shop ↗</a></div>
+      <div><a href="#" id="sehLink" target="_blank" class="search-input" style="text-decoration:none; background:var(--accent); color:#000; border:none; font-weight:600;">Go to Shop ↗</a></div>
     </div>
 
     <div id="eventLoader" class="hidden"><div class="spinner"></div>Loading Data...</div>
@@ -184,7 +180,6 @@
       <div class="chart-section">
         <div class="chart-header">
             <span>📈 Stock Trend (History)</span>
-            <span style="font-size:12px; color:#666; font-weight:400;" id="chartSubtitle">(All Categories)</span>
         </div>
         <div class="chart-box"><canvas id="chartHistory"></canvas></div>
       </div>
@@ -228,6 +223,7 @@ let EVENTS = [];
 let CATEGORIES = [];
 let EVENT_DATA = null;
 let EVENT_FILTER = 'ALL';
+let CURRENT_EVENT_INFO = null;
 let CHARTS = { history: null, current: null };
 
 /* --- INITIALIZATION --- */
@@ -317,6 +313,10 @@ function selectEvent(evt) {
   document.getElementById('sehLink').href = evt.url;
   document.getElementById('eventSearch').value = evt.name;
 
+  // Reset Filter to ALL when changing event
+  document.getElementById('eventFilterSelect').value = 'ALL';
+  EVENT_FILTER = 'ALL';
+
   loadEventData(evt.id);
 }
 
@@ -380,10 +380,8 @@ function isExcluded(ticketName) {
     return n.includes('RELAY') || n.includes('CHARITY') || n.includes('SPECTATOR') || n.includes('ADAPTIVE');
 }
 
-window.setEventFilter = (filter, btn) => {
-  EVENT_FILTER = filter;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+window.setEventFilter = (filterVal) => {
+  EVENT_FILTER = filterVal;
   renderEventCharts();
 }
 
@@ -394,15 +392,18 @@ function renderEventCharts() {
   const labels = EVENT_DATA.map(d => d.date.split('-').slice(1).reverse().join('.')); // 07.02
   let datasets = [];
 
-  // Define Filter Rules
-  // N = Ticket Name (UpperCase)
+  // --- FILTER DEFINITIONS (STRICT LOGIC) ---
   const filters = {
     'ALL': () => true,
-    'MEN_OPEN': (n) => n.includes('MEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
-    'MEN_PRO': (n) => n.includes('MEN') && n.includes('PRO'),
+    // Fix: Strict exclusion for MEN to avoid WOMEN overlap
+    'MEN_OPEN': (n) => n.includes('MEN') && !n.includes('WOMEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
+    'MEN_PRO': (n) => n.includes('MEN') && !n.includes('WOMEN') && n.includes('PRO'),
+    
     'WOMEN_OPEN': (n) => n.includes('WOMEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
     'WOMEN_PRO': (n) => n.includes('WOMEN') && n.includes('PRO'),
-    'DOUBLES_MEN': (n) => n.includes('DOUBLES') && n.includes('MEN') && !n.includes('MIXED'),
+    
+    // Fix: Strict exclusion for Doubles Men
+    'DOUBLES_MEN': (n) => n.includes('DOUBLES') && n.includes('MEN') && !n.includes('WOMEN') && !n.includes('MIXED'),
     'DOUBLES_WOMEN': (n) => n.includes('DOUBLES') && n.includes('WOMEN') && !n.includes('MIXED'),
     'DOUBLES_MIXED': (n) => n.includes('DOUBLES') && n.includes('MIXED')
   };
@@ -412,12 +413,12 @@ function renderEventCharts() {
   // --- CHART 1: History (Stock Over Time) ---
   
   if (EVENT_FILTER === 'ALL') {
-      // Show Aggregates
+      // Show Aggregates of all Main Categories
       const groups = [
           { name: 'Men Open', color: '#3b82f6', rule: filters['MEN_OPEN'] },
-          { name: 'Men Pro', color: '#2563eb', rule: filters['MEN_PRO'] },
+          { name: 'Men Pro', color: '#1d4ed8', rule: filters['MEN_PRO'] },
           { name: 'Women Open', color: '#ec4899', rule: filters['WOMEN_OPEN'] },
-          { name: 'Women Pro', color: '#db2777', rule: filters['WOMEN_PRO'] },
+          { name: 'Women Pro', color: '#be185d', rule: filters['WOMEN_PRO'] },
           { name: 'Dbl Men', color: '#fbbf24', rule: filters['DOUBLES_MEN'] },
           { name: 'Dbl Women', color: '#f59e0b', rule: filters['DOUBLES_WOMEN'] },
           { name: 'Dbl Mixed', color: '#d97706', rule: filters['DOUBLES_MIXED'] }
@@ -435,7 +436,6 @@ function renderEventCharts() {
 
   } else {
       // Show Specific Ticket Types within the Category
-      // Find all unique ticket names matching the filter
       const uniqueNames = new Set();
       EVENT_DATA.forEach(d => {
           d.tickets.forEach(t => {
@@ -448,17 +448,22 @@ function renderEventCharts() {
 
       uniqueNames.forEach(uName => {
         const dName = uName.replace(/HYROX /gi, '').trim();
-        datasets.push({
-            label: dName,
-            borderColor: palette[cIdx % palette.length],
-            backgroundColor: palette[cIdx % palette.length],
-            tension: 0.3,
-            data: EVENT_DATA.map(day => {
-                const found = day.tickets.find(t => t.ticket === uName);
-                return found ? found.stock : null;
-            })
+        const dataPoints = EVENT_DATA.map(day => {
+            const found = day.tickets.find(t => t.ticket === uName);
+            return found ? found.stock : null;
         });
-        cIdx++;
+        
+        // Only add dataset if there is data
+        if(dataPoints.some(d => d !== null)) {
+            datasets.push({
+                label: dName,
+                borderColor: palette[cIdx % palette.length],
+                backgroundColor: palette[cIdx % palette.length],
+                tension: 0.3,
+                data: dataPoints
+            });
+            cIdx++;
+        }
       });
   }
 
