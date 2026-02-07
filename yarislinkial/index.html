@@ -36,7 +36,7 @@
     <header class="h-12 border-b border-slate-800 flex items-center px-4 bg-slate-900/50 backdrop-blur-sm justify-between flex-none">
         <div class="flex items-center gap-2">
             <i class="fa-solid fa-bolt text-yellow-500 text-xs"></i>
-            <span class="font-bold text-slate-200 tracking-wide text-xs">HYROX SCRAPER v5.1</span>
+            <span class="font-bold text-slate-200 tracking-wide text-xs">HYROX SCRAPER v5.2</span>
         </div>
         <div id="statusBadge" class="hidden items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-400 font-medium">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -313,25 +313,56 @@
                                 const detailDoc = parser.parseFromString(detailHtml, 'text/html');
                                 const links = detailDoc.querySelectorAll('a');
                                 let checkoutFound = false;
+                                let foundLink = null;
 
+                                // STRATEJİ:
+                                // 1. Önce "/checkout/" içeren "-season-" linkini ara.
+                                // 2. Yoksa sadece "-season-" içeren linki ara.
+                                
+                                // Öncelik 1: Tam Eşleşme (checkout + season)
                                 for (const link of links) {
                                     const href = link.getAttribute('href');
-                                    if (href && href.includes('-season-')) {
-                                        if (href.startsWith('http')) {
-                                            finalUrl = href;
-                                        } else {
-                                            const urlObj = new URL(eventPageUrl);
-                                            finalUrl = urlObj.origin + href;
-                                        }
-                                        checkoutFound = true;
+                                    if (href && href.includes('-season-') && href.includes('/checkout/')) {
+                                        foundLink = href;
                                         break;
                                     }
                                 }
 
+                                // Öncelik 2: Yedek (Sadece season, muhtemelen event)
+                                if (!foundLink) {
+                                    for (const link of links) {
+                                        const href = link.getAttribute('href');
+                                        if (href && href.includes('-season-')) {
+                                            foundLink = href;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                if (foundLink) {
+                                    // Relative link kontrolü
+                                    if (foundLink.startsWith('http')) {
+                                        finalUrl = foundLink;
+                                    } else {
+                                        const urlObj = new URL(eventPageUrl);
+                                        finalUrl = urlObj.origin + foundLink;
+                                    }
+
+                                    // DÜZELTME: Eğer link "/event/" içeriyorsa "/checkout/" ile değiştir
+                                    if (finalUrl.includes('/event/')) {
+                                        finalUrl = finalUrl.replace('/event/', '/checkout/');
+                                        addLog(`   ↪ Link bulundu ve düzeltildi (/event -> /checkout)`, 'warning');
+                                    } else {
+                                        addLog(`   ↪ Link bulundu: OK`, 'success');
+                                    }
+
+                                    checkoutFound = true;
+                                }
+
+                                // Linki temizle (? sonrası parametreleri at)
                                 finalUrl = cleanUrl(finalUrl);
 
                                 if (checkoutFound) {
-                                    addLog(`   ↪ Link: OK`, 'success');
                                     
                                     const id = generateId(rawName, rawDate);
                                     finalResults.push({
