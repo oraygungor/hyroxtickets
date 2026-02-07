@@ -3,42 +3,42 @@
     "id": "MEN_SINGLE",
     "name": "Men Singles",
     "include": ["MEN"],
-    "exclude": ["DOUBLES", "RELAY", "PRO", "WOMEN", "MIXED"]
+    "exclude": ["DOUBLES", "RELAY", "PRO", "WOMEN", "MIXED", "ADAPTIVE"]
   },
   {
     "id": "WOMEN_SINGLE",
     "name": "Women Singles",
     "include": ["WOMEN"],
-    "exclude": ["DOUBLES", "RELAY", "PRO", "MIXED"]
+    "exclude": ["DOUBLES", "RELAY", "PRO", "MIXED","ADAPTIVE"]
   },
   {
     "id": "MEN_PRO",
     "name": "Men Pro",
     "include": ["MEN", "PRO"],
-    "exclude": ["DOUBLES", "RELAY", "WOMEN"]
+    "exclude": ["DOUBLES", "RELAY", "WOMEN","ADAPTIVE"]
   },
   {
     "id": "WOMEN_PRO",
     "name": "Women Pro",
     "include": ["WOMEN", "PRO"],
-    "exclude": ["DOUBLES", "RELAY"]
+    "exclude": ["DOUBLES", "RELAY","ADAPTIVE"]
   },
   {
     "id": "DOUBLES_MEN",
     "name": "Doubles Men",
     "include": ["DOUBLES", "MEN"],
-    "exclude": ["MIXED", "WOMEN"]
+    "exclude": ["MIXED", "WOMEN","ADAPTIVE"]
   },
   {
     "id": "DOUBLES_WOMEN",
     "name": "Doubles Women",
     "include": ["DOUBLES", "WOMEN"],
-    "exclude": ["MIXED"]
+    "exclude": ["MIXED","ADAPTIVE"]
   },
   {
     "id": "DOUBLES_MIXED",
     "name": "Doubles Mixed",
     "include": ["DOUBLES", "MIXED"],
-    "exclude": []
+    "exclude": ["ADAPTIVE"]
   }
 ]
