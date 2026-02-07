@@ -84,17 +84,12 @@ def build_inventory(next_data: dict) -> dict:
     return {"tickets": rows, "by_parkur": by_parkur}
 
 def update_history_file(event_id, event_name, event_url, inventory_data):
-    """
-    JSON dosyasını okur, bugünün verisi varsa günceller, yoksa ekler.
-    """
-    # Klasör yoksa oluştur
     Path(DATA_DIR).mkdir(exist_ok=True)
     
     file_path = Path(DATA_DIR) / f"{event_id}.json"
     current_dt = now_copenhagen()
-    today_str = current_dt.strftime("%Y-%m-%d") # Tarih anahtarı (Gün bazlı)
+    today_str = current_dt.strftime("%Y-%m-%d")
 
-    # 1. Mevcut dosyayı yükle veya yeni yapı oluştur
     if file_path.exists():
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
@@ -110,7 +105,6 @@ def update_history_file(event_id, event_name, event_url, inventory_data):
             "history": []
         }
 
-    # 2. Yeni eklenecek veri paketi
     new_entry = {
         "date": today_str,
         "fetched_at": current_dt.isoformat(),
@@ -118,8 +112,6 @@ def update_history_file(event_id, event_name, event_url, inventory_data):
         "data": inventory_data
     }
 
-    # 3. Tarih kontrolü: Bugünün verisi listede var mı?
-    # history listesini gez, eğer "date" == "today_str" ise indexi bul.
     found_index = -1
     for i, entry in enumerate(data["history"]):
         if entry.get("date") == today_str:
@@ -127,15 +119,12 @@ def update_history_file(event_id, event_name, event_url, inventory_data):
             break
     
     if found_index != -1:
-        # GÜNCELLEME: Aynı gün tekrar çalıştıysa üzerine yaz
-        print(f"   🔄 {today_str} için kayıt zaten var, güncelleniyor...")
+        print(f"   🔄 {today_str} verisi güncelleniyor...")
         data["history"][found_index] = new_entry
     else:
-        # EKLEME: Yeni gün
-        print(f"   ➕ {today_str} için yeni kayıt ekleniyor...")
+        print(f"   ➕ {today_str} verisi ekleniyor...")
         data["history"].append(new_entry)
 
-    # 4. Dosyayı kaydet
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
@@ -149,15 +138,32 @@ def main():
     with open(EVENTS_FILE, 'r', encoding='utf-8') as f:
         events = json.load(f)
 
-    print(f"--- Tarama Başladı: {now_copenhagen().isoformat()} ---")
+    current_dt = now_copenhagen()
+    print(f"--- Tarama Başladı: {current_dt.isoformat()} ---")
 
     for event in events:
         event_id = event.get('id')
         event_name = event.get('name')
         url = event.get('url')
+        start_date_str = event.get('startDate') # Tarihi alıyoruz
 
         if not event_id or not url:
             continue
+
+        # --- TARİH KONTROLÜ (YENİ EKLENEN KISIM) ---
+        if start_date_str:
+            try:
+                # String tarihi (06.02.2026) datetime objesine çevir
+                event_date = datetime.strptime(start_date_str, "%d.%m.%Y")
+                
+                # Timezone sorununu çözmek için naive date kullanıyoruz (sadece gün/ay/yıl)
+                # Eğer bugün > yarış tarihi ise atla
+                if current_dt.date() > event_date.date():
+                    print(f"\n⏩ ATLANDI: {event_name} - Yarış tarihi ({start_date_str}) geçmiş.")
+                    continue
+            except ValueError:
+                print(f"⚠️ Uyarı: {event_name} için tarih formatı hatalı ({start_date_str}), yine de kontrol ediliyor.")
+        # ---------------------------------------------
 
         print(f"\nİşleniyor: {event_name} ({event_id})")
         
@@ -165,10 +171,7 @@ def main():
             html = fetch_html(url)
             next_data = extract_next_data(html)
             inventory = build_inventory(next_data)
-            
-            # Dosya güncelleme fonksiyonunu çağır
             saved_path = update_history_file(event_id, event_name, url, inventory)
-            
             print(f"✅ KAYDEDİLDİ: {saved_path}")
 
         except Exception as e:
