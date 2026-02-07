@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Hyrox Global Tracker</title>
+  <title>HYROX SLOT RADAR</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -24,14 +24,15 @@
       position: sticky; top: 0; z-index: 50;
     }
     .header-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-    .brand { font-family: 'Teko', sans-serif; font-size: 28px; font-weight: 600; text-transform: uppercase; }
+    .brand { font-family: 'Teko', sans-serif; font-size: 28px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
     .brand span { color: var(--accent); }
+    .version { font-size: 11px; color: #444; font-family: 'Inter', sans-serif; letter-spacing: 0;}
 
     /* TABS */
     .tabs { display: flex; gap: 20px; margin-top: 20px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
     .tab-btn {
       background: transparent; border: none; color: var(--text-dim); 
-      font-size: 16px; font-weight: 600; padding: 10px 5px; cursor: pointer;
+      font-size: 15px; font-weight: 600; padding: 10px 5px; cursor: pointer;
       border-bottom: 3px solid transparent; transition: 0.3s;
     }
     .tab-btn:hover { color: #fff; }
@@ -41,7 +42,7 @@
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
     /* --- SEARCH BOX STYLES --- */
-    .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+    .top-bar { margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start; flex-wrap: wrap; }
     
     .search-wrapper { position: relative; min-width: 300px; flex: 1; }
     .search-input {
@@ -68,6 +69,17 @@
     .ri-name { font-weight: 600; color: #fff; }
     .ri-date { font-size: 12px; color: var(--accent); background: rgba(251, 191, 36, 0.1); padding: 2px 6px; border-radius: 4px; }
 
+    /* FILTER BUTTONS */
+    .filter-wrapper { display: flex; flex-direction: column; gap:8px;}
+    .filter-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;}
+    .filter-group { display: flex; gap: 5px; flex-wrap: wrap; }
+    .filter-btn { 
+      background: #222; border: 1px solid var(--border); color: #aaa; padding: 8px 12px; 
+      border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; transition: 0.2s;
+    }
+    .filter-btn:hover { border-color: #555; color: #fff; }
+    .filter-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+
     /* SELECTED EVENT INFO */
     .selected-event-header {
       background: var(--card); border: 1px solid var(--border); padding: 15px; 
@@ -83,8 +95,7 @@
     }
     select.custom-select:focus { outline: none; border-color: var(--accent); }
 
-
-    /* CARDS & CHARTS */
+    /* CHARTS */
     .chart-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
     .chart-header { font-size: 16px; font-weight: 700; margin-bottom: 15px; display: flex; justify-content: space-between; }
     .chart-box { position: relative; height: 350px; width: 100%; }
@@ -112,19 +123,13 @@
     .spinner { width: 40px; height: 40px; border: 4px solid #333; border-top-color: var(--accent); border-radius: 50%; animation: spin 1s infinite; margin: 0 auto 10px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* BUTTON GROUP (Inside Event View) */
-    .filter-group { display: flex; gap: 5px; flex-wrap: wrap; }
-    .filter-btn { background: #222; border: 1px solid var(--border); color: #aaa; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px;}
-    .filter-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
-
   </style>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
-    <div class="brand">HYROX <span>PRO</span></div>
-    <div style="font-size: 12px; color: #666;" id="lastUpdate">v2.3 EN</div>
+    <div class="brand">HYROX <span>SLOT RADAR</span> <span class="version">v3.0</span></div>
   </div>
   <div class="header-inner">
     <div class="tabs">
@@ -140,15 +145,25 @@
     
     <div class="top-bar">
       <div class="search-wrapper">
-        <input type="text" id="eventSearch" class="search-input" placeholder="Search for a city (e.g. Istanbul)..." autocomplete="off">
+        <div class="filter-label" style="margin-bottom:5px;">SELECT EVENT</div>
+        <input type="text" id="eventSearch" class="search-input" placeholder="Search city (e.g. London)..." autocomplete="off">
         <div id="searchResults" class="search-results"></div>
       </div>
 
-      <div class="filter-group">
-        <button class="filter-btn active" onclick="setEventFilter('ALL', this)">ALL</button>
-        <button class="filter-btn" onclick="setEventFilter('MEN', this)">MEN</button>
-        <button class="filter-btn" onclick="setEventFilter('WOMEN', this)">WOMEN</button>
-        <button class="filter-btn" onclick="setEventFilter('DOUBLES', this)">DOUBLES</button>
+      <div class="filter-wrapper">
+        <div class="filter-label">FILTERS</div>
+        <div class="filter-group">
+          <button class="filter-btn active" onclick="setEventFilter('ALL', this)">ALL</button>
+          <button class="filter-btn" onclick="setEventFilter('MEN_OPEN', this)">MEN OPEN</button>
+          <button class="filter-btn" onclick="setEventFilter('MEN_PRO', this)">MEN PRO</button>
+          <button class="filter-btn" onclick="setEventFilter('WOMEN_OPEN', this)">WOMEN OPEN</button>
+          <button class="filter-btn" onclick="setEventFilter('WOMEN_PRO', this)">WOMEN PRO</button>
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn" onclick="setEventFilter('DOUBLES_MEN', this)">DBL MEN</button>
+            <button class="filter-btn" onclick="setEventFilter('DOUBLES_WOMEN', this)">DBL WOMEN</button>
+            <button class="filter-btn" onclick="setEventFilter('DOUBLES_MIXED', this)">DBL MIXED</button>
+        </div>
       </div>
     </div>
 
@@ -168,8 +183,8 @@
     <div id="eventDashboard" class="hidden">
       <div class="chart-section">
         <div class="chart-header">
-            <span>📈 Stock Trend Over Time</span>
-            <span style="font-size:12px; color:#666; font-weight:400;">(Breakdown by Type)</span>
+            <span>📈 Stock Trend (History)</span>
+            <span style="font-size:12px; color:#666; font-weight:400;" id="chartSubtitle">(All Categories)</span>
         </div>
         <div class="chart-box"><canvas id="chartHistory"></canvas></div>
       </div>
@@ -213,7 +228,6 @@ let EVENTS = [];
 let CATEGORIES = [];
 let EVENT_DATA = null;
 let EVENT_FILTER = 'ALL';
-let CURRENT_EVENT_INFO = null;
 let CHARTS = { history: null, current: null };
 
 /* --- INITIALIZATION --- */
@@ -296,8 +310,6 @@ function setupSearch() {
 }
 
 function selectEvent(evt) {
-  CURRENT_EVENT_INFO = evt;
-  
   const infoBox = document.getElementById('selectedEventInfo');
   infoBox.classList.remove('hidden');
   document.getElementById('sehName').textContent = evt.name;
@@ -347,9 +359,10 @@ async function loadEventData(eventId) {
     if(!res.ok) throw new Error("Data file not found.");
     const json = await res.json();
     
+    // Sort and Filter Data (Remove Relay/Charity immediately)
     EVENT_DATA = json.history.map(h => ({
       date: h.date,
-      tickets: h.data.tickets
+      tickets: h.data.tickets.filter(t => !isExcluded(t.ticket))
     })).sort((a,b) => new Date(a.date) - new Date(b.date));
 
     renderEventCharts();
@@ -359,6 +372,12 @@ async function loadEventData(eventId) {
   } catch (e) {
     loader.innerHTML = `No tracking data found yet. Scraper will run soon.`;
   }
+}
+
+// Global Exclusion Logic
+function isExcluded(ticketName) {
+    const n = ticketName.toUpperCase();
+    return n.includes('RELAY') || n.includes('CHARITY') || n.includes('SPECTATOR') || n.includes('ADAPTIVE');
 }
 
 window.setEventFilter = (filter, btn) => {
@@ -373,80 +392,81 @@ function renderEventCharts() {
 
   const ctxH = document.getElementById('chartHistory').getContext('2d');
   const labels = EVENT_DATA.map(d => d.date.split('-').slice(1).reverse().join('.')); // 07.02
-  
   let datasets = [];
 
-  // --- LOGIC: CREATE MULTIPLE DATASETS BASED ON FILTER ---
+  // Define Filter Rules
+  // N = Ticket Name (UpperCase)
+  const filters = {
+    'ALL': () => true,
+    'MEN_OPEN': (n) => n.includes('MEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
+    'MEN_PRO': (n) => n.includes('MEN') && n.includes('PRO'),
+    'WOMEN_OPEN': (n) => n.includes('WOMEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
+    'WOMEN_PRO': (n) => n.includes('WOMEN') && n.includes('PRO'),
+    'DOUBLES_MEN': (n) => n.includes('DOUBLES') && n.includes('MEN') && !n.includes('MIXED'),
+    'DOUBLES_WOMEN': (n) => n.includes('DOUBLES') && n.includes('WOMEN') && !n.includes('MIXED'),
+    'DOUBLES_MIXED': (n) => n.includes('DOUBLES') && n.includes('MIXED')
+  };
+
+  const currentCheck = filters[EVENT_FILTER] || filters['ALL'];
+
+  // --- CHART 1: History (Stock Over Time) ---
   
-  // 1. If Filter is 'ALL', show Major Groups (Men, Women, Doubles)
   if (EVENT_FILTER === 'ALL') {
+      // Show Aggregates
       const groups = [
-          { name: 'MEN', color: '#3b82f6', check: (n) => n.includes('MEN') && !n.includes('WOMEN') && !n.includes('MIXED') },
-          { name: 'WOMEN', color: '#ec4899', check: (n) => n.includes('WOMEN') },
-          { name: 'DOUBLES', color: '#fbbf24', check: (n) => n.includes('DOUBLES') }
+          { name: 'Men Open', color: '#3b82f6', rule: filters['MEN_OPEN'] },
+          { name: 'Men Pro', color: '#2563eb', rule: filters['MEN_PRO'] },
+          { name: 'Women Open', color: '#ec4899', rule: filters['WOMEN_OPEN'] },
+          { name: 'Women Pro', color: '#db2777', rule: filters['WOMEN_PRO'] },
+          { name: 'Dbl Men', color: '#fbbf24', rule: filters['DOUBLES_MEN'] },
+          { name: 'Dbl Women', color: '#f59e0b', rule: filters['DOUBLES_WOMEN'] },
+          { name: 'Dbl Mixed', color: '#d97706', rule: filters['DOUBLES_MIXED'] }
       ];
 
-      datasets = groups.map(g => {
-          return {
-              label: g.name,
-              borderColor: g.color,
-              backgroundColor: g.color,
-              tension: 0.3,
-              data: EVENT_DATA.map(day => {
-                  return day.tickets
-                      .filter(t => g.check(t.ticket.toUpperCase()))
-                      .reduce((sum, t) => sum + t.stock, 0);
-              })
-          };
-      });
+      datasets = groups.map(g => ({
+          label: g.name,
+          borderColor: g.color,
+          backgroundColor: g.color,
+          tension: 0.3,
+          pointRadius: 2,
+          borderWidth: 2,
+          data: EVENT_DATA.map(day => day.tickets.filter(t => g.rule(t.ticket.toUpperCase())).reduce((s, t) => s + t.stock, 0))
+      }));
 
   } else {
-      // 2. If Filter is specific (e.g., 'MEN'), show individual ticket types
-      // First, gather all unique ticket names that match the filter across all history
-      const uniqueTicketNames = new Set();
-      EVENT_DATA.forEach(day => {
-          day.tickets.forEach(t => {
-              if (t.ticket.toUpperCase().includes(EVENT_FILTER)) {
-                  uniqueTicketNames.add(t.ticket);
-              }
+      // Show Specific Ticket Types within the Category
+      // Find all unique ticket names matching the filter
+      const uniqueNames = new Set();
+      EVENT_DATA.forEach(d => {
+          d.tickets.forEach(t => {
+              if(currentCheck(t.ticket.toUpperCase())) uniqueNames.add(t.ticket);
           });
       });
 
-      const palette = ['#fbbf24', '#3b82f6', '#ef4444', '#10b981', '#f97316', '#8b5cf6', '#a855f7'];
-      let colorIdx = 0;
+      const palette = ['#fbbf24', '#3b82f6', '#ef4444', '#10b981', '#f97316', '#8b5cf6'];
+      let cIdx = 0;
 
-      uniqueTicketNames.forEach(ticketName => {
-          // Clean name for legend
-          const displayName = ticketName.replace(/HYROX /gi, '').trim();
-          
-          const dataPoints = EVENT_DATA.map(day => {
-              const ticket = day.tickets.find(t => t.ticket === ticketName);
-              return ticket ? ticket.stock : null; // null breaks the line if data missing
-          });
-
-          // Only add if there is at least one data point
-          if (dataPoints.some(d => d !== null)) {
-              const color = palette[colorIdx % palette.length];
-              datasets.push({
-                  label: displayName,
-                  borderColor: color,
-                  backgroundColor: color,
-                  tension: 0.3,
-                  pointRadius: 3,
-                  data: dataPoints
-              });
-              colorIdx++;
-          }
+      uniqueNames.forEach(uName => {
+        const dName = uName.replace(/HYROX /gi, '').trim();
+        datasets.push({
+            label: dName,
+            borderColor: palette[cIdx % palette.length],
+            backgroundColor: palette[cIdx % palette.length],
+            tension: 0.3,
+            data: EVENT_DATA.map(day => {
+                const found = day.tickets.find(t => t.ticket === uName);
+                return found ? found.stock : null;
+            })
+        });
+        cIdx++;
       });
   }
 
+  // Draw History Chart
   if(CHARTS.history) CHARTS.history.destroy();
   CHARTS.history = new Chart(ctxH, {
     type: 'line',
-    data: {
-      labels: labels,
-      datasets: datasets
-    },
+    data: { labels, datasets },
     options: { 
       responsive: true, maintainAspectRatio: false, 
       scales: { 
@@ -454,18 +474,15 @@ function renderEventCharts() {
           x: { grid: { color: '#2a2f3a' }, ticks: { color: '#9ca3af' } }
       },
       plugins: { 
-          legend: { labels: { color: '#fff' } },
+          legend: { labels: { color: '#fff', font:{size:11} } },
           tooltip: { mode: 'index', intersect: false }
       }
     }
   });
 
-  // --- CHART 2: Current Bar (Logic remains similar but filtered) ---
+  // --- CHART 2: Current Bar ---
   const latest = EVENT_DATA[EVENT_DATA.length - 1];
-  let currentTickets = latest.tickets.filter(t => {
-      if(EVENT_FILTER === 'ALL') return true;
-      return t.ticket.toUpperCase().includes(EVENT_FILTER);
-  });
+  let currentTickets = latest.tickets.filter(t => currentCheck(t.ticket.toUpperCase()));
   
   currentTickets.sort((a,b) => b.stock - a.stock);
 
@@ -498,12 +515,10 @@ function renderEventCharts() {
 async function loadGlobalData() {
   const catId = document.getElementById('categorySelector').value;
   const categoryRule = CATEGORIES.find(c => c.id === catId);
-  
   if(!categoryRule) return;
 
   const loader = document.getElementById('globalLoader');
   const resultsDiv = document.getElementById('globalResults');
-  
   loader.classList.remove('hidden');
   resultsDiv.innerHTML = '';
 
@@ -516,20 +531,18 @@ async function loadGlobalData() {
     );
 
     const results = await Promise.all(promises);
-    
     const validResults = [];
 
     results.forEach(item => {
       if(!item.data || !item.data.history || item.data.history.length === 0) return;
-      
       const history = item.data.history;
       const latest = history[history.length - 1];
-      
       let totalStock = 0;
 
       latest.data.tickets.forEach(t => {
-        const name = t.ticket.toUpperCase();
+        if(isExcluded(t.ticket)) return; // Global exclude check
         
+        const name = t.ticket.toUpperCase();
         const matchesInclude = categoryRule.include.every(key => name.includes(key));
         const matchesExclude = categoryRule.exclude.some(key => name.includes(key));
 
@@ -541,7 +554,7 @@ async function loadGlobalData() {
       if (totalStock > 0) {
         validResults.push({
           eventName: item.event.name,
-          eventDate: item.event.startDate, // Added Date
+          eventDate: item.event.startDate,
           url: item.event.url,
           stock: totalStock,
           lastUpdate: latest.date
@@ -549,21 +562,17 @@ async function loadGlobalData() {
       }
     });
 
-    // SORT BY EVENT DATE (Closest First)
     validResults.sort((a,b) => parseDate(a.eventDate) - parseDate(b.eventDate));
-
     loader.classList.add('hidden');
     renderGlobalResults(validResults, categoryRule.name);
 
   } catch (e) {
     loader.innerHTML = "Error occurred during search.";
-    console.error(e);
   }
 }
 
 function renderGlobalResults(list, catName) {
   const container = document.getElementById('globalResults');
-  
   if(list.length === 0) {
     container.innerHTML = `<div style="text-align:center; padding:20px; color:#aaa;">No tickets found for <strong>${catName}</strong>.</div>`;
     return;
@@ -574,7 +583,6 @@ function renderGlobalResults(list, catName) {
     el.className = 'global-item gi-link';
     el.href = item.url;
     el.target = "_blank"; 
-    
     const stockClass = item.stock < 50 ? 'stock-red' : 'stock-green';
 
     el.innerHTML = `
