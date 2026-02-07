@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyrox Scraper (Minimal)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        slate: { 850: '#151f32', 950: '#020617' } 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-400 h-screen flex flex-col font-sans text-sm selection:bg-indigo-500/30 selection:text-indigo-200">
+
+    <!-- Minimal Header -->
+    <header class="h-12 border-b border-slate-800 flex items-center px-4 bg-slate-900/50 backdrop-blur-sm justify-between flex-none">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-bolt text-yellow-500 text-xs"></i>
+            <span class="font-bold text-slate-200 tracking-wide text-xs">HYROX SCRAPER v5.1</span>
+        </div>
+        <div id="statusBadge" class="hidden items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-400 font-medium">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            ÇALIŞIYOR
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="flex-1 flex flex-col p-4 gap-4 overflow-hidden">
+        
+        <!-- Top Control Bar -->
+        <div class="flex items-center gap-3 flex-none bg-slate-900/50 p-2 rounded-lg border border-slate-800/50">
+            <!-- Start Button -->
+            <button onclick="startFullAutomation()" id="btnAuto" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 px-4 rounded shadow-lg shadow-indigo-500/20 transition-all flex items-center gap-2">
+                <i class="fa-solid fa-play text-[10px]"></i> <span>TARAMAYI BAŞLAT</span>
+            </button>
+
+            <!-- Cancel Button -->
+            <button onclick="cancelProcess()" id="btnCancel" class="hidden bg-red-500/10 hover:bg-red-500/20 text-red-400 text-xs font-semibold py-2 px-4 rounded border border-red-500/20 transition-all flex items-center gap-2">
+                <i class="fa-solid fa-stop text-[10px]"></i> <span>DURDUR</span>
+            </button>
+
+            <!-- Progress Info -->
+            <div id="progressSection" class="hidden flex-1 flex items-center gap-3 animate-in fade-in slide-in-from-left-2 duration-300">
+                <div class="h-1.5 flex-1 bg-slate-800 rounded-full overflow-hidden">
+                    <div id="progressBar" class="h-full bg-indigo-500 transition-all duration-300 w-0"></div>
+                </div>
+                <span id="progressText" class="font-mono text-[10px] text-slate-300 w-8 text-right">0%</span>
+            </div>
+        </div>
+
+        <!-- Split View Area -->
+        <div class="flex-1 grid grid-cols-2 gap-4 min-h-0">
+            
+            <!-- Left: Console -->
+            <div class="flex flex-col bg-[#0b1120] rounded border border-slate-800 shadow-inner overflow-hidden group">
+                <div class="px-3 py-2 border-b border-slate-800 bg-slate-900/30 flex justify-between items-center select-none">
+                    <span class="text-[10px] font-mono font-medium text-slate-500 uppercase tracking-wider">Console Log</span>
+                    <div class="flex gap-1.5">
+                        <div class="w-2 h-2 rounded-full bg-slate-700 group-hover:bg-red-500/50 transition-colors"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-700 group-hover:bg-yellow-500/50 transition-colors"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-700 group-hover:bg-green-500/50 transition-colors"></div>
+                    </div>
+                </div>
+                <div id="logs" class="flex-1 p-3 font-mono text-[11px] leading-5 overflow-y-auto space-y-1 text-slate-400 scroll-smooth">
+                    <div class="text-slate-600 italic">>> Sistem hazır. Başlatmak için butona basın...</div>
+                </div>
+            </div>
+
+            <!-- Right: JSON Editor -->
+            <div class="flex flex-col bg-[#0b1120] rounded border border-slate-800 shadow-inner overflow-hidden relative">
+                <div class="px-3 py-1.5 border-b border-slate-800 bg-slate-900/30 flex justify-between items-center select-none">
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-mono font-medium text-slate-500 uppercase tracking-wider">JSON Output</span>
+                        <span id="recordCount" class="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700/50">0 items</span>
+                    </div>
+                    <div class="flex items-center">
+                        <button onclick="copyOutput()" id="btnCopy" class="p-1.5 text-slate-500 hover:text-indigo-400 transition-colors disabled:opacity-30 disabled:cursor-not-allowed" title="Kopyala" disabled>
+                            <i class="fa-regular fa-copy text-xs"></i>
+                        </button>
+                        <div class="w-[1px] h-3 bg-slate-800 mx-1"></div>
+                        <button onclick="downloadJson()" id="btnDownload" class="p-1.5 text-slate-500 hover:text-emerald-400 transition-colors disabled:opacity-30 disabled:cursor-not-allowed" title="İndir" disabled>
+                            <i class="fa-solid fa-download text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <textarea id="outputJson" class="flex-1 w-full h-full p-3 bg-transparent font-mono text-[11px] text-emerald-100/80 resize-none focus:outline-none border-none leading-relaxed" readonly spellcheck="false" placeholder="// Sonuçlar burada görünecek..."></textarea>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // --- DEĞİŞKENLER ---
+        let abortController = null;
+        let isRunning = false;
+
+        // --- YARDIMCI FONKSİYONLAR ---
+
+        function addLog(message, type = 'info') {
+            const logs = document.getElementById('logs');
+            const div = document.createElement('div');
+            const time = new Date().toLocaleTimeString('tr-TR', { hour12: false });
+            
+            let content = '';
+            
+            if (type === 'process') {
+                content = `<span class="text-indigo-400 mr-2">➜</span><span class="opacity-50 mr-2">[${time}]</span><span class="text-indigo-200">${message}</span>`;
+            } else if (type === 'success') {
+                content = `<span class="text-emerald-500 mr-2">✓</span><span class="opacity-50 mr-2">[${time}]</span><span class="text-emerald-300">${message}</span>`;
+            } else if (type === 'warning') {
+                content = `<span class="text-amber-500 mr-2">!</span><span class="opacity-50 mr-2">[${time}]</span><span class="text-amber-200">${message}</span>`;
+            } else if (type === 'error') {
+                content = `<span class="text-red-500 mr-2">✖</span><span class="opacity-50 mr-2">[${time}]</span><span class="text-red-400">${message}</span>`;
+            } else {
+                content = `<span class="text-slate-600 mr-2">i</span><span class="opacity-50 mr-2">[${time}]</span><span class="text-slate-400">${message}</span>`;
+            }
+
+            div.className = "hover:bg-white/5 px-1 rounded transition-colors";
+            div.innerHTML = content;
+            logs.appendChild(div);
+            logs.scrollTop = logs.scrollHeight;
+        }
+
+        async function fetchHtmlThroughProxy(targetUrl, signal) {
+            const proxies = [
+                { name: "CorsProxy", url: `https://corsproxy.io/?${encodeURIComponent(targetUrl)}` },
+                { name: "AllOrigins", url: `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}` }
+            ];
+
+            for (const proxy of proxies) {
+                if (signal.aborted) throw new Error('İşlem iptal edildi');
+                
+                try {
+                    const response = await fetch(proxy.url, { signal: signal });
+                    if (response.ok) {
+                        const text = await response.text();
+                        if (text && text.length > 500) return text; 
+                    }
+                } catch (error) {
+                    if (error.name === 'AbortError') throw error;
+                }
+            }
+            return null;
+        }
+
+        function generateId(name, dateStr) {
+            const yearMatch = dateStr.match(/\d{4}/);
+            const year = yearMatch ? yearMatch[0] : '2026';
+            let cleanName = name.toLowerCase().replace(/®/g, '').replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+            return `${cleanName}-${year}`;
+        }
+
+        function cleanUrl(url) {
+            if (!url) return "";
+            return url.split('?')[0]; 
+        }
+
+        // Yeni Tarih Formatlayıcı (DD.MM.YYYY)
+        function formatDateToDDMMYYYY(dateStr) {
+            if (!dateStr) return "Tarih Yok";
+            
+            // "6. Feb. 2026" veya "12. Nov. 2025" gibi formatları yakalamak için Regex
+            const match = dateStr.match(/(\d{1,2})[\.\s]+([A-Za-z]+)[\.\s]+(\d{4})/);
+            
+            if (match) {
+                let day = match[1];
+                let monthName = match[2].toLowerCase();
+                let year = match[3];
+                
+                const months = {
+                    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'may': '05', 'jun': '06',
+                    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12',
+                    'january': '01', 'february': '02', 'march': '03', 'april': '04', 'june': '06',
+                    'july': '07', 'august': '08', 'september': '09', 'october': '10', 'november': '11', 'december': '12'
+                };
+                
+                // Eğer ay ismi listede varsa
+                if (months[monthName]) {
+                    // Gün tek haneliyse başına 0 ekle (5 -> 05)
+                    if (day.length === 1) day = '0' + day;
+                    return `${day}.${months[monthName]}.${year}`;
+                }
+            }
+            // Eşleşme yoksa orijinali döndür
+            return dateStr;
+        }
+
+        function cancelProcess() {
+            if (abortController) {
+                abortController.abort();
+                addLog('İşlem durduruluyor...', 'warning');
+            }
+        }
+
+        function setProcessingState(processing) {
+            const btnAuto = document.getElementById('btnAuto');
+            const btnCancel = document.getElementById('btnCancel');
+            const statusBadge = document.getElementById('statusBadge');
+            const progressSection = document.getElementById('progressSection');
+            
+            isRunning = processing;
+
+            if (processing) {
+                btnAuto.classList.add('hidden');
+                btnCancel.classList.remove('hidden');
+                statusBadge.classList.remove('hidden');
+                statusBadge.classList.add('flex');
+                progressSection.classList.remove('hidden');
+            } else {
+                btnAuto.classList.remove('hidden');
+                btnCancel.classList.add('hidden');
+                statusBadge.classList.add('hidden');
+                statusBadge.classList.remove('flex');
+            }
+        }
+
+        // --- ANA OTOMASYON ---
+
+        async function startFullAutomation() {
+            if (isRunning) return;
+
+            abortController = new AbortController();
+            const signal = abortController.signal;
+            setProcessingState(true);
+
+            const output = document.getElementById('outputJson');
+            const pBar = document.getElementById('progressBar');
+            const pText = document.getElementById('progressText');
+            const btnCopy = document.getElementById('btnCopy');
+            const btnDownload = document.getElementById('btnDownload');
+            const recordCount = document.getElementById('recordCount');
+
+            // Reset
+            output.value = '';
+            document.getElementById('logs').innerHTML = '';
+            pBar.style.width = '2%';
+            btnCopy.disabled = true; btnCopy.classList.add('opacity-30', 'cursor-not-allowed');
+            btnDownload.disabled = true; btnDownload.classList.add('opacity-30', 'cursor-not-allowed');
+            recordCount.innerText = "0 items";
+
+            const raceListUrl = "https://hyrox.com/find-my-race/";
+            addLog(`Başlatılıyor... Hedef: hyrox.com`, 'process');
+
+            try {
+                const mainHtml = await fetchHtmlThroughProxy(raceListUrl, signal);
+
+                if (!mainHtml) throw new Error("Ana sayfaya erişilemedi.");
+
+                addLog("Yarış listesi çözümleniyor...", 'success');
+
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(mainHtml, 'text/html');
+                const articles = doc.querySelectorAll('.w-grid-list article.event');
+                
+                if (articles.length === 0) throw new Error("Yarış bulunamadı.");
+
+                const racesToProcess = Array.from(articles); // LIMITSIZ
+                const totalToProcess = racesToProcess.length;
+                
+                addLog(`${totalToProcess} yarış bulundu. Tarama başlıyor.`, 'info');
+
+                const finalResults = [];
+
+                for (let i = 0; i < racesToProcess.length; i++) {
+                    if (signal.aborted) throw new Error('İşlem iptal edildi');
+
+                    const article = racesToProcess[i];
+                    const titleEl = article.querySelector('.entry-title a');
+                    const rawName = titleEl ? titleEl.textContent.trim() : "Bilinmeyen Yarış";
+                    const eventPageUrl = titleEl ? titleEl.getAttribute('href') : "";
+                    
+                    // Tarih Alma
+                    const dateEl = article.querySelector('.event_date_1 .w-post-elm-value');
+                    let rawDate = dateEl ? dateEl.textContent.trim() : "Tarih Yok";
+                    
+                    // --- TARIH FORMATLAMA ---
+                    rawDate = formatDateToDDMMYYYY(rawDate);
+                    // -----------------------
+
+                    addLog(`[${i+1}/${totalToProcess}] ${rawName}`, 'process');
+
+                    let finalUrl = eventPageUrl;
+                    
+                    if (eventPageUrl) {
+                        await new Promise((resolve, reject) => {
+                            const timer = setTimeout(resolve, 1000); // 1sn gecikme
+                            signal.addEventListener('abort', () => { clearTimeout(timer); reject(new Error('İşlem iptal edildi')); });
+                        });
+
+                        try {
+                            const detailHtml = await fetchHtmlThroughProxy(eventPageUrl, signal);
+                            if (detailHtml) {
+                                const detailDoc = parser.parseFromString(detailHtml, 'text/html');
+                                const links = detailDoc.querySelectorAll('a');
+                                let checkoutFound = false;
+
+                                for (const link of links) {
+                                    const href = link.getAttribute('href');
+                                    if (href && href.includes('-season-')) {
+                                        if (href.startsWith('http')) {
+                                            finalUrl = href;
+                                        } else {
+                                            const urlObj = new URL(eventPageUrl);
+                                            finalUrl = urlObj.origin + href;
+                                        }
+                                        checkoutFound = true;
+                                        break;
+                                    }
+                                }
+
+                                finalUrl = cleanUrl(finalUrl);
+
+                                if (checkoutFound) {
+                                    addLog(`   ↪ Link: OK`, 'success');
+                                    
+                                    const id = generateId(rawName, rawDate);
+                                    finalResults.push({
+                                        id: id,
+                                        name: rawName,
+                                        url: finalUrl,
+                                        startDate: rawDate
+                                    });
+
+                                    output.value = JSON.stringify(finalResults, null, 2);
+                                    recordCount.innerText = `${finalResults.length} items`;
+
+                                } else {
+                                    addLog(`   ↪ Ödeme linki yok, atlanıyor.`, 'warning');
+                                }
+                            } else {
+                                addLog(`   ↪ Sayfa hatası.`, 'error');
+                            }
+                        } catch (err) {
+                            if (err.message === 'İşlem iptal edildi') throw err;
+                            addLog(`   ↪ Hata: ${err.message}`, 'error');
+                        }
+                    }
+
+                    const percent = Math.round(((i + 1) / totalToProcess) * 100);
+                    pBar.style.width = `${percent}%`;
+                    pText.innerText = `${percent}%`;
+                }
+
+                addLog("Tamamlandı.", 'success');
+                btnCopy.disabled = false; btnCopy.classList.remove('opacity-30', 'cursor-not-allowed');
+                btnDownload.disabled = false; btnDownload.classList.remove('opacity-30', 'cursor-not-allowed');
+
+            } catch (error) {
+                if (error.message === 'İşlem iptal edildi') {
+                    addLog('Durduruldu.', 'warning');
+                    pBar.classList.remove('bg-indigo-500');
+                    pBar.classList.add('bg-red-500');
+                    if (output.value.length > 5) {
+                         btnCopy.disabled = false; btnCopy.classList.remove('opacity-30', 'cursor-not-allowed');
+                         btnDownload.disabled = false; btnDownload.classList.remove('opacity-30', 'cursor-not-allowed');
+                    }
+                } else {
+                    addLog(`Hata: ${error.message}`, 'error');
+                }
+            } finally {
+                setProcessingState(false);
+                abortController = null;
+            }
+        }
+
+        function copyOutput() {
+            const copyText = document.getElementById("outputJson");
+            copyText.select();
+            document.execCommand("copy");
+            const btn = document.getElementById('btnCopy');
+            btn.innerHTML = '<i class="fa-solid fa-check text-emerald-400 text-xs"></i>';
+            setTimeout(() => { btn.innerHTML = '<i class="fa-regular fa-copy text-xs"></i>'; }, 2000);
+        }
+
+        function downloadJson() {
+            const text = document.getElementById("outputJson").value;
+            if (!text) return;
+            const blob = new Blob([text], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "hyrox_races.json";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
