@@ -5,11 +5,21 @@
   "history": [
     {
       "date": "2026-02-07",
-      "fetched_at": "2026-02-07T12:04:06.765669+01:00",
-      "total_stock": 0,
+      "fetched_at": "2026-02-07T12:11:00.125154+01:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE WOMEN | Saturday": 1
+          }
+        }
       }
     }
   ]

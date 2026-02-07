@@ -5,11 +5,133 @@
   "history": [
     {
       "date": "2026-02-07",
-      "fetched_at": "2026-02-07T12:04:05.031477+01:00",
-      "total_stock": 0,
+      "fetched_at": "2026-02-07T12:10:58.225814+01:00",
+      "total_stock": 19,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Sunday",
+            "stock": 453
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
+            "stock": 75
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Saturday",
+            "stock": 615
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Friday",
+            "stock": 63
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN | Friday",
+            "stock": 10
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Friday",
+            "stock": 92
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Friday",
+            "stock": 10
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Friday",
+            "stock": 8
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
+            "stock": 82
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 191
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 10
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Saturday",
+            "stock": 240
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Saturday",
+            "stock": 8
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Sunday",
+            "stock": 370
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Friday",
+            "stock": 5
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Friday",
+            "stock": 140
+          },
+          {
+            "parkur": "Corporate Challenge",
+            "ticket": "HYROX Doubles Women | Team Member 1",
+            "stock": 58
+          },
+          {
+            "parkur": "Corporate Challenge",
+            "ticket": "HYROX Doubles Mixed |Team Member 1",
+            "stock": 58
+          },
+          {
+            "parkur": "Corporate Challenge",
+            "ticket": "HYROX Doubles Men | Team Member 1",
+            "stock": 57
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Sunday": 453,
+            "HYROX PRO DOUBLES MEN | Saturday": 75,
+            "HYROX DOUBLES WOMEN | Saturday": 615,
+            "HYROX DOUBLES MEN | Friday": 92,
+            "HYROX PRO DOUBLES WOMEN | Saturday": 82,
+            "HYROX DOUBLES MEN | Sunday": 370,
+            "HYROX DOUBLES MIXED | Friday": 5,
+            "HYROX DOUBLES WOMEN | Friday": 140
+          },
+          "Singles": {
+            "HYROX PRO WOMEN | Friday": 63,
+            "HYROX PRO MEN | Friday": 10,
+            "HYROX ADAPTIVE MEN | Friday": 10,
+            "HYROX ADAPTIVE WOMEN | Friday": 8,
+            "HYROX WOMEN | Sunday": 191,
+            "HYROX ADAPTIVE WOMEN | Sunday": 10,
+            "HYROX MEN | Saturday": 240,
+            "HYROX ADAPTIVE MEN | Saturday": 8
+          },
+          "Corporate Challenge": {
+            "HYROX Doubles Women | Team Member 1": 58,
+            "HYROX Doubles Mixed |Team Member 1": 58,
+            "HYROX Doubles Men | Team Member 1": 57
+          }
+        }
       }
     }
   ]
