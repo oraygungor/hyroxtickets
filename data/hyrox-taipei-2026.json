@@ -71,6 +71,75 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-02-08",
+      "fetched_at": "2026-02-08T08:06:32.956986+01:00",
+      "total_stock": 9,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX ADAPTIVE WOMEN 身障女子組 | SATURDAY",
+            "stock": 8
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX PRO DOUBLES WOMEN 女子菁英雙人組 | SATURDAY",
+            "stock": 16
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX WOMEN 女子公開組 | SUNDAY",
+            "stock": 65
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY",
+            "stock": 5
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX MEN 男子公開組 | SUNDAY",
+            "stock": 150
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY",
+            "stock": 4
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY",
+            "stock": 79
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES MEN 男子公開雙人組 | SUNDAY",
+            "stock": 199
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES MIXED 混合雙人組 | SUNDAY",
+            "stock": 205
+          }
+        ],
+        "by_parkur": {
+          "Single Division 個人參賽": {
+            "HYROX ADAPTIVE WOMEN 身障女子組 | SATURDAY": 8,
+            "HYROX WOMEN 女子公開組 | SUNDAY": 65,
+            "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY": 5,
+            "HYROX MEN 男子公開組 | SUNDAY": 150,
+            "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY": 4
+          },
+          "Double Division 雙人參賽": {
+            "HYROX PRO DOUBLES WOMEN 女子菁英雙人組 | SATURDAY": 16,
+            "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY": 79,
+            "HYROX DOUBLES MEN 男子公開雙人組 | SUNDAY": 199,
+            "HYROX DOUBLES MIXED 混合雙人組 | SUNDAY": 205
+          }
+        }
+      }
     }
   ]
 }
