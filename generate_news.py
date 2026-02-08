@@ -1,26 +1,45 @@
 import json
 import os
 import glob
-from datetime import datetime
+from datetime import datetime, timedelta
 
-# Ayarlar
+# --- AYARLAR ---
 DATA_DIR = "data"
 EVENTS_FILE = "events.json"
 OUTPUT_FILE = "notifications.json"
+
+# Zaman Pencereleri (Gün)
+WINDOW_NEW_EVENT = 30   # Yeni yarışlar için geriye dönük kontrol
+WINDOW_STOCK_CHANGE = 7 # Stok değişimleri için geriye dönük kontrol
+
+# Eşik Değer
+LOW_STOCK_THRESHOLD = 5 # Kaçın altına düşünce "Running Low" desin?
+
+# Harici Tutulacak Kelimeler
+EXCLUDED_KEYWORDS = ["RELAY", "CHARITY", "SPECTATOR"] 
 
 def load_json(path):
     if not os.path.exists(path): return []
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def is_excluded(ticket_name):
+    name_upper = ticket_name.upper()
+    for keyword in EXCLUDED_KEYWORDS:
+        if keyword in name_upper:
+            return True
+    return False
+
+def parse_date(date_str):
+    return datetime.strptime(date_str, "%Y-%m-%d")
+
 def generate_news():
     events_list = load_json(EVENTS_FILE)
-    # ID -> Event Name eşleşmesi için sözlük
     event_map = {e['id']: e['name'] for e in events_list}
     
     notifications = []
+    today = datetime.now()
     
-    # Tüm data klasöründeki event jsonlarını gez
     json_files = glob.glob(os.path.join(DATA_DIR, "*.json"))
     
     for file_path in json_files:
@@ -30,69 +49,85 @@ def generate_news():
         data = load_json(file_path)
         history = data.get("history", [])
         
-        # Karşılaştırma yapabilmek için en az 1 kayıt olmalı
         if not history:
             continue
             
-        latest = history[-1]
-        latest_date = latest['date']
-        
-        # --- DURUM 1: YENİ YARIŞ EKLENDİ ---
-        # Eğer geçmişte sadece 1 kayıt varsa, bu yarış listeye yeni girmiştir.
-        if len(history) == 1:
+        # --- 1. YENİ YARIŞ KONTROLÜ ---
+        first_entry = history[0]
+        first_date = parse_date(first_entry['date'])
+        if (today - first_date).days <= WINDOW_NEW_EVENT:
             notifications.append({
                 "type": "new_event",
-                "message": f"YENİ YARIŞ: {event_name} takvime eklendi!",
-                "date": latest_date,
+                "message": f"NEW EVENT: {event_name} added to calendar.",
+                "date": first_entry['date'],
                 "priority": 1
             })
-            continue
 
-        # --- DURUM 2 & 3: STOK DEĞİŞİMLERİ ---
-        # Bir önceki günün verisini al
-        previous = history[-2]
-        
-        # Biletleri sözlüğe çevir ki karşılaştırma kolay olsun: { "MEN OPEN": 10, ... }
-        current_tickets = {t['ticket']: t['stock'] for t in latest['data']['tickets']}
-        prev_tickets = {t['ticket']: t['stock'] for t in previous['data']['tickets']}
-        
-        all_ticket_names = set(current_tickets.keys()) | set(prev_tickets.keys())
-        
-        for t_name in all_ticket_names:
-            curr_stock = current_tickets.get(t_name, 0)
-            prev_stock = prev_tickets.get(t_name, 0)
+        # --- 2. STOK GEÇMİŞİ ANALİZİ (Son 7 Gün) ---
+        for i in range(len(history) - 1, 0, -1):
+            current_day = history[i]
+            prev_day = history[i-1]
             
-            clean_name = t_name.replace("HYROX", "").strip()
-            
-            # Senaryo A: Bilet Yoktu/Bitmişti -> Şimdi Var (RESTOCK)
-            if prev_stock == 0 and curr_stock > 0:
-                notifications.append({
-                    "type": "restock",
-                    "message": f"BİLET AÇILDI: {event_name} - {clean_name} kategorisinde {curr_stock} bilet satışa çıktı!",
-                    "date": latest_date,
-                    "priority": 2
-                })
+            curr_date_obj = parse_date(current_day['date'])
+            if (today - curr_date_obj).days > WINDOW_STOCK_CHANGE:
+                break
                 
-            # Senaryo B: Bilet Vardı -> Şimdi Bitti (SOLD OUT)
-            elif prev_stock > 0 and curr_stock == 0:
-                notifications.append({
-                    "type": "soldout",
-                    "message": f"TÜKENDİ: {event_name} - {clean_name} biletleri az önce bitti.",
-                    "date": latest_date,
-                    "priority": 0
-                })
+            current_tickets = {t['ticket']: t['stock'] for t in current_day['data']['tickets'] if not is_excluded(t['ticket'])}
+            prev_tickets = {t['ticket']: t['stock'] for t in prev_day['data']['tickets'] if not is_excluded(t['ticket'])}
+            
+            all_tickets = set(current_tickets.keys()) | set(prev_tickets.keys())
+            
+            for t_name in all_tickets:
+                curr_stock = current_tickets.get(t_name, 0)
+                prev_stock = prev_tickets.get(t_name, 0)
+                
+                clean_name = t_name.replace("HYROX", "").strip()
+                event_date_str = current_day['date']
+                
+                # --- MANTIK ZİNCİRİ (if - elif - elif) ---
+                # Bu yapı sayesinde bir durum gerçekleşirse diğerlerine bakmaz.
+                
+                # DURUM A: RESTOCK (0 -> Pozitif)
+                # Dün kesinlikle 0 olmalı. Bugün 1 bile olsa Restock sayılır.
+                if prev_stock == 0 and curr_stock > 0:
+                    notifications.append({
+                        "type": "restock",
+                        "message": f"RESTOCK: {curr_stock} tickets released for {clean_name} at {event_name}!",
+                        "date": event_date_str,
+                        "priority": 3
+                    })
+                
+                # DURUM B: RUNNING LOW (Yüksek -> Düşük)
+                # ÇAKIŞMA ENGELLEME:
+                # Sadece dün eşik değerin ÜSTÜNDEYSE (>5) ve bugün altına indiyse çalışır.
+                # Eğer dün 0 idiyse (Restock durumu), burası "False" döner ve çalışmaz.
+                elif prev_stock > LOW_STOCK_THRESHOLD and 0 < curr_stock <= LOW_STOCK_THRESHOLD:
+                     notifications.append({
+                        "type": "low_stock",
+                        "message": f"HURRY UP: Only {curr_stock} tickets left for {clean_name} at {event_name}!",
+                        "date": event_date_str,
+                        "priority": 2
+                    })
 
-    # Bildirimleri tarihe göre (en yeni en üstte) ve önceliğe göre sırala
-    # Priority: 2 (Restock - En Önemli), 1 (New Event), 0 (Sold Out)
+                # DURUM C: SOLD OUT (Pozitif -> 0)
+                elif prev_stock > 0 and curr_stock == 0:
+                    notifications.append({
+                        "type": "soldout",
+                        "message": f"SOLD OUT: {clean_name} at {event_name} is gone.",
+                        "date": event_date_str,
+                        "priority": 0
+                    })
+
+    # Sıralama: Önce Tarih (Yeni -> Eski), Sonra Önem Derecesi
     notifications.sort(key=lambda x: (x['date'], x['priority']), reverse=True)
     
-    # Sadece son 1-2 günün bildirimlerini tutmak mantıklı olabilir veya son 10 bildirim
-    recent_notifications = notifications[:10] 
+    # UI dolmasın diye limit
+    recent_notifications = notifications[:20]
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(recent_notifications, f, indent=2, ensure_ascii=False)
     
-    print(f"{len(recent_notifications)} bildirim oluşturuldu.")
+    print(f"Generated {len(recent_notifications)} notifications.")
 
 if __name__ == "__main__":
     generate_news()
