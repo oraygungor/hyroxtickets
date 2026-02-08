@@ -12,32 +12,16 @@
   <style>
     /* --- THEME VARIABLES --- */
     :root {
-      /* Dark Theme (Default) */
-      --bg: #09090b;
-      --card: #18181b;
-      --border: #27272a;
-      --text: #fafafa;
-      --text-dim: #a1a1aa;
-      --accent: #facc15; /* Hyrox Yellow */
-      --green: #10b981;
-      --red: #ef4444;
-      --blue: #3b82f6;
-      --hover: #27272a;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+      --bg: #09090b; --card: #18181b; --border: #27272a;
+      --text: #fafafa; --text-dim: #a1a1aa;
+      --accent: #facc15; --green: #10b981; --red: #ef4444; --blue: #3b82f6; --orange: #f97316;
+      --hover: #27272a; --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
     }
-
     [data-theme="light"] {
-      --bg: #f3f4f6;
-      --card: #ffffff;
-      --border: #e5e7eb;
-      --text: #111827;
-      --text-dim: #6b7280;
-      --accent: #d97706; /* Darker Yellow for light mode contrast */
-      --green: #059669;
-      --red: #dc2626;
-      --blue: #2563eb;
-      --hover: #f9fafb;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --bg: #f3f4f6; --card: #ffffff; --border: #e5e7eb;
+      --text: #111827; --text-dim: #6b7280;
+      --accent: #d97706; --green: #059669; --red: #dc2626; --blue: #2563eb; --orange: #ea580c;
+      --hover: #f9fafb; --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
     
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -46,153 +30,159 @@
     /* --- HEADER --- */
     header {
       background: var(--card); border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; z-index: 100;
-      padding: 15px 20px 0 20px;
-      transition: background 0.3s;
+      position: sticky; top: 0; z-index: 100; padding: 15px 20px 0 20px;
     }
-    .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; max-width: 1200px; margin: 0 auto 15px; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; max-width: 1300px; margin: 0 auto 15px; }
     
-    /* LOGO & BRANDING */
     .brand-wrapper { display: flex; align-items: center; gap: 12px; }
-    .logo-svg { width: 36px; height: 36px; stroke: var(--text); transition: stroke 0.3s; }
-    .brand { font-family: 'Teko', sans-serif; font-size: 32px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; line-height: 1; display:flex; align-items:center; gap:6px; }
+    .logo-svg { width: 32px; height: 32px; stroke: var(--text); }
+    .brand { font-family: 'Teko', sans-serif; font-size: 30px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; line-height: 1; display:flex; align-items:center; gap:6px; }
     .brand span { color: var(--accent); }
-    .version { font-size: 11px; color: var(--text-dim); font-family: 'Inter', sans-serif; font-weight: 500; background: var(--hover); padding: 2px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+    .version { font-size: 11px; color: var(--text-dim); font-family: 'Inter', sans-serif; font-weight: 500; background: var(--hover); padding: 2px 6px; border-radius: 4px; margin-left: 8px; }
     
-    .theme-toggle {
-      background: transparent; border: 1px solid var(--border); color: var(--text);
-      width: 40px; height: 40px; border-radius: 8px; cursor: pointer;
-      display: flex; align-items: center; justify-content: center; font-size: 20px;
-      transition: 0.2s;
-    }
-    .theme-toggle:hover { background: var(--hover); border-color: var(--accent); }
+    .theme-toggle { background: transparent; border: 1px solid var(--border); color: var(--text); width: 36px; height: 36px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; }
 
     /* --- TABS --- */
-    .tabs { display: flex; gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .tabs { display: flex; gap: 25px; max-width: 1300px; margin: 0 auto; }
     .tab-btn {
       background: transparent; border: none; color: var(--text-dim);
-      font-size: 14px; font-weight: 600; padding: 10px 0; cursor: pointer;
+      font-size: 14px; font-weight: 600; padding: 12px 0; cursor: pointer;
       border-bottom: 3px solid transparent; transition: 0.3s; margin-bottom: -1px;
     }
+    .tab-btn:hover { color: var(--text); }
     .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
 
     /* --- CONTAINER --- */
-    .container { max-width: 1200px; margin: 0 auto; padding: 25px 20px; }
+    .container { max-width: 1300px; margin: 0 auto; padding: 25px 20px; }
 
-    /* --- SEARCH & FILTERS (MOVED TO TOP) --- */
-    .top-bar { display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin-bottom: 25px; }
-    @media (max-width: 768px) { .top-bar { grid-template-columns: 1fr; } }
+    /* =========================================
+       HOME TAB LAYOUT (Split Screen)
+       ========================================= */
+    .home-grid {
+        display: grid; grid-template-columns: 2fr 1fr; gap: 30px;
+        align-items: start;
+    }
+    @media (max-width: 900px) { .home-grid { grid-template-columns: 1fr; } }
 
+    /* LEFT SIDE: SEARCH & CHARTS */
     .input-label { font-size: 11px; color: var(--text-dim); font-weight: 700; margin-bottom: 8px; display: block; letter-spacing: 0.5px; }
-    .search-wrapper { position: relative; }
+    .search-wrapper { position: relative; margin-bottom: 20px; }
     
     .search-input, .custom-select {
       width: 100%; background: var(--card); border: 1px solid var(--border); color: var(--text);
-      padding: 14px 16px; border-radius: 10px; font-size: 16px; 
-      transition: 0.2s; appearance: none;
+      padding: 16px; border-radius: 12px; font-size: 16px; transition: 0.2s; appearance: none;
     }
-    .search-input:focus, .custom-select:focus { outline: none; border-color: var(--accent); }
+    .search-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.1); }
     
     .search-results {
       position: absolute; top: 100%; left: 0; right: 0;
-      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
       max-height: 300px; overflow-y: auto; z-index: 50; margin-top: 5px;
       box-shadow: 0 10px 40px rgba(0,0,0,0.5); display: none;
     }
     .search-results.show { display: block; }
-    .result-item { padding: 15px; border-bottom: 1px solid var(--border); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: 0.2s;}
+    .result-item { padding: 15px; border-bottom: 1px solid var(--border); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
     .result-item:hover { background: var(--hover); }
-    .ri-name { font-weight: 500; color: var(--text); }
-    .ri-date { font-size: 12px; color: var(--accent); background: rgba(250, 204, 21, 0.1); padding: 3px 8px; border-radius: 100px; }
 
-    /* --- NEWS DASHBOARD --- */
-    .news-section { margin-bottom: 40px; }
-    .news-grid { 
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-      gap: 20px; 
+    /* RIGHT SIDE: LIVE FEED TICKER */
+    .ticker-container {
+        background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+        overflow: hidden; height: 500px; display: flex; flex-direction: column;
+        box-shadow: var(--shadow);
     }
-    
-    .news-col { display: flex; flex-direction: column; gap: 10px; }
-    .col-header { 
-      font-family: 'Teko', sans-serif; font-size: 20px; font-weight: 500; 
-      text-transform: uppercase; display: flex; align-items: center; gap: 8px; 
-      padding-bottom: 8px; border-bottom: 2px solid var(--border); margin-bottom: 5px;
+    .ticker-header {
+        padding: 15px; border-bottom: 1px solid var(--border); background: var(--bg);
+        font-family: 'Teko', sans-serif; font-size: 20px; letter-spacing: 0.5px;
+        display: flex; align-items: center; gap: 8px;
     }
-    .col-restock .col-header { color: var(--green); border-color: var(--green); }
-    .col-new .col-header { color: var(--blue); border-color: var(--blue); }
-    .col-sold .col-header { color: var(--red); border-color: var(--red); }
+    .live-dot { width: 8px; height: 8px; background: var(--red); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 
-    /* Scrollable Box with Fixed Height (Limit 5 approx) */
-    .news-scroll-box {
-        max-height: 320px; /* Approx 4-5 items */
-        overflow-y: auto;
-        padding-right: 5px;
-        display: flex; flex-direction: column; gap: 10px;
+    .ticker-scroll-area {
+        flex: 1; overflow: hidden; position: relative;
     }
-    /* Thin Scrollbar */
-    .news-scroll-box::-webkit-scrollbar { width: 4px; }
-    .news-scroll-box::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
-    .news-scroll-box::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
-
-    .news-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-      padding: 12px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
-      position: relative; overflow: hidden; box-shadow: var(--shadow);
+    .ticker-list {
+        padding: 0 15px;
+        animation: autoScroll 40s linear infinite; /* Adjust speed here */
     }
-    .news-card:hover { transform: translateY(-2px); border-color: var(--text-dim); }
-    .news-card:active { transform: scale(0.98); }
+    .ticker-list:hover { animation-play-state: paused; } /* Pause on hover */
     
-    .nc-top { display: flex; justify-content: space-between; margin-bottom: 6px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
-    .nc-event { font-weight: 700; font-size: 13px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; }
-    .nc-time { font-size: 10px; color: var(--text-dim); }
-    
-    .nc-msg { font-size: 13px; color: var(--text-dim); line-height: 1.4; }
-    
-    /* Highlight Classes */
-    .hl-cat { color: var(--accent); font-weight: 700; text-transform: uppercase; }
-    .hl-num { color: var(--text); font-weight: 700; }
+    @keyframes autoScroll {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-100%); } /* Needs JS duplication for seamless loop or reset */
+    }
+    /* Simple vertical stack for now, JS will not duplicate to keep logic simple, just scrollable */
+    .ticker-scroll-area { overflow-y: auto; } /* Fallback to manual scroll if preferred, but let's do simple auto */
 
-    /* --- EMPTY STATE --- */
-    #emptyState { text-align: center; padding: 40px 20px; opacity: 0.4; }
-    .empty-icon { font-size: 48px; margin-bottom: 15px; display: block; filter: grayscale(100%); }
-    .empty-text { font-size: 16px; font-weight: 500; }
+    .feed-item {
+        padding: 15px 0; border-bottom: 1px solid var(--border);
+        display: flex; flex-direction: column; gap: 4px; cursor: pointer;
+        transition: 0.2s;
+    }
+    .feed-item:hover { opacity: 0.7; }
+    .fi-top { display: flex; justify-content: space-between; align-items: center; }
+    .fi-cat { font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; color: #000; }
+    .cat-restock { background: var(--green); }
+    .cat-low { background: var(--orange); }
+    .cat-new { background: var(--blue); }
+    .cat-sold { background: var(--red); }
+    
+    .fi-msg { font-size: 13px; line-height: 1.4; color: var(--text-dim); }
+    .fi-msg strong { color: var(--text); color: var(--accent); }
+    
+    /* NEW BADGE */
+    .badge-today {
+        background: var(--red); color: #fff; font-size: 9px; font-weight: 700; 
+        padding: 1px 5px; border-radius: 4px; margin-left: 5px; animation: pulse 1s infinite;
+    }
 
-    /* --- DASHBOARD --- */
+    /* =========================================
+       MARKET TAB LAYOUT (Grid)
+       ========================================= */
+    .market-grid {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    @media (max-width: 1024px) { .market-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .market-grid { grid-template-columns: 1fr; } }
+
+    .market-col {
+        background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+        display: flex; flex-direction: column; overflow: hidden; height: 80vh;
+    }
+    .mc-header {
+        padding: 15px; font-family: 'Teko', sans-serif; font-size: 22px; text-transform: uppercase;
+        border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px;
+        background: var(--bg); position: sticky; top: 0;
+    }
+    .mc-list { overflow-y: auto; padding: 10px; flex: 1; }
+    
+    .market-card {
+        background: var(--bg); border: 1px solid var(--border); padding: 12px;
+        border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.2s;
+    }
+    .market-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .mc-date { font-size: 11px; color: var(--text-dim); margin-bottom: 5px; display: flex; justify-content: space-between;}
+
+    /* DASHBOARD & CHARTS (Hidden initially) */
+    .dashboard-area { margin-top: 30px; }
     .selected-event-header {
       background: var(--card); border: 1px solid var(--border); padding: 20px; 
       border-radius: 12px; margin-bottom: 20px; 
       display: flex; flex-direction: column; gap: 15px; box-shadow: var(--shadow);
     }
     @media(min-width: 768px) { .selected-event-header { flex-direction: row; align-items: center; justify-content: space-between; } }
-
-    .seh-title { font-size: 28px; font-family: 'Teko', sans-serif; color: var(--text); line-height: 1; }
-    .seh-date { font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; margin-top: 5px; }
-    
+    .seh-title { font-size: 32px; font-family: 'Teko', sans-serif; color: var(--text); line-height: 1; }
     .shop-btn {
       background: var(--accent); color: #000; text-decoration: none;
-      padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px;
-      display: inline-block; text-align: center; transition: 0.2s;
+      padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; display: inline-block;
     }
-    .shop-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4); }
-
-    /* CHARTS */
-    .chart-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-    @media(min-width: 1000px) { .chart-grid { grid-template-columns: 1fr 1fr; } }
-    .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
-    .chart-title { font-size: 15px; font-weight: 700; margin-bottom: 15px; color: var(--text-dim); text-transform: uppercase; }
-    .chart-box { position: relative; height: 300px; width: 100%; }
-
-    /* GLOBAL LIST */
-    .global-item { 
-      background: var(--card); border: 1px solid var(--border); padding: 15px; border-radius: 8px; 
-      margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; 
-      text-decoration: none; color: var(--text); transition: 0.2s; 
-    }
-    .global-item:hover { border-color: var(--accent); }
+    .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; height: 350px; }
 
     /* UTILS */
     .hidden { display: none !important; }
-    .spinner { width: 40px; height: 40px; border: 4px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s infinite; margin: 40px auto; }
+    .empty-state { text-align: center; padding: 50px; opacity: 0.5; }
+    .spinner { width: 40px; height: 40px; border: 4px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s infinite; margin: 50px auto; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
   </style>
@@ -202,131 +192,132 @@
 <header>
   <div class="header-top">
     <div class="brand-wrapper">
-        <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g clip-path="url(#clip0_901_2624)">
-                <path d="M29.2695 22.999C30.3745 20.91 30.9995 18.527 30.9995 16C30.9995 7.716 24.2845 1 15.9995 1L16 16M13 1.3008C6.153 2.6898 1 8.7428 1 15.9998C1 24.2838 7.716 30.9998 16 30.9998C19.189 30.9998 22.11 30.0628 24.541 28.3658M8.5166 21.002C10.1316 23.412 12.8806 25 15.9996 25C20.9706 25 24.9996 20.971 24.9996 16C24.9996 11.029 20.9706 7 15.9996 7M13 7.5117C10.09 8.5397 7.887 10.9367 7.223 13.9997M9 16C9 14.896 8.104 14 7 14C5.896 14 5 14.896 5 16C5 17.104 5.896 18 7 18C8.104 18 9 17.104 9 16ZM28 27C28 25.896 27.104 25 26 25C24.896 25 24 25.896 24 27C24 28.104 24.896 29 26 29C27.104 29 28 28.104 28 27Z"/>
-            </g>
-            <defs><clipPath id="clip0_901_2624"><rect width="32" height="32" fill="white"/></clipPath></defs>
+        <svg class="logo-svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M29.2695 22.999C30.3745 20.91 30.9995 18.527 30.9995 16C30.9995 7.716 24.2845 1 15.9995 1L16 16M13 1.3008C6.153 2.6898 1 8.7428 1 15.9998C1 24.2838 7.716 30.9998 16 30.9998C19.189 30.9998 22.11 30.0628 24.541 28.3658M8.5166 21.002C10.1316 23.412 12.8806 25 15.9996 25C20.9706 25 24.9996 20.971 24.9996 16C24.9996 11.029 20.9706 7 15.9996 7M13 7.5117C10.09 8.5397 7.887 10.9367 7.223 13.9997M9 16C9 14.896 8.104 14 7 14C5.896 14 5 14.896 5 16C5 17.104 5.896 18 7 18C8.104 18 9 17.104 9 16ZM28 27C28 25.896 27.104 25 26 25C24.896 25 24 25.896 24 27C24 28.104 24.896 29 26 29C27.104 29 28 28.104 28 27Z"/>
         </svg>
-
-        <div class="brand">
-            HYROX <span>RADAR</span> 
-            <span class="version">v0.2</span>
-        </div>
+        <div class="brand">HYROX <span>RADAR</span> <span class="version">v0.3</span></div>
     </div>
-
     <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀</button>
   </div>
   
   <div class="tabs">
-    <button class="tab-btn active" onclick="switchTab('tab-event')">City Analysis</button>
-    <button class="tab-btn" onclick="switchTab('tab-category')">Global Search</button>
+    <button class="tab-btn active" onclick="switchTab('tab-home')">HOME / SEARCH</button>
+    <button class="tab-btn" onclick="switchTab('tab-market')">LIVE MARKET</button>
+    <button class="tab-btn" onclick="switchTab('tab-global')">GLOBAL FINDER</button>
   </div>
 </header>
 
 <div class="container">
 
-  <div id="tab-event" class="tab-content">
-    
-    <div class="top-bar">
-      <div class="search-wrapper">
-        <label class="input-label">SEARCH CITY</label>
-        <input type="text" id="eventSearch" class="search-input" placeholder="Type a city (e.g. London)..." autocomplete="off">
-        <div id="searchResults" class="search-results"></div>
-      </div>
-
-      <div>
-        <label class="input-label">FILTER CATEGORY</label>
-        <select id="eventFilterSelect" class="custom-select" onchange="setEventFilter(this.value)" disabled>
-            <option value="ALL">Show All Categories</option>
-            <option disabled>──────────</option>
-            <option value="MEN_OPEN">Men Open</option>
-            <option value="MEN_PRO">Men Pro</option>
-            <option value="WOMEN_OPEN">Women Open</option>
-            <option value="WOMEN_PRO">Women Pro</option>
-            <option value="DOUBLES_MEN">Doubles Men</option>
-            <option value="DOUBLES_WOMEN">Doubles Women</option>
-            <option value="DOUBLES_MIXED">Doubles Mixed</option>
-        </select>
-      </div>
-    </div>
-
-    <div id="newsSection" class="news-section">
-        <div class="news-grid">
-            
-            <div class="news-col col-restock">
-                <div class="col-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-                    Restocks
-                </div>
-                <div id="feedRestock" class="news-scroll-box">
-                    <div style="font-size:12px; color:var(--text-dim);">No recent restocks.</div>
-                </div>
-            </div>
-
-            <div class="news-col col-new">
-                <div class="col-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                    New & Low
-                </div>
-                <div id="feedNew" class="news-scroll-box">
-                     <div style="font-size:12px; color:var(--text-dim);">No new alerts.</div>
-                </div>
-            </div>
-
-            <div class="news-col col-sold">
-                <div class="col-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                    Sold Out
-                </div>
-                <div id="feedSold" class="news-scroll-box">
-                    <div style="font-size:12px; color:var(--text-dim);">Everything available.</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="emptyState">
-      <div class="empty-icon">🏙️</div>
-      <div class="empty-text">Select a city above or click a news item</div>
-    </div>
-
-    <div id="eventLoader" class="hidden"><div class="spinner"></div></div>
-
-    <div id="eventDashboard" class="hidden">
-      
-      <div class="selected-event-header">
+  <div id="tab-home" class="tab-content">
+    <div class="home-grid">
+        
         <div>
-          <div class="seh-title" id="sehName">Event Name</div>
-          <div class="seh-date">📅 <span id="sehDate">...</span></div>
-        </div>
-        <a href="#" id="sehLink" target="_blank" class="shop-btn">GO TO TICKET STORE ↗</a>
-      </div>
+            <div class="search-wrapper">
+                <label class="input-label">QUICK SEARCH</label>
+                <input type="text" id="eventSearch" class="search-input" placeholder="Type a city name (e.g. London)..." autocomplete="off">
+                <div id="searchResults" class="search-results"></div>
+            </div>
 
-      <div class="chart-grid">
-        <div class="chart-card">
-          <div class="chart-title">📈 7-Day Trend</div>
-          <div class="chart-box"><canvas id="chartHistory"></canvas></div>
+            <div id="emptyState" class="empty-state">
+                <div style="font-size: 40px; margin-bottom: 10px;">🔍</div>
+                Start typing to analyze stock history
+            </div>
+
+            <div id="eventLoader" class="hidden"><div class="spinner"></div></div>
+
+            <div id="eventDashboard" class="hidden dashboard-area">
+                <div class="selected-event-header">
+                    <div>
+                        <div class="seh-title" id="sehName">Event Name</div>
+                        <div style="color:var(--text-dim); margin-top:5px;">📅 <span id="sehDate">...</span></div>
+                    </div>
+                    <a href="#" id="sehLink" target="_blank" class="shop-btn">GO TO STORE ↗</a>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                     <label class="input-label">FILTER CATEGORY</label>
+                     <select id="eventFilterSelect" class="custom-select" onchange="setEventFilter(this.value)">
+                        <option value="ALL">Show All Categories</option>
+                        <option disabled>──────────</option>
+                        <option value="MEN_OPEN">Men Open</option>
+                        <option value="MEN_PRO">Men Pro</option>
+                        <option value="WOMEN_OPEN">Women Open</option>
+                        <option value="WOMEN_PRO">Women Pro</option>
+                        <option value="DOUBLES_MEN">Doubles Men</option>
+                        <option value="DOUBLES_WOMEN">Doubles Women</option>
+                        <option value="DOUBLES_MIXED">Doubles Mixed</option>
+                     </select>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="chart-card">
+                        <div style="font-weight:700; color:var(--text-dim); margin-bottom:10px;">STOCK TREND (7 DAYS)</div>
+                        <div style="height:300px; position:relative;"><canvas id="chartHistory"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <div style="font-weight:700; color:var(--text-dim); margin-bottom:10px;">CURRENT AVAILABILITY</div>
+                        <div style="height:300px; position:relative;"><canvas id="chartCurrent"></canvas></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="chart-card">
-          <div class="chart-title">📊 Availability</div>
-          <div class="chart-box"><canvas id="chartCurrent"></canvas></div>
+
+        <div class="ticker-container">
+            <div class="ticker-header">
+                <div class="live-dot"></div> LIVE FEED
+            </div>
+            <div class="ticker-scroll-area" id="homeTicker">
+                <div style="padding:20px; color:var(--text-dim); text-align:center;">Loading feed...</div>
+            </div>
         </div>
-      </div>
 
     </div>
   </div>
 
-  <div id="tab-category" class="tab-content hidden">
-    <div class="chart-card">
-        <div class="chart-title" style="margin-bottom: 10px;">SCAN ALL CITIES</div>
+  <div id="tab-market" class="tab-content hidden">
+      <div class="market-grid">
+          
+          <div class="market-col">
+              <div class="mc-header" style="color:var(--green); border-bottom-color:var(--green);">
+                  <span>⚡ RESTOCKS</span>
+              </div>
+              <div id="marketRestock" class="mc-list"></div>
+          </div>
+
+          <div class="market-col">
+              <div class="mc-header" style="color:var(--orange); border-bottom-color:var(--orange);">
+                  <span>⚠️ LOW STOCK</span>
+              </div>
+              <div id="marketLow" class="mc-list"></div>
+          </div>
+
+          <div class="market-col">
+              <div class="mc-header" style="color:var(--blue); border-bottom-color:var(--blue);">
+                  <span>🆕 NEW EVENTS</span>
+              </div>
+              <div id="marketNew" class="mc-list"></div>
+          </div>
+
+          <div class="market-col">
+              <div class="mc-header" style="color:var(--red); border-bottom-color:var(--red);">
+                  <span>❌ SOLD OUT</span>
+              </div>
+              <div id="marketSold" class="mc-list"></div>
+          </div>
+
+      </div>
+  </div>
+
+  <div id="tab-global" class="tab-content hidden">
+      <div class="chart-card" style="height:auto;">
+        <div style="font-weight:700; color:var(--text-dim); margin-bottom:10px;">SCAN ALL CITIES FOR A CATEGORY</div>
         <select id="categorySelector" class="custom-select" onchange="loadGlobalData()">
              <option disabled selected>Select category...</option>
         </select>
         <div id="globalLoader" class="hidden"><div class="spinner"></div></div>
         <div id="globalResults" style="margin-top: 20px;"></div>
-    </div>
+      </div>
   </div>
 
 </div>
@@ -346,32 +337,19 @@ let EVENT_DATA = null;
 let EVENT_FILTER = 'ALL';
 let CHARTS = { history: null, current: null };
 
-/* --- GLOBAL EXCLUSION LIST --- */
-function isExcluded(ticketName) {
-    const n = ticketName.toUpperCase();
-    return n.includes('RELAY') || 
-           n.includes('CHARITY') || 
-           n.includes('SPECTATOR') || 
-           n.includes('ADAPTIVE');
-}
-
-/* --- THEME LOGIC --- */
+/* --- THEME --- */
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    document.getElementById('themeBtn').textContent = saved === 'dark' ? '☀' : '☾';
 }
 function toggleTheme() {
     const current = document.documentElement.getAttribute('data-theme');
-    const newTheme = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-    
-    if(EVENT_DATA) renderEventCharts(); 
-}
-function updateThemeIcon(theme) {
-    document.getElementById('themeBtn').textContent = theme === 'dark' ? '☀' : '☾';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    document.getElementById('themeBtn').textContent = next === 'dark' ? '☀' : '☾';
+    if(EVENT_DATA) renderEventCharts();
 }
 
 /* --- INIT --- */
@@ -382,92 +360,126 @@ async function init() {
       fetch(`${CONFIG.eventsFile}?t=${Date.now()}`),
       fetch(`${CONFIG.categoriesFile}?t=${Date.now()}`)
     ]);
-
     if(evRes.ok) EVENTS = await evRes.json();
     if(catRes.ok) CATEGORIES = await catRes.json();
-
-    EVENTS.sort((a, b) => parseDate(a.startDate) - parseDate(b.startDate));
+    EVENTS.sort((a,b) => parseDate(a.startDate) - parseDate(b.startDate));
 
     setupSearch();
     populateCategoryDropdown();
     loadNotifications();
 
-  } catch (e) { console.error(e); }
+  } catch(e) { console.error(e); }
 }
 
-/* --- NEWS SYSTEM --- */
+/* --- NEWS & TICKER SYSTEM --- */
 async function loadNotifications() {
     try {
         const res = await fetch(`${CONFIG.newsFile}?t=${Date.now()}`);
         if(!res.ok) return;
         const news = await res.json();
+        
+        // 1. POPULATE HOME TICKER
+        const ticker = document.getElementById('homeTicker');
+        ticker.innerHTML = '';
+        
+        // 2. POPULATE MARKET GRID
+        const mRestock = document.getElementById('marketRestock');
+        const mLow = document.getElementById('marketLow');
+        const mNew = document.getElementById('marketNew');
+        const mSold = document.getElementById('marketSold');
+        mRestock.innerHTML = mLow.innerHTML = mNew.innerHTML = mSold.innerHTML = '';
 
-        const restockBox = document.getElementById('feedRestock');
-        const newBox = document.getElementById('feedNew');
-        const soldBox = document.getElementById('feedSold');
-
-        let rHtml = '', nHtml = '', sHtml = '';
+        if(news.length === 0) {
+             ticker.innerHTML = '<div style="padding:20px; text-align:center; color:var(--text-dim)">Quiet market today.</div>';
+             return;
+        }
 
         news.forEach(item => {
             if(isExcluded(item.message)) return;
 
+            // Prepare Data
             const timeStr = getRelativeTime(item.date);
+            const isToday = timeStr === 'Today';
             let matchedEvent = EVENTS.find(e => item.message.includes(e.name));
-            const clickAttr = matchedEvent ? `onclick="loadEventByName('${matchedEvent.name.replace(/'/g, "\\'")}')"` : '';
+            const clickAttr = matchedEvent ? `onclick="goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')"` : '';
+            
+            // Format HTML Content
+            const msgHtml = formatNewsMessage(item.message);
+            
+            // Determine Badge & Category
+            let catLabel = 'NEWS';
+            let catClass = 'cat-new';
+            if(item.type === 'restock') { catLabel = 'RESTOCK'; catClass = 'cat-restock'; }
+            else if(item.type === 'low_stock') { catLabel = 'LOW'; catClass = 'cat-low'; }
+            else if(item.type === 'soldout') { catLabel = 'SOLD'; catClass = 'cat-sold'; }
+            
+            const newBadge = isToday ? '<span class="badge-today">NEW</span>' : '';
 
-            const card = `
-            <div class="news-card" ${clickAttr}>
-                <div class="nc-top">
-                    <span class="nc-event">${matchedEvent ? matchedEvent.name : 'Update'}</span>
-                    <span class="nc-time">${timeStr}</span>
+            // --- A) ADD TO HOME TICKER ---
+            const feedItem = document.createElement('div');
+            feedItem.className = 'feed-item';
+            if(matchedEvent) feedItem.setAttribute('onclick', `goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')`);
+            
+            feedItem.innerHTML = `
+                <div class="fi-top">
+                    <span class="fi-cat ${catClass}">${catLabel}</span>
+                    <span style="font-size:10px; color:var(--text-dim)">${timeStr}${newBadge}</span>
                 </div>
-                <div class="nc-msg">${formatNewsMessage(item.message)}</div>
-            </div>`;
+                <div class="fi-msg">${msgHtml}</div>
+            `;
+            ticker.appendChild(feedItem);
 
-            if(item.type === 'restock') rHtml += card;
-            else if(item.type === 'soldout') sHtml += card;
-            else nHtml += card; 
+            // --- B) ADD TO MARKET GRID (Detailed Card) ---
+            const marketCard = document.createElement('div');
+            marketCard.className = 'market-card';
+            if(matchedEvent) marketCard.setAttribute('onclick', `goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')`);
+            
+            marketCard.innerHTML = `
+                <div class="mc-date">
+                    <span>${item.date}</span>
+                    ${newBadge}
+                </div>
+                <div class="fi-msg" style="font-size:14px;">${msgHtml}</div>
+            `;
+
+            if(item.type === 'restock') mRestock.appendChild(marketCard);
+            else if(item.type === 'low_stock') mLow.appendChild(marketCard);
+            else if(item.type === 'soldout') mSold.appendChild(marketCard);
+            else mNew.appendChild(marketCard);
         });
 
-        if(rHtml) restockBox.innerHTML = rHtml;
-        if(nHtml) newBox.innerHTML = nHtml;
-        if(sHtml) soldBox.innerHTML = sHtml;
-
-    } catch(e) { console.log("News error", e); }
+    } catch(e) { console.log(e); }
 }
 
-// Geliştirilmiş Metin Formatlama
 function formatNewsMessage(msg) {
-    // 1. Kategorileri Boya (Sarı)
-    let formatted = msg.replace(/(MEN OPEN|WOMEN OPEN|MEN PRO|WOMEN PRO|DOUBLES MEN|DOUBLES WOMEN|DOUBLES MIXED)/gi, 
-        '<span class="hl-cat">$1</span>');
-    
-    // 2. Sayıları Kalınlaştır
-    formatted = formatted.replace(/(\d+ tickets|\d+ left)/gi, '<span class="hl-num">$1</span>');
-    
-    return formatted;
+    let f = msg.replace(/(MEN OPEN|WOMEN OPEN|MEN PRO|WOMEN PRO|DOUBLES MEN|DOUBLES WOMEN|DOUBLES MIXED)/gi, 
+        '<span style="color:var(--accent); font-weight:700;">$1</span>');
+    f = f.replace(/(\d+ tickets|\d+ left)/gi, '<span style="color:var(--text); font-weight:700;">$1</span>');
+    return f;
 }
 
-function loadEventByName(name) {
+function goToEvent(name) {
     const evt = EVENTS.find(e => e.name === name);
     if(evt) {
-        switchTab('tab-event'); 
+        switchTab('tab-home');
         selectEvent(evt);
-        document.getElementById('eventDashboard').scrollIntoView({behavior: 'smooth', block: 'start'});
     }
 }
 
-function getRelativeTime(dateStr) {
-    const date = new Date(dateStr);
-    const today = new Date();
-    const diffTime = Math.abs(today - date);
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)); 
-    if (diffDays === 0) return 'Today';
-    if (diffDays === 1) return 'Yesterday';
-    return `${diffDays}d ago`;
+/* --- TABS --- */
+window.switchTab = (id) => {
+    document.querySelectorAll('.tab-content').forEach(e => e.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(e => e.classList.remove('active'));
+    document.getElementById(id).classList.remove('hidden');
+    // Find button that triggered this or match by text if called manually
+    // Simple way: iterate buttons
+    const btns = document.querySelectorAll('.tab-btn');
+    if(id === 'tab-home') btns[0].classList.add('active');
+    if(id === 'tab-market') btns[1].classList.add('active');
+    if(id === 'tab-global') btns[2].classList.add('active');
 }
 
-/* --- SEARCH & SELECTION --- */
+/* --- SEARCH & EVENT LOGIC --- */
 function setupSearch() {
   const input = document.getElementById('eventSearch');
   const resultsBox = document.getElementById('searchResults');
@@ -478,7 +490,7 @@ function setupSearch() {
     list.forEach(evt => {
       const div = document.createElement('div');
       div.className = 'result-item';
-      div.innerHTML = `<span class="ri-name">${evt.name}</span><span class="ri-date">${evt.startDate}</span>`;
+      div.innerHTML = `<span style="font-weight:500">${evt.name}</span><span style="font-size:12px; color:var(--accent)">${evt.startDate}</span>`;
       div.onclick = () => { selectEvent(evt); input.value = evt.name; resultsBox.classList.remove('show'); };
       resultsBox.appendChild(div);
     });
@@ -489,28 +501,32 @@ function setupSearch() {
     render(EVENTS.filter(evt => evt.name.toLowerCase().includes(term)));
     resultsBox.classList.add('show');
   });
-  
   input.addEventListener('focus', () => { render(EVENTS); resultsBox.classList.add('show'); });
   document.addEventListener('click', (e) => { if (!e.target.closest('.search-wrapper')) resultsBox.classList.remove('show'); });
 }
 
 function selectEvent(evt) {
   document.getElementById('emptyState').classList.add('hidden');
-  document.getElementById('eventDashboard').classList.add('hidden');
-  document.getElementById('eventLoader').classList.remove('hidden');
-  document.getElementById('eventFilterSelect').disabled = false;
+  document.getElementById('eventDashboard').classList.remove('hidden');
+  document.getElementById('eventLoader').classList.remove('hidden'); // momentarily
+  document.getElementById('eventSearch').value = evt.name;
 
   document.getElementById('sehName').textContent = evt.name;
   document.getElementById('sehDate').textContent = evt.startDate || 'TBA';
   document.getElementById('sehLink').href = evt.url;
-  document.getElementById('eventSearch').value = evt.name;
 
   document.getElementById('eventFilterSelect').value = 'ALL';
   EVENT_FILTER = 'ALL';
+  
   loadEventData(evt.id);
 }
 
-/* --- CHARTS --- */
+/* --- DATA & CHARTS --- */
+function isExcluded(t) { 
+    const n = t.toUpperCase();
+    return n.includes('RELAY') || n.includes('CHARITY') || n.includes('SPECTATOR') || n.includes('ADAPTIVE');
+}
+
 async function loadEventData(eventId) {
     try {
         const res = await fetch(`${CONFIG.dataDir}/${eventId}.json?t=${Date.now()}`);
@@ -523,22 +539,20 @@ async function loadEventData(eventId) {
         })).sort((a,b) => new Date(a.date) - new Date(b.date));
 
         document.getElementById('eventLoader').classList.add('hidden');
-        document.getElementById('eventDashboard').classList.remove('hidden');
         renderEventCharts();
     } catch (e) {
         document.getElementById('eventLoader').classList.add('hidden');
-        alert("Data not found for this event.");
+        alert("No history data yet.");
     }
 }
 
 function renderEventCharts() {
     if(!EVENT_DATA) return;
-    
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    const gridColor = isDark ? '#333' : '#e5e7eb';
-    const textColor = isDark ? '#a1a1aa' : '#6b7280';
+    const gridC = isDark ? '#333' : '#e5e7eb';
+    const textC = isDark ? '#a1a1aa' : '#6b7280';
     
-    const labels = EVENT_DATA.map(d => d.date.substring(5).replace('-','.')); 
+    // Filters
     const filters = {
         'ALL': () => true,
         'MEN_OPEN': (n) => n.includes('MEN') && !n.includes('WOMEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
@@ -551,43 +565,47 @@ function renderEventCharts() {
     };
     const check = filters[EVENT_FILTER] || filters['ALL'];
     
+    const labels = EVENT_DATA.map(d => d.date.substring(5).replace('-','.')); 
     let datasets = [];
+    
     if(EVENT_FILTER === 'ALL') {
          const groups = [
             { name: 'Men Open', c: '#3b82f6', r: filters['MEN_OPEN'] },
             { name: 'Women Open', c: '#ec4899', r: filters['WOMEN_OPEN'] },
-            { name: 'Dbl Men', c: '#eab308', r: filters['DOUBLES_MEN'] },
+            { name: 'Dbl Men', c: '#facc15', r: filters['DOUBLES_MEN'] },
             { name: 'Dbl Women', c: '#f97316', r: filters['DOUBLES_WOMEN'] },
             { name: 'Dbl Mixed', c: '#a855f7', r: filters['DOUBLES_MIXED'] }
         ];
         datasets = groups.map(g => ({
-            label: g.name, borderColor: g.c, backgroundColor: g.c, tension:0.4, pointRadius:0, borderWidth:2,
+            label: g.name, borderColor: g.c, backgroundColor: g.c, tension:0.3, pointRadius:0, borderWidth:2,
             data: EVENT_DATA.map(day => day.tickets.filter(t => g.r(t.ticket.toUpperCase())).reduce((s,t)=>s+t.stock,0))
         }));
     } else {
         const unique = new Set();
         EVENT_DATA.forEach(d => d.tickets.forEach(t => { if(check(t.ticket.toUpperCase())) unique.add(t.ticket); }));
-        const palette = ['#eab308', '#3b82f6', '#ef4444', '#10b981']; let i=0;
+        const palette = ['#facc15', '#3b82f6', '#ef4444', '#10b981']; let i=0;
         unique.forEach(u => {
              datasets.push({
                  label: u.replace(/HYROX /gi,'').trim(),
-                 borderColor: palette[i++%palette.length], tension:0.4, pointRadius:2,
+                 borderColor: palette[i++%palette.length], tension:0.3, pointRadius:2,
                  data: EVENT_DATA.map(d => { const f=d.tickets.find(x=>x.ticket===u); return f?f.stock:null; })
              });
         });
     }
 
+    // Chart 1: History
     const ctxH = document.getElementById('chartHistory').getContext('2d');
     if(CHARTS.history) CHARTS.history.destroy();
     CHARTS.history = new Chart(ctxH, {
         type: 'line', data: { labels, datasets },
         options: { 
             responsive:true, maintainAspectRatio:false, interaction:{mode:'index', intersect:false}, 
-            scales:{ y:{beginAtZero:true, grid:{color:gridColor}, ticks:{color:textColor}}, x:{grid:{display:false}, ticks:{color:textColor}} },
-            plugins:{ legend:{labels:{color:textColor, boxWidth:10}} } 
+            scales:{ y:{grid:{color:gridC}, ticks:{color:textC}}, x:{grid:{display:false}, ticks:{color:textC}} },
+            plugins:{ legend:{labels:{color:textC, boxWidth:10}} } 
         }
     });
 
+    // Chart 2: Current
     const latest = EVENT_DATA[EVENT_DATA.length-1];
     const currentItems = latest.tickets.filter(t => check(t.ticket.toUpperCase())).sort((a,b)=>b.stock-a.stock);
     const ctxC = document.getElementById('chartCurrent').getContext('2d');
@@ -600,19 +618,17 @@ function renderEventCharts() {
         },
         options: { 
             indexAxis:'y', responsive:true, maintainAspectRatio:false, 
-            scales:{x:{grid:{color:gridColor}, ticks:{color:textColor}}, y:{grid:{display:false}, ticks:{color:textColor}}} 
+            scales:{x:{grid:{color:gridC}, ticks:{color:textC}}, y:{grid:{display:false}, ticks:{color:textC}}} 
         }
     });
 }
 
 window.setEventFilter = (val) => { EVENT_FILTER = val; renderEventCharts(); }
-window.switchTab = (id) => {
-    document.querySelectorAll('.tab-content').forEach(e => e.classList.add('hidden'));
-    document.querySelectorAll('.tab-btn').forEach(e => e.classList.remove('active'));
-    document.getElementById(id).classList.remove('hidden');
-    event.target.classList.add('active');
-}
 function parseDate(str) { if(!str) return 0; const p=str.split('.'); return new Date(p[2],p[1]-1,p[0]); }
+function getRelativeTime(d) {
+    const diff = Math.floor((new Date() - new Date(d)) / (86400000));
+    return diff === 0 ? 'Today' : (diff === 1 ? 'Yesterday' : `${diff} days ago`);
+}
 function populateCategoryDropdown() {
     const sel = document.getElementById('categorySelector');
     CATEGORIES.forEach(c => { const o=document.createElement('option'); o.value=c.id; o.textContent=c.name; sel.appendChild(o); });
@@ -622,12 +638,9 @@ async function loadGlobalData() {
     const catRule = CATEGORIES.find(c=>c.id===catId); if(!catRule) return;
     document.getElementById('globalLoader').classList.remove('hidden');
     const div = document.getElementById('globalResults'); div.innerHTML = '';
-
     const promises = EVENTS.map(evt => fetch(`${CONFIG.dataDir}/${evt.id}.json?t=${Date.now()}`).then(r=>r.ok?r.json():null).then(d=>({evt, d})).catch(()=>({evt, d:null})));
     const res = await Promise.all(promises);
-    
     let html = '';
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     res.forEach(({evt, d}) => {
         if(!d || !d.history.length) return;
         const last = d.history[d.history.length-1];
@@ -638,15 +651,14 @@ async function loadGlobalData() {
             if(catRule.include.every(x=>n.includes(x)) && !catRule.exclude.some(x=>n.includes(x))) stock += t.stock;
         });
         if(stock > 0) {
-            html += `
-            <a href="${evt.url}" target="_blank" class="global-item">
-                <div><div style="font-size:14px; font-weight:700;">${evt.name}</div><div style="font-size:12px; opacity:0.7;">${evt.startDate}</div></div>
-                <div style="text-align:right;"><div style="font-size:10px; opacity:0.6;">AVAIL</div><div style="font-size:18px; font-weight:700; color:${stock<20?'#ef4444':'#10b981'}">${stock}</div></div>
+            html += `<a href="${evt.url}" target="_blank" style="display:flex; justify-content:space-between; padding:15px; border-bottom:1px solid var(--border); text-decoration:none; color:var(--text);">
+                <div><div style="font-weight:700;">${evt.name}</div><div style="font-size:12px; color:var(--text-dim);">${evt.startDate}</div></div>
+                <div style="text-align:right;"><div style="font-size:18px; font-weight:700; color:${stock<20?'var(--red)':'var(--green)'}">${stock}</div></div>
             </a>`;
         }
     });
     document.getElementById('globalLoader').classList.add('hidden');
-    div.innerHTML = html || '<div style="text-align:center; opacity:0.6;">No tickets found globally.</div>';
+    div.innerHTML = html || '<div style="text-align:center; padding:20px; opacity:0.6;">No tickets found.</div>';
 }
 
 init();
