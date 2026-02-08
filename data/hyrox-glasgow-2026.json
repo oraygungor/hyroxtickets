@@ -170,10 +170,15 @@
     },
     {
       "date": "2026-02-08",
-      "fetched_at": "2026-02-08T08:06:34.397590+01:00",
-      "total_stock": 24,
+      "fetched_at": "2026-02-08T10:36:16.393350+01:00",
+      "total_stock": 25,
       "data": {
         "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Thursday",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Thursday",
@@ -207,7 +212,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 3
+            "stock": 5
           },
           {
             "parkur": "Doubles",
@@ -296,6 +301,19 @@
           }
         ],
         "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN | Thursday": 1,
+            "HYROX DOUBLES MIXED | Thursday": 3,
+            "HYROX DOUBLES WOMEN | Friday": 4,
+            "HYROX PRO DOUBLES MEN | Thursday": 13,
+            "HYROX PRO DOUBLES WOMEN | Friday": 12,
+            "HYROX DOUBLES MIXED | Saturday": 5,
+            "HYROX PRO DOUBLES MEN | Friday": 5,
+            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday": 1,
+            "HYROX DOUBLES MIXED | Wednesday": 20,
+            "HYROX PRO DOUBLES MEN | Wednesday": 47,
+            "HYROX DOUBLES WOMEN | Wednesday": 3
+          },
           "Singles": {
             "HYROX PRO WOMEN | Thursday": 6,
             "HYROX PRO WOMEN | Sunday": 12,
@@ -311,18 +329,6 @@
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 2,
             "HYROX ADAPTIVE WOMEN | Wednesday": 5,
             "HYROX ADAPTIVE WOMEN | Thursday": 5
-          },
-          "Doubles": {
-            "HYROX DOUBLES MIXED | Thursday": 3,
-            "HYROX DOUBLES WOMEN | Friday": 4,
-            "HYROX PRO DOUBLES MEN | Thursday": 13,
-            "HYROX PRO DOUBLES WOMEN | Friday": 12,
-            "HYROX DOUBLES MIXED | Saturday": 3,
-            "HYROX PRO DOUBLES MEN | Friday": 5,
-            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday": 1,
-            "HYROX DOUBLES MIXED | Wednesday": 20,
-            "HYROX PRO DOUBLES MEN | Wednesday": 47,
-            "HYROX DOUBLES WOMEN | Wednesday": 3
           }
         }
       }
