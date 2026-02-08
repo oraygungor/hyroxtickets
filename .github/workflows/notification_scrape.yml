@@ -1,0 +1,48 @@
+name: Hyrox Scraper & News
+
+on:
+  schedule:
+    # Her gün 09:00 UTC (10:00 CET)
+    - cron: '0 9 * * *'
+  # İstersen GitHub arayüzünden manuel tetiklemek için:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Depoyu Çek (Checkout)
+      uses: actions/checkout@v4
+
+    - name: Python Kurulumu
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Kütüphaneleri Yükle
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
+        # Eğer scraper.py içinde başka kütüphane varsa buraya ekle
+
+    - name: Scraper'ı Çalıştır
+      run: python scraper.py
+
+    - name: Haber Üreticiyi Çalıştır
+      run: python generate_news.py
+
+    - name: Değişiklikleri Kaydet (Commit & Push)
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        
+        # Hem data klasörünü hem de yeni oluşan json'ı ekle
+        git add data/
+        git add notifications.json
+        
+        # Eğer değişiklik varsa commit at ve pushla, yoksa hata verme
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Günlük veri ve haber güncellemesi" && git push)
