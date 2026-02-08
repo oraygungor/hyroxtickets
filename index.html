@@ -56,7 +56,7 @@
     .container { max-width: 1300px; margin: 0 auto; padding: 25px 20px; }
 
     /* =========================================
-       HOME TAB LAYOUT (Split Screen)
+       HOME TAB LAYOUT
        ========================================= */
     .home-grid {
         display: grid; grid-template-columns: 2fr 1fr; gap: 30px;
@@ -64,7 +64,6 @@
     }
     @media (max-width: 900px) { .home-grid { grid-template-columns: 1fr; } }
 
-    /* LEFT SIDE: SEARCH & CHARTS */
     .input-label { font-size: 11px; color: var(--text-dim); font-weight: 700; margin-bottom: 8px; display: block; letter-spacing: 0.5px; }
     .search-wrapper { position: relative; margin-bottom: 20px; }
     
@@ -84,7 +83,7 @@
     .result-item { padding: 15px; border-bottom: 1px solid var(--border); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
     .result-item:hover { background: var(--hover); }
 
-    /* RIGHT SIDE: LIVE FEED TICKER */
+    /* TICKER */
     .ticker-container {
         background: var(--card); border: 1px solid var(--border); border-radius: 12px;
         overflow: hidden; height: 500px; display: flex; flex-direction: column;
@@ -98,26 +97,11 @@
     .live-dot { width: 8px; height: 8px; background: var(--red); border-radius: 50%; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 
-    .ticker-scroll-area {
-        flex: 1; overflow: hidden; position: relative;
-    }
-    .ticker-list {
-        padding: 0 15px;
-        animation: autoScroll 40s linear infinite; /* Adjust speed here */
-    }
-    .ticker-list:hover { animation-play-state: paused; } /* Pause on hover */
-    
-    @keyframes autoScroll {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-100%); } /* Needs JS duplication for seamless loop or reset */
-    }
-    /* Simple vertical stack for now, JS will not duplicate to keep logic simple, just scrollable */
-    .ticker-scroll-area { overflow-y: auto; } /* Fallback to manual scroll if preferred, but let's do simple auto */
+    .ticker-scroll-area { flex: 1; overflow-y: auto; }
 
     .feed-item {
         padding: 15px 0; border-bottom: 1px solid var(--border);
-        display: flex; flex-direction: column; gap: 4px; cursor: pointer;
-        transition: 0.2s;
+        display: flex; flex-direction: column; gap: 4px; cursor: pointer; transition: 0.2s;
     }
     .feed-item:hover { opacity: 0.7; }
     .fi-top { display: flex; justify-content: space-between; align-items: center; }
@@ -128,16 +112,10 @@
     .cat-sold { background: var(--red); }
     
     .fi-msg { font-size: 13px; line-height: 1.4; color: var(--text-dim); }
-    .fi-msg strong { color: var(--text); color: var(--accent); }
-    
-    /* NEW BADGE */
-    .badge-today {
-        background: var(--red); color: #fff; font-size: 9px; font-weight: 700; 
-        padding: 1px 5px; border-radius: 4px; margin-left: 5px; animation: pulse 1s infinite;
-    }
+    .badge-today { background: var(--red); color: #fff; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 4px; margin-left: 5px; animation: pulse 1s infinite; }
 
     /* =========================================
-       MARKET TAB LAYOUT (Grid)
+       MARKET TAB LAYOUT
        ========================================= */
     .market-grid {
         display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
@@ -147,12 +125,12 @@
 
     .market-col {
         background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-        display: flex; flex-direction: column; overflow: hidden; height: 80vh;
+        display: flex; flex-direction: column; overflow: hidden; height: 75vh;
     }
     .mc-header {
         padding: 15px; font-family: 'Teko', sans-serif; font-size: 22px; text-transform: uppercase;
         border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px;
-        background: var(--bg); position: sticky; top: 0;
+        background: var(--bg); position: sticky; top: 0; z-index:10;
     }
     .mc-list { overflow-y: auto; padding: 10px; flex: 1; }
     
@@ -163,7 +141,7 @@
     .market-card:hover { border-color: var(--accent); transform: translateY(-2px); }
     .mc-date { font-size: 11px; color: var(--text-dim); margin-bottom: 5px; display: flex; justify-content: space-between;}
 
-    /* DASHBOARD & CHARTS (Hidden initially) */
+    /* DASHBOARD */
     .dashboard-area { margin-top: 30px; }
     .selected-event-header {
       background: var(--card); border: 1px solid var(--border); padding: 20px; 
@@ -195,7 +173,7 @@
         <svg class="logo-svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M29.2695 22.999C30.3745 20.91 30.9995 18.527 30.9995 16C30.9995 7.716 24.2845 1 15.9995 1L16 16M13 1.3008C6.153 2.6898 1 8.7428 1 15.9998C1 24.2838 7.716 30.9998 16 30.9998C19.189 30.9998 22.11 30.0628 24.541 28.3658M8.5166 21.002C10.1316 23.412 12.8806 25 15.9996 25C20.9706 25 24.9996 20.971 24.9996 16C24.9996 11.029 20.9706 7 15.9996 7M13 7.5117C10.09 8.5397 7.887 10.9367 7.223 13.9997M9 16C9 14.896 8.104 14 7 14C5.896 14 5 14.896 5 16C5 17.104 5.896 18 7 18C8.104 18 9 17.104 9 16ZM28 27C28 25.896 27.104 25 26 25C24.896 25 24 25.896 24 27C24 28.104 24.896 29 26 29C27.104 29 28 28.104 28 27Z"/>
         </svg>
-        <div class="brand">HYROX <span>RADAR</span> <span class="version">v0.3</span></div>
+        <div class="brand">HYROX <span>RADAR</span> <span class="version">v0.5</span></div>
     </div>
     <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀</button>
   </div>
@@ -276,36 +254,29 @@
   </div>
 
   <div id="tab-market" class="tab-content hidden">
+      
+      <div class="search-wrapper" style="margin-bottom: 25px;">
+        <label class="input-label">FILTER UPDATES</label>
+        <input type="text" id="marketSearch" class="search-input" placeholder="Type event name to filter (e.g. Manchester)..." oninput="filterMarket(this.value)">
+      </div>
+
       <div class="market-grid">
-          
           <div class="market-col">
-              <div class="mc-header" style="color:var(--green); border-bottom-color:var(--green);">
-                  <span>⚡ RESTOCKS</span>
-              </div>
+              <div class="mc-header" style="color:var(--green); border-bottom-color:var(--green);"><span>⚡ RESTOCKS</span></div>
               <div id="marketRestock" class="mc-list"></div>
           </div>
-
           <div class="market-col">
-              <div class="mc-header" style="color:var(--orange); border-bottom-color:var(--orange);">
-                  <span>⚠️ LOW STOCK</span>
-              </div>
+              <div class="mc-header" style="color:var(--orange); border-bottom-color:var(--orange);"><span>⚠️ LOW STOCK</span></div>
               <div id="marketLow" class="mc-list"></div>
           </div>
-
           <div class="market-col">
-              <div class="mc-header" style="color:var(--blue); border-bottom-color:var(--blue);">
-                  <span>🆕 NEW EVENTS</span>
-              </div>
+              <div class="mc-header" style="color:var(--blue); border-bottom-color:var(--blue);"><span>🆕 NEW EVENTS</span></div>
               <div id="marketNew" class="mc-list"></div>
           </div>
-
           <div class="market-col">
-              <div class="mc-header" style="color:var(--red); border-bottom-color:var(--red);">
-                  <span>❌ SOLD OUT</span>
-              </div>
+              <div class="mc-header" style="color:var(--red); border-bottom-color:var(--red);"><span>❌ SOLD OUT</span></div>
               <div id="marketSold" class="mc-list"></div>
           </div>
-
       </div>
   </div>
 
@@ -337,7 +308,7 @@ let EVENT_DATA = null;
 let EVENT_FILTER = 'ALL';
 let CHARTS = { history: null, current: null };
 
-/* --- THEME --- */
+/* --- UTILS --- */
 function initTheme() {
     const saved = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', saved);
@@ -350,6 +321,18 @@ function toggleTheme() {
     localStorage.setItem('theme', next);
     document.getElementById('themeBtn').textContent = next === 'dark' ? '☀' : '☾';
     if(EVENT_DATA) renderEventCharts();
+}
+// DATE FORMATTER: YYYY-MM-DD -> DD.MM.YYYY
+function formatDateDMY(str) {
+    if(!str) return '';
+    const p = str.split('-'); // assuming YYYY-MM-DD from python
+    if(p.length !== 3) return str;
+    return `${p[2]}.${p[1]}.${p[0]}`;
+}
+function parseDate(str) { if(!str) return 0; const p=str.split('.'); return new Date(p[2],p[1]-1,p[0]); }
+function getRelativeTime(d) {
+    const diff = Math.floor((new Date() - new Date(d)) / (86400000));
+    return diff === 0 ? 'Today' : (diff === 1 ? 'Yesterday' : `${diff} days ago`);
 }
 
 /* --- INIT --- */
@@ -371,18 +354,16 @@ async function init() {
   } catch(e) { console.error(e); }
 }
 
-/* --- NEWS & TICKER SYSTEM --- */
+/* --- NEWS & MARKET LOGIC --- */
 async function loadNotifications() {
     try {
         const res = await fetch(`${CONFIG.newsFile}?t=${Date.now()}`);
         if(!res.ok) return;
         const news = await res.json();
         
-        // 1. POPULATE HOME TICKER
         const ticker = document.getElementById('homeTicker');
         ticker.innerHTML = '';
         
-        // 2. POPULATE MARKET GRID
         const mRestock = document.getElementById('marketRestock');
         const mLow = document.getElementById('marketLow');
         const mNew = document.getElementById('marketNew');
@@ -397,29 +378,24 @@ async function loadNotifications() {
         news.forEach(item => {
             if(isExcluded(item.message)) return;
 
-            // Prepare Data
             const timeStr = getRelativeTime(item.date);
+            const dateFormatted = formatDateDMY(item.date); // DD.MM.YYYY
             const isToday = timeStr === 'Today';
             let matchedEvent = EVENTS.find(e => item.message.includes(e.name));
             const clickAttr = matchedEvent ? `onclick="goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')"` : '';
-            
-            // Format HTML Content
             const msgHtml = formatNewsMessage(item.message);
             
-            // Determine Badge & Category
-            let catLabel = 'NEWS';
-            let catClass = 'cat-new';
+            let catLabel = 'NEWS'; let catClass = 'cat-new';
             if(item.type === 'restock') { catLabel = 'RESTOCK'; catClass = 'cat-restock'; }
             else if(item.type === 'low_stock') { catLabel = 'LOW'; catClass = 'cat-low'; }
             else if(item.type === 'soldout') { catLabel = 'SOLD'; catClass = 'cat-sold'; }
             
             const newBadge = isToday ? '<span class="badge-today">NEW</span>' : '';
 
-            // --- A) ADD TO HOME TICKER ---
+            // Ticker Item
             const feedItem = document.createElement('div');
             feedItem.className = 'feed-item';
             if(matchedEvent) feedItem.setAttribute('onclick', `goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')`);
-            
             feedItem.innerHTML = `
                 <div class="fi-top">
                     <span class="fi-cat ${catClass}">${catLabel}</span>
@@ -429,14 +405,17 @@ async function loadNotifications() {
             `;
             ticker.appendChild(feedItem);
 
-            // --- B) ADD TO MARKET GRID (Detailed Card) ---
+            // Market Card
             const marketCard = document.createElement('div');
             marketCard.className = 'market-card';
             if(matchedEvent) marketCard.setAttribute('onclick', `goToEvent('${matchedEvent.name.replace(/'/g, "\\'")}')`);
             
+            // Search text = raw message content for filtering
+            marketCard.setAttribute('data-search', item.message.toLowerCase());
+            
             marketCard.innerHTML = `
                 <div class="mc-date">
-                    <span>${item.date}</span>
+                    <span>${dateFormatted}</span>
                     ${newBadge}
                 </div>
                 <div class="fi-msg" style="font-size:14px;">${msgHtml}</div>
@@ -451,10 +430,21 @@ async function loadNotifications() {
     } catch(e) { console.log(e); }
 }
 
+function filterMarket(term) {
+    const q = term.toLowerCase();
+    const cards = document.querySelectorAll('.market-card');
+    cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        card.style.display = text.includes(q) ? 'block' : 'none';
+    });
+}
+
 function formatNewsMessage(msg) {
-    let f = msg.replace(/(MEN OPEN|WOMEN OPEN|MEN PRO|WOMEN PRO|DOUBLES MEN|DOUBLES WOMEN|DOUBLES MIXED)/gi, 
-        '<span style="color:var(--accent); font-weight:700;">$1</span>');
+    let f = msg;
     f = f.replace(/(\d+ tickets|\d+ left)/gi, '<span style="color:var(--text); font-weight:700;">$1</span>');
+    const catRegex = /(PRO DOUBLES WOMEN|PRO DOUBLES MEN|DOUBLES WOMEN|DOUBLES MEN|DOUBLES MIXED|MEN OPEN|WOMEN OPEN|MEN PRO|WOMEN PRO|PRO MEN|PRO WOMEN|MEN|WOMEN)/gi;
+    f = f.replace(catRegex, '<span style="color:var(--accent); font-weight:700;">$1</span>');
+    f = f.replace(/ at (.*?)(!|$)/g, ' at <span style="color:var(--text); font-weight:700;">$1</span>$2');
     return f;
 }
 
@@ -471,19 +461,16 @@ window.switchTab = (id) => {
     document.querySelectorAll('.tab-content').forEach(e => e.classList.add('hidden'));
     document.querySelectorAll('.tab-btn').forEach(e => e.classList.remove('active'));
     document.getElementById(id).classList.remove('hidden');
-    // Find button that triggered this or match by text if called manually
-    // Simple way: iterate buttons
     const btns = document.querySelectorAll('.tab-btn');
     if(id === 'tab-home') btns[0].classList.add('active');
     if(id === 'tab-market') btns[1].classList.add('active');
     if(id === 'tab-global') btns[2].classList.add('active');
 }
 
-/* --- SEARCH & EVENT LOGIC --- */
+/* --- SEARCH & EVENT --- */
 function setupSearch() {
   const input = document.getElementById('eventSearch');
   const resultsBox = document.getElementById('searchResults');
-
   const render = (list) => {
     resultsBox.innerHTML = '';
     if(list.length === 0) return;
@@ -495,7 +482,6 @@ function setupSearch() {
       resultsBox.appendChild(div);
     });
   };
-
   input.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     render(EVENTS.filter(evt => evt.name.toLowerCase().includes(term)));
@@ -508,7 +494,7 @@ function setupSearch() {
 function selectEvent(evt) {
   document.getElementById('emptyState').classList.add('hidden');
   document.getElementById('eventDashboard').classList.remove('hidden');
-  document.getElementById('eventLoader').classList.remove('hidden'); // momentarily
+  document.getElementById('eventLoader').classList.remove('hidden');
   document.getElementById('eventSearch').value = evt.name;
 
   document.getElementById('sehName').textContent = evt.name;
@@ -517,27 +503,21 @@ function selectEvent(evt) {
 
   document.getElementById('eventFilterSelect').value = 'ALL';
   EVENT_FILTER = 'ALL';
-  
   loadEventData(evt.id);
 }
 
 /* --- DATA & CHARTS --- */
-function isExcluded(t) { 
-    const n = t.toUpperCase();
-    return n.includes('RELAY') || n.includes('CHARITY') || n.includes('SPECTATOR') || n.includes('ADAPTIVE');
-}
+function isExcluded(t) { return t.toUpperCase().match(/RELAY|CHARITY|SPECTATOR|ADAPTIVE/); }
 
 async function loadEventData(eventId) {
     try {
         const res = await fetch(`${CONFIG.dataDir}/${eventId}.json?t=${Date.now()}`);
         if(!res.ok) throw new Error();
         const json = await res.json();
-
         EVENT_DATA = json.history.map(h => ({
             date: h.date,
             tickets: h.data.tickets.filter(t => !isExcluded(t.ticket))
         })).sort((a,b) => new Date(a.date) - new Date(b.date));
-
         document.getElementById('eventLoader').classList.add('hidden');
         renderEventCharts();
     } catch (e) {
@@ -552,7 +532,13 @@ function renderEventCharts() {
     const gridC = isDark ? '#333' : '#e5e7eb';
     const textC = isDark ? '#a1a1aa' : '#6b7280';
     
-    // Filters
+    // Labels now utilize the same Formatter logic but simplified for charts
+    const labels = EVENT_DATA.map(d => {
+        const f = formatDateDMY(d.date); 
+        return f.substring(0,5); // DD.MM only for charts to save space
+    }); 
+    
+    // ... Filters & Datasets Logic (Same as before) ...
     const filters = {
         'ALL': () => true,
         'MEN_OPEN': (n) => n.includes('MEN') && !n.includes('WOMEN') && !n.includes('PRO') && !n.includes('DOUBLES'),
@@ -565,9 +551,7 @@ function renderEventCharts() {
     };
     const check = filters[EVENT_FILTER] || filters['ALL'];
     
-    const labels = EVENT_DATA.map(d => d.date.substring(5).replace('-','.')); 
     let datasets = [];
-    
     if(EVENT_FILTER === 'ALL') {
          const groups = [
             { name: 'Men Open', c: '#3b82f6', r: filters['MEN_OPEN'] },
@@ -593,7 +577,6 @@ function renderEventCharts() {
         });
     }
 
-    // Chart 1: History
     const ctxH = document.getElementById('chartHistory').getContext('2d');
     if(CHARTS.history) CHARTS.history.destroy();
     CHARTS.history = new Chart(ctxH, {
@@ -605,7 +588,6 @@ function renderEventCharts() {
         }
     });
 
-    // Chart 2: Current
     const latest = EVENT_DATA[EVENT_DATA.length-1];
     const currentItems = latest.tickets.filter(t => check(t.ticket.toUpperCase())).sort((a,b)=>b.stock-a.stock);
     const ctxC = document.getElementById('chartCurrent').getContext('2d');
@@ -624,11 +606,7 @@ function renderEventCharts() {
 }
 
 window.setEventFilter = (val) => { EVENT_FILTER = val; renderEventCharts(); }
-function parseDate(str) { if(!str) return 0; const p=str.split('.'); return new Date(p[2],p[1]-1,p[0]); }
-function getRelativeTime(d) {
-    const diff = Math.floor((new Date() - new Date(d)) / (86400000));
-    return diff === 0 ? 'Today' : (diff === 1 ? 'Yesterday' : `${diff} days ago`);
-}
+
 function populateCategoryDropdown() {
     const sel = document.getElementById('categorySelector');
     CATEGORIES.forEach(c => { const o=document.createElement('option'); o.value=c.id; o.textContent=c.name; sel.appendChild(o); });
