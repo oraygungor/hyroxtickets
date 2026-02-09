@@ -1,9 +1,111 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | SUNDAY at BYD HYROX Bangkok!",
-    "date": "2026-02-08",
+    "message": "RESTOCK: 1 tickets released for PRO WOMEN | SUNDAY at BYD HYROX Bangkok!",
+    "date": "2026-02-09",
     "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Saturday at The Feed HYROX Las Vegas!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Málaga!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for WOMEN | Friday at HYROX Málaga!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday at Creapure® HYROX Houston!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED 混合雙人組 | SATURDAY at HYROX Taipei!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO WOMEN 女子菁英組 | SATURDAY at HYROX Taipei!",
+    "date": "2026-02-09",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for PRO MEN | Friday at Virgin Active HYROX Cape Town 25/26!",
+    "date": "2026-02-09",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for ADAPTIVE MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-02-09",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for PRO WOMEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-02-09",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES WOMEN | SUNDAY at BYD HYROX Bangkok is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | SATURDAY at BYD HYROX Bangkok is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Monday at HYROX Cardiff is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO WOMEN | Friday at HYROX Lisboa is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at Virgin Active HYROX Cape Town 25/26 is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Friday at Original Source HYROX London is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Wednesday at Original Source HYROX London is gone.",
+    "date": "2026-02-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES WOMEN | Saturday at Legendz HYROX Miami Beach is gone.",
+    "date": "2026-02-09",
+    "priority": 0
   },
   {
     "type": "restock",
@@ -13,110 +115,8 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 4 tickets released for PRO DOUBLES MEN | Saturday at MARTES SPORT HYROX KATOWICE!",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | SUNDAY at BYD HYROX Bangkok!",
     "date": "2026-02-08",
     "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Wednesday at Original Source HYROX London!",
-    "date": "2026-02-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at Original Source HYROX London!",
-    "date": "2026-02-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 5 tickets released for DOUBLES MIXED | Saturday at HYROX Glasgow!",
-    "date": "2026-02-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday at Legendz HYROX Miami Beach!",
-    "date": "2026-02-08",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Saturday at HYROX Wuhan!",
-    "date": "2026-02-08",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for PRO MEN | Saturday at MARTES SPORT HYROX KATOWICE!",
-    "date": "2026-02-08",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Tuesday at Original Source HYROX London!",
-    "date": "2026-02-08",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at HYROX WARSAW is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | FRIDAY at BYD HYROX Bangkok is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Thursday at HYROX Rotterdam is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Wednesday at Original Source HYROX London is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Thursday at HYROX Glasgow is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at HYROX Mechelen is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Friday at Cigna Healthcare HYROX Hong Kong is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Friday at Cigna Healthcare HYROX Hong Kong is gone.",
-    "date": "2026-02-08",
-    "priority": 0
-  },
-  {
-    "type": "new_event",
-    "message": "NEW EVENT: MAYBELLINE HYROX PARIS GRAND PALAIS 25/26 added to calendar.",
-    "date": "2026-02-07",
-    "priority": 1
-  },
-  {
-    "type": "new_event",
-    "message": "NEW EVENT: HYROX WARSAW added to calendar.",
-    "date": "2026-02-07",
-    "priority": 1
   }
 ]
