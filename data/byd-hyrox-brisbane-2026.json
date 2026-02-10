@@ -149,6 +149,55 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-02-10",
+      "fetched_at": "2026-02-10T08:21:41.375082+01:00",
+      "total_stock": 6,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Monday",
+            "stock": 100
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Monday",
+            "stock": 300
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Monday",
+            "stock": 398
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "CHARITY | HYROX DOUBLES WOMEN | Monday",
+            "stock": 8
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "CHARITY | HYROX DOUBLES MIXED | Monday",
+            "stock": 13
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "CHARITY | HYROX DOUBLES MEN | Monday",
+            "stock": 16
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Monday": 100,
+            "HYROX DOUBLES WOMEN | Monday": 300,
+            "HYROX DOUBLES MEN | Monday": 398,
+            "CHARITY | HYROX DOUBLES WOMEN | Monday": 8,
+            "CHARITY | HYROX DOUBLES MIXED | Monday": 13,
+            "CHARITY | HYROX DOUBLES MEN | Monday": 16
+          }
+        }
+      }
     }
   ]
 }
