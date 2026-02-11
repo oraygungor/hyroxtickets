@@ -419,8 +419,8 @@
     },
     {
       "date": "2026-02-11",
-      "fetched_at": "2026-02-11T10:40:26.734535+01:00",
-      "total_stock": 9,
+      "fetched_at": "2026-02-11T20:41:58.081859+01:00",
+      "total_stock": 8,
       "data": {
         "tickets": [
           {
@@ -435,13 +435,8 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX WOMEN | Friday",
-            "stock": 103
+            "stock": 102
           },
           {
             "parkur": "Doubles",
@@ -451,37 +446,36 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Friday",
-            "stock": 257
+            "stock": 254
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 131
+            "stock": 126
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Friday",
-            "stock": 93
+            "stock": 91
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Friday",
-            "stock": 180
+            "stock": 177
           }
         ],
         "by_parkur": {
           "Singles": {
             "HYROX ADAPTIVE WOMEN | Sunday": 8,
             "HYROX ADAPTIVE MEN | Saturday": 1,
-            "HYROX PRO MEN | Saturday": 1,
-            "HYROX WOMEN | Friday": 103,
-            "HYROX PRO MEN | Friday": 131,
-            "HYROX MEN | Friday": 180
+            "HYROX WOMEN | Friday": 102,
+            "HYROX PRO MEN | Friday": 126,
+            "HYROX MEN | Friday": 177
           },
           "Doubles": {
             "HYROX DOUBLES WOMEN | Friday": 68,
-            "HYROX DOUBLES MIXED | Friday": 257,
-            "HYROX PRO DOUBLES MEN | Friday": 93
+            "HYROX DOUBLES MIXED | Friday": 254,
+            "HYROX PRO DOUBLES MEN | Friday": 91
           }
         }
       }
