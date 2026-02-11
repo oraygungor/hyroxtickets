@@ -511,14 +511,14 @@
     },
     {
       "date": "2026-02-11",
-      "fetched_at": "2026-02-11T08:18:45.091217+01:00",
+      "fetched_at": "2026-02-11T10:40:33.067502+01:00",
       "total_stock": 18,
       "data": {
         "tickets": [
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 8
+            "stock": 7
           },
           {
             "parkur": "Singles",
@@ -563,7 +563,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 134
+            "stock": 133
           },
           {
             "parkur": "Singles",
@@ -583,7 +583,7 @@
           {
             "parkur": "Company Challenge",
             "ticket": "HYROX DOUBLES MEN | TEAM 1 | MEMBER 1",
-            "stock": 50
+            "stock": 49
           },
           {
             "parkur": "Company Challenge",
@@ -593,7 +593,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 196
+            "stock": 194
           },
           {
             "parkur": "Singles",
@@ -608,7 +608,7 @@
         ],
         "by_parkur": {
           "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Saturday": 8
+            "HYROX PRO DOUBLES WOMEN | Saturday": 7
           },
           "Singles": {
             "HYROX ADAPTIVE MEN | Saturday": 8,
@@ -619,16 +619,16 @@
             "CHARITY | HYROX PRO MEN | Friday": 16,
             "CHARITY | HYROX WOMEN | Sunday": 56,
             "HYROX ADAPTIVE MEN | Wednesday": 6,
-            "HYROX WOMEN | Wednesday": 134,
+            "HYROX WOMEN | Wednesday": 133,
             "HYROX ADAPTIVE WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Thursday": 10,
-            "HYROX PRO WOMEN | Friday": 196,
+            "HYROX PRO WOMEN | Friday": 194,
             "HYROX ADAPTIVE MEN | Friday": 10,
             "HYROX ADAPTIVE WOMEN | Friday": 10
           },
           "Company Challenge": {
             "HYROX DOUBLES WOMEN | TEAM 1 | MEMBER 1": 32,
-            "HYROX DOUBLES MEN | TEAM 1 | MEMBER 1": 50,
+            "HYROX DOUBLES MEN | TEAM 1 | MEMBER 1": 49,
             "HYROX DOUBLES MIXED | TEAM 1 | MEMBER 1": 52
           }
         }
