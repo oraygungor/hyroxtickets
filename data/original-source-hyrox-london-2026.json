@@ -560,14 +560,14 @@
     },
     {
       "date": "2026-02-12",
-      "fetched_at": "2026-02-12T13:45:14.119349+01:00",
-      "total_stock": 17,
+      "fetched_at": "2026-02-12T19:51:43.788552+01:00",
+      "total_stock": 9,
       "data": {
         "tickets": [
           {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Thursday",
-            "stock": 5
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday",
+            "stock": 65
           },
           {
             "parkur": "Singles",
@@ -586,91 +586,43 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Wednesday",
-            "stock": 9
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
             "stock": 20
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE WOMEN | Wednesday",
-            "stock": 6
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE WOMEN | Thursday",
-            "stock": 8
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Friday",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 111
+            "stock": 83
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Tuesday",
-            "stock": 5
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE WOMEN | Tuesday",
-            "stock": 4
+            "ticket": "HYROX WOMEN | Friday",
+            "stock": 73
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 49
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 15
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday",
-            "stock": 64
+            "stock": 28
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
             "stock": 1
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE WOMEN | Friday",
-            "stock": 6
           }
         ],
         "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Saturday": 65,
+            "HYROX PRO DOUBLES WOMEN | Saturday": 28,
+            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 1
+          },
           "Singles": {
-            "HYROX ADAPTIVE MEN | Thursday": 5,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 15,
             "HYROX WOMEN | Thursday": 55,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 25,
-            "HYROX ADAPTIVE MEN | Wednesday": 9,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 20,
-            "HYROX ADAPTIVE WOMEN | Wednesday": 6,
-            "HYROX ADAPTIVE WOMEN | Thursday": 8,
-            "HYROX PRO MEN | Friday": 1,
-            "HYROX PRO WOMEN | Friday": 111,
-            "HYROX ADAPTIVE MEN | Tuesday": 5,
-            "HYROX ADAPTIVE WOMEN | Tuesday": 4,
-            "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday": 64,
-            "HYROX ADAPTIVE WOMEN | Friday": 6
-          },
-          "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Saturday": 49,
-            "HYROX PRO DOUBLES MEN | Saturday": 15,
-            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 1
+            "HYROX PRO WOMEN | Friday": 83,
+            "HYROX WOMEN | Friday": 73
           }
         }
       }
