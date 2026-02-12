@@ -380,14 +380,14 @@
     },
     {
       "date": "2026-02-12",
-      "fetched_at": "2026-02-12T10:35:32.606817+01:00",
+      "fetched_at": "2026-02-12T13:45:06.985268+01:00",
       "total_stock": 10,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 13
+            "stock": 12
           },
           {
             "parkur": "Doubles",
@@ -397,7 +397,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Friday",
-            "stock": 38
+            "stock": 37
           },
           {
             "parkur": "Doubles",
@@ -412,12 +412,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Saturday",
-            "stock": 17
+            "stock": 16
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN | Friday",
-            "stock": 7
+            "stock": 6
           },
           {
             "parkur": "Singles",
@@ -432,23 +432,23 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Saturday",
-            "stock": 41
+            "stock": 40
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO MEN | Friday": 13,
-            "HYROX ADAPTIVE MEN | Friday": 7,
+            "HYROX PRO MEN | Friday": 12,
+            "HYROX ADAPTIVE MEN | Friday": 6,
             "HYROX ADAPTIVE WOMEN | Saturday": 8,
             "HYROX PRO WOMEN | Friday": 25,
-            "HYROX WOMEN | Saturday": 41
+            "HYROX WOMEN | Saturday": 40
           },
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Friday": 37,
-            "HYROX DOUBLES MIXED | Friday": 38,
+            "HYROX DOUBLES MIXED | Friday": 37,
             "HYROX PRO DOUBLES MEN | Friday": 38,
             "HYROX DOUBLES WOMEN | Saturday": 16,
-            "HYROX DOUBLES MEN | Saturday": 17
+            "HYROX DOUBLES MEN | Saturday": 16
           }
         }
       }

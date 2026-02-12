@@ -308,8 +308,8 @@
     },
     {
       "date": "2026-02-12",
-      "fetched_at": "2026-02-12T10:35:34.108531+01:00",
-      "total_stock": 7,
+      "fetched_at": "2026-02-12T13:45:08.234082+01:00",
+      "total_stock": 8,
       "data": {
         "tickets": [
           {
@@ -325,12 +325,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 13
+            "stock": 12
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
+            "stock": 1
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 28
+            "stock": 26
           },
           {
             "parkur": "Doubles",
@@ -340,7 +345,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 17
+            "stock": 16
           },
           {
             "parkur": "Singles",
@@ -352,12 +357,13 @@
           "Singles": {
             "HYROX PRO MEN | Saturday": 8,
             "HYROX PRO WOMEN | Saturday": 3,
-            "HYROX WOMEN | Sunday": 17,
+            "HYROX WOMEN | Sunday": 16,
             "HYROX MEN | Sunday": 15
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Sunday": 13,
-            "HYROX DOUBLES MIXED | Saturday": 28,
+            "HYROX DOUBLES WOMEN | Sunday": 12,
+            "HYROX PRO DOUBLES MEN | Saturday": 1,
+            "HYROX DOUBLES MIXED | Saturday": 26,
             "HYROX DOUBLES MEN | Sunday": 49
           }
         }
