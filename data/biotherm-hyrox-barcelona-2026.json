@@ -1,0 +1,52 @@
+{
+  "event_id": "biotherm-hyrox-barcelona-2026",
+  "event_name": "Biotherm HYROX Barcelona",
+  "url": "https://spain.hyrox.com/checkout/hyrox-barcelona-season-25-26-copy-9tiy2w",
+  "history": [
+    {
+      "date": "2026-02-13",
+      "fetched_at": "2026-02-13T08:44:40.934455+01:00",
+      "total_stock": 5,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
+            "stock": 270
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Friday",
+            "stock": 141
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 337
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Thursday",
+            "stock": 208
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN | Saturday": 270
+          },
+          "Singles": {
+            "HYROX PRO WOMEN | Friday": 141,
+            "HYROX ADAPTIVE WOMEN | Sunday": 1,
+            "HYROX WOMEN | Sunday": 337,
+            "HYROX WOMEN | Thursday": 208
+          }
+        }
+      }
+    }
+  ]
+}
