@@ -527,14 +527,14 @@
     },
     {
       "date": "2026-02-13",
-      "fetched_at": "2026-02-13T13:39:54.603268+01:00",
+      "fetched_at": "2026-02-13T19:36:13.729337+01:00",
       "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 308
+            "stock": 306
           },
           {
             "parkur": "SINGLES",
@@ -549,7 +549,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 126
+            "stock": 124
           },
           {
             "parkur": "SINGLES",
@@ -574,7 +574,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "CHARITY | HYROX WOMEN | Friday",
-            "stock": 6
+            "stock": 7
           },
           {
             "parkur": "SINGLES",
@@ -584,7 +584,7 @@
           {
             "parkur": "DOUBLES",
             "ticket": "HYROX DOUBLES WOMEN PRO | Saturday",
-            "stock": 41
+            "stock": 40
           },
           {
             "parkur": "DOUBLES",
@@ -594,19 +594,19 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "HYROX WOMEN | Wednesday": 308,
+            "HYROX WOMEN | Wednesday": 306,
             "CHARITY | HYROX WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Wednesday": 10,
-            "HYROX WOMEN | Thursday": 126,
+            "HYROX WOMEN | Thursday": 124,
             "CHARITY | HYROX WOMEN | Thursday": 12,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
             "HYROX WOMEN PRO | Friday": 160,
             "CHARITY | HYROX WOMEN PRO | Friday": 30,
-            "CHARITY | HYROX WOMEN | Friday": 6,
+            "CHARITY | HYROX WOMEN | Friday": 7,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "DOUBLES": {
-            "HYROX DOUBLES WOMEN PRO | Saturday": 41,
+            "HYROX DOUBLES WOMEN PRO | Saturday": 40,
             "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 18
           }
         }
