@@ -1319,8 +1319,8 @@
     },
     {
       "date": "2026-02-13",
-      "fetched_at": "2026-02-13T10:31:50.545873+01:00",
-      "total_stock": 33,
+      "fetched_at": "2026-02-13T13:39:45.903460+01:00",
+      "total_stock": 34,
       "data": {
         "tickets": [
           {
@@ -1331,7 +1331,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 88
+            "stock": 87
           },
           {
             "parkur": "Doubles",
@@ -1410,6 +1410,11 @@
           },
           {
             "parkur": "Singles",
+            "ticket": "HYROX MEN | Saturday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Saturday",
             "stock": 37
           },
@@ -1451,7 +1456,7 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Thursday",
-            "stock": 9
+            "stock": 8
           },
           {
             "parkur": "Singles",
@@ -1492,7 +1497,7 @@
         "by_parkur": {
           "Doubles": {
             "HYROX DOUBLES MIXED | Sunday": 162,
-            "HYROX PRO DOUBLES MEN | Saturday": 88,
+            "HYROX PRO DOUBLES MEN | Saturday": 87,
             "HYROX DOUBLES WOMEN | Saturday": 35,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 12,
             "CHARITY | HYROX DOUBLES MIXED | Sunday": 25,
@@ -1519,12 +1524,13 @@
             "HYROX WOMEN | Sunday": 285,
             "CHARITY | HYROX WOMEN | Sunday": 26,
             "HYROX ADAPTIVE WOMEN | Sunday": 8,
+            "HYROX MEN | Saturday": 1,
             "CHARITY | HYROX MEN | Saturday": 37,
             "HYROX ADAPTIVE MEN | Saturday": 4,
             "HYROX WOMEN | Thursday": 135,
             "CHARITY | HYROX WOMEN | Thursday": 13,
             "HYROX ADAPTIVE WOMEN | Thursday": 10,
-            "CHARITY | HYROX MEN | Thursday": 9,
+            "CHARITY | HYROX MEN | Thursday": 8,
             "HYROX ADAPTIVE MEN | Thursday": 9
           }
         }
