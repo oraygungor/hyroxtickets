@@ -614,8 +614,8 @@
     },
     {
       "date": "2026-02-14",
-      "fetched_at": "2026-02-14T13:30:02.309962+01:00",
-      "total_stock": 8,
+      "fetched_at": "2026-02-14T19:22:57.550152+01:00",
+      "total_stock": 9,
       "data": {
         "tickets": [
           {
@@ -630,8 +630,13 @@
           },
           {
             "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "HYROX WOMEN | Friday",
-            "stock": 93
+            "stock": 92
           },
           {
             "parkur": "Doubles",
@@ -641,36 +646,37 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Friday",
-            "stock": 237
+            "stock": 236
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 121
+            "stock": 119
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Friday",
-            "stock": 85
+            "stock": 84
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Friday",
-            "stock": 144
+            "stock": 139
           }
         ],
         "by_parkur": {
           "Singles": {
             "HYROX ADAPTIVE WOMEN | Sunday": 8,
             "HYROX ADAPTIVE MEN | Saturday": 1,
-            "HYROX WOMEN | Friday": 93,
-            "HYROX PRO MEN | Friday": 121,
-            "HYROX MEN | Friday": 144
+            "HYROX WOMEN | Sunday": 1,
+            "HYROX WOMEN | Friday": 92,
+            "HYROX PRO MEN | Friday": 119,
+            "HYROX MEN | Friday": 139
           },
           "Doubles": {
             "HYROX DOUBLES WOMEN | Friday": 58,
-            "HYROX DOUBLES MIXED | Friday": 237,
-            "HYROX PRO DOUBLES MEN | Friday": 85
+            "HYROX DOUBLES MIXED | Friday": 236,
+            "HYROX PRO DOUBLES MEN | Friday": 84
           }
         }
       }

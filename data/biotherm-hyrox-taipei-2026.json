@@ -80,8 +80,8 @@
     },
     {
       "date": "2026-02-14",
-      "fetched_at": "2026-02-14T13:30:24.880412+01:00",
-      "total_stock": 11,
+      "fetched_at": "2026-02-14T19:23:16.292522+01:00",
+      "total_stock": 9,
       "data": {
         "tickets": [
           {
@@ -90,19 +90,9 @@
             "stock": 8
           },
           {
-            "parkur": "Single Division 個人參賽",
-            "ticket": "HYROX MEN 男子公開組 | SATURDAY",
-            "stock": 1
-          },
-          {
             "parkur": "Double Division 雙人參賽",
             "ticket": "HYROX PRO DOUBLES WOMEN 女子菁英雙人組 | SATURDAY",
             "stock": 15
-          },
-          {
-            "parkur": "Double Division 雙人參賽",
-            "ticket": "HYROX DOUBLES MEN 男子公開雙人組 | SATURDAY",
-            "stock": 1
           },
           {
             "parkur": "Single Division 個人參賽",
@@ -117,7 +107,7 @@
           {
             "parkur": "Single Division 個人參賽",
             "ticket": "HYROX MEN 男子公開組 | SUNDAY",
-            "stock": 133
+            "stock": 132
           },
           {
             "parkur": "Single Division 個人參賽",
@@ -127,7 +117,7 @@
           {
             "parkur": "Double Division 雙人參賽",
             "ticket": "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY",
-            "stock": 75
+            "stock": 74
           },
           {
             "parkur": "Double Division 雙人參賽",
@@ -143,16 +133,14 @@
         "by_parkur": {
           "Single Division 個人參賽": {
             "HYROX ADAPTIVE WOMEN 身障女子組 | SATURDAY": 8,
-            "HYROX MEN 男子公開組 | SATURDAY": 1,
             "HYROX WOMEN 女子公開組 | SUNDAY": 63,
             "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY": 5,
-            "HYROX MEN 男子公開組 | SUNDAY": 133,
+            "HYROX MEN 男子公開組 | SUNDAY": 132,
             "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY": 4
           },
           "Double Division 雙人參賽": {
             "HYROX PRO DOUBLES WOMEN 女子菁英雙人組 | SATURDAY": 15,
-            "HYROX DOUBLES MEN 男子公開雙人組 | SATURDAY": 1,
-            "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY": 75,
+            "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY": 74,
             "HYROX DOUBLES MEN 男子公開雙人組 | SUNDAY": 195,
             "HYROX DOUBLES MIXED 混合雙人組 | SUNDAY": 196
           }
