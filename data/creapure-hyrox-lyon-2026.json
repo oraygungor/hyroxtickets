@@ -701,14 +701,14 @@
     },
     {
       "date": "2026-02-15",
-      "fetched_at": "2026-02-15T13:32:20.757350+01:00",
+      "fetched_at": "2026-02-15T19:25:14.150143+01:00",
       "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 302
+            "stock": 300
           },
           {
             "parkur": "SINGLES",
@@ -723,7 +723,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 114
+            "stock": 105
           },
           {
             "parkur": "SINGLES",
@@ -738,7 +738,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN PRO | Friday",
-            "stock": 154
+            "stock": 153
           },
           {
             "parkur": "SINGLES",
@@ -758,7 +758,7 @@
           {
             "parkur": "DOUBLES",
             "ticket": "HYROX DOUBLES WOMEN PRO | Saturday",
-            "stock": 38
+            "stock": 37
           },
           {
             "parkur": "DOUBLES",
@@ -768,19 +768,19 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "HYROX WOMEN | Wednesday": 302,
+            "HYROX WOMEN | Wednesday": 300,
             "CHARITY | HYROX WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Wednesday": 10,
-            "HYROX WOMEN | Thursday": 114,
+            "HYROX WOMEN | Thursday": 105,
             "CHARITY | HYROX WOMEN | Thursday": 12,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
-            "HYROX WOMEN PRO | Friday": 154,
+            "HYROX WOMEN PRO | Friday": 153,
             "CHARITY | HYROX WOMEN PRO | Friday": 30,
             "CHARITY | HYROX WOMEN | Friday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "DOUBLES": {
-            "HYROX DOUBLES WOMEN PRO | Saturday": 38,
+            "HYROX DOUBLES WOMEN PRO | Saturday": 37,
             "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 18
           }
         }
