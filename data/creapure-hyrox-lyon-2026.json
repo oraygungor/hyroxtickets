@@ -788,14 +788,14 @@
     },
     {
       "date": "2026-02-16",
-      "fetched_at": "2026-02-16T10:40:12.966073+01:00",
+      "fetched_at": "2026-02-16T13:43:15.618172+01:00",
       "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 296
+            "stock": 293
           },
           {
             "parkur": "SINGLES",
@@ -810,7 +810,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 102
+            "stock": 97
           },
           {
             "parkur": "SINGLES",
@@ -825,7 +825,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN PRO | Friday",
-            "stock": 151
+            "stock": 152
           },
           {
             "parkur": "SINGLES",
@@ -845,7 +845,7 @@
           {
             "parkur": "DOUBLES",
             "ticket": "HYROX DOUBLES WOMEN PRO | Saturday",
-            "stock": 37
+            "stock": 36
           },
           {
             "parkur": "DOUBLES",
@@ -855,19 +855,19 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "HYROX WOMEN | Wednesday": 296,
+            "HYROX WOMEN | Wednesday": 293,
             "CHARITY | HYROX WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Wednesday": 10,
-            "HYROX WOMEN | Thursday": 102,
+            "HYROX WOMEN | Thursday": 97,
             "CHARITY | HYROX WOMEN | Thursday": 12,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
-            "HYROX WOMEN PRO | Friday": 151,
+            "HYROX WOMEN PRO | Friday": 152,
             "CHARITY | HYROX WOMEN PRO | Friday": 30,
             "CHARITY | HYROX WOMEN | Friday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "DOUBLES": {
-            "HYROX DOUBLES WOMEN PRO | Saturday": 37,
+            "HYROX DOUBLES WOMEN PRO | Saturday": 36,
             "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 18
           }
         }
