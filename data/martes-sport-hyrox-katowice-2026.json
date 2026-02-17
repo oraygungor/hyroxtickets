@@ -587,57 +587,51 @@
     },
     {
       "date": "2026-02-17",
-      "fetched_at": "2026-02-17T13:42:27.701367+01:00",
-      "total_stock": 7,
+      "fetched_at": "2026-02-17T19:45:44.658571+01:00",
+      "total_stock": 6,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 1
+            "stock": 2
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 1
+            "stock": 3
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 12
+            "stock": 11
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 25
+            "stock": 24
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 47
+            "stock": 46
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 19
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX MEN | Sunday",
-            "stock": 4
+            "stock": 18
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO MEN | Saturday": 1,
-            "HYROX PRO WOMEN | Saturday": 1,
-            "HYROX WOMEN | Sunday": 19,
-            "HYROX MEN | Sunday": 4
+            "HYROX PRO MEN | Saturday": 2,
+            "HYROX PRO WOMEN | Saturday": 3,
+            "HYROX WOMEN | Sunday": 18
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Sunday": 12,
-            "HYROX DOUBLES MIXED | Saturday": 25,
-            "HYROX DOUBLES MEN | Sunday": 47
+            "HYROX DOUBLES WOMEN | Sunday": 11,
+            "HYROX DOUBLES MIXED | Saturday": 24,
+            "HYROX DOUBLES MEN | Sunday": 46
           }
         }
       }

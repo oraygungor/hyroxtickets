@@ -695,14 +695,14 @@
     },
     {
       "date": "2026-02-17",
-      "fetched_at": "2026-02-17T13:42:46.412943+01:00",
+      "fetched_at": "2026-02-17T19:46:01.018890+01:00",
       "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY",
-            "stock": 3
+            "stock": 4
           },
           {
             "parkur": "Singles",
@@ -712,12 +712,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN 남자 오픈 | FRIDAY",
-            "stock": 462
+            "stock": 460
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN 여자 오픈 | FRIDAY",
-            "stock": 90
+            "stock": 91
           },
           {
             "parkur": "Singles",
@@ -732,7 +732,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN 더블 남자 | FRIDAY",
-            "stock": 309
+            "stock": 305
           },
           {
             "parkur": "Doubles",
@@ -742,22 +742,22 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY",
-            "stock": 320
+            "stock": 319
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY": 3,
+            "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY": 4,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY": 6,
-            "HYROX MEN 남자 오픈 | FRIDAY": 462,
-            "HYROX WOMEN 여자 오픈 | FRIDAY": 90,
+            "HYROX MEN 남자 오픈 | FRIDAY": 460,
+            "HYROX WOMEN 여자 오픈 | FRIDAY": 91,
             "HYROX ADAPTIVE MEN 어뎁티브 남자 | FRIDAY": 4,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | FRIDAY": 4
           },
           "Doubles": {
-            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 309,
+            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 305,
             "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY": 378,
-            "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY": 320
+            "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY": 319
           }
         }
       }
