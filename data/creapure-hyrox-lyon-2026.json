@@ -875,14 +875,14 @@
     },
     {
       "date": "2026-02-17",
-      "fetched_at": "2026-02-17T08:44:30.006789+01:00",
+      "fetched_at": "2026-02-17T10:36:05.910647+01:00",
       "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 288
+            "stock": 283
           },
           {
             "parkur": "SINGLES",
@@ -897,7 +897,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 82
+            "stock": 81
           },
           {
             "parkur": "SINGLES",
@@ -912,7 +912,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN PRO | Friday",
-            "stock": 152
+            "stock": 151
           },
           {
             "parkur": "SINGLES",
@@ -932,7 +932,7 @@
           {
             "parkur": "DOUBLES",
             "ticket": "HYROX DOUBLES WOMEN PRO | Saturday",
-            "stock": 32
+            "stock": 34
           },
           {
             "parkur": "DOUBLES",
@@ -942,19 +942,19 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "HYROX WOMEN | Wednesday": 288,
+            "HYROX WOMEN | Wednesday": 283,
             "CHARITY | HYROX WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Wednesday": 10,
-            "HYROX WOMEN | Thursday": 82,
+            "HYROX WOMEN | Thursday": 81,
             "CHARITY | HYROX WOMEN | Thursday": 12,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
-            "HYROX WOMEN PRO | Friday": 152,
+            "HYROX WOMEN PRO | Friday": 151,
             "CHARITY | HYROX WOMEN PRO | Friday": 30,
             "CHARITY | HYROX WOMEN | Friday": 5,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "DOUBLES": {
-            "HYROX DOUBLES WOMEN PRO | Saturday": 32,
+            "HYROX DOUBLES WOMEN PRO | Saturday": 34,
             "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 18
           }
         }

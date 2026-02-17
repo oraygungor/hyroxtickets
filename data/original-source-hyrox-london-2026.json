@@ -923,24 +923,19 @@
     },
     {
       "date": "2026-02-17",
-      "fetched_at": "2026-02-17T08:44:16.817327+01:00",
-      "total_stock": 8,
+      "fetched_at": "2026-02-17T10:35:53.370403+01:00",
+      "total_stock": 7,
       "data": {
         "tickets": [
           {
-            "parkur": "Doubles",
-            "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 51
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Thursday",
+            "stock": 24
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
             "stock": 14
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Thursday",
-            "stock": 59
           },
           {
             "parkur": "Singles",
@@ -955,12 +950,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 81
+            "stock": 50
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Friday",
-            "stock": 63
+            "stock": 60
           },
           {
             "parkur": "Doubles",
@@ -969,17 +964,16 @@
           }
         ],
         "by_parkur": {
-          "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 51,
-            "HYROX PRO DOUBLES WOMEN | Saturday": 30
-          },
           "Singles": {
+            "HYROX MEN | Thursday": 24,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 14,
-            "HYROX WOMEN | Thursday": 59,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 25,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 20,
-            "HYROX PRO WOMEN | Friday": 81,
-            "HYROX WOMEN | Friday": 63
+            "HYROX PRO WOMEN | Friday": 50,
+            "HYROX WOMEN | Friday": 60
+          },
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN | Saturday": 30
           }
         }
       }
