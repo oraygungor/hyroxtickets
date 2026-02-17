@@ -695,14 +695,14 @@
     },
     {
       "date": "2026-02-17",
-      "fetched_at": "2026-02-17T10:36:04.502356+01:00",
+      "fetched_at": "2026-02-17T13:42:46.412943+01:00",
       "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY",
-            "stock": 4
+            "stock": 3
           },
           {
             "parkur": "Singles",
@@ -712,12 +712,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN 남자 오픈 | FRIDAY",
-            "stock": 463
+            "stock": 462
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN 여자 오픈 | FRIDAY",
-            "stock": 92
+            "stock": 90
           },
           {
             "parkur": "Singles",
@@ -732,32 +732,32 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN 더블 남자 | FRIDAY",
-            "stock": 310
+            "stock": 309
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY",
-            "stock": 380
+            "stock": 378
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY",
-            "stock": 321
+            "stock": 320
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY": 4,
+            "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY": 3,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY": 6,
-            "HYROX MEN 남자 오픈 | FRIDAY": 463,
-            "HYROX WOMEN 여자 오픈 | FRIDAY": 92,
+            "HYROX MEN 남자 오픈 | FRIDAY": 462,
+            "HYROX WOMEN 여자 오픈 | FRIDAY": 90,
             "HYROX ADAPTIVE MEN 어뎁티브 남자 | FRIDAY": 4,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | FRIDAY": 4
           },
           "Doubles": {
-            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 310,
-            "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY": 380,
-            "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY": 321
+            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 309,
+            "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY": 378,
+            "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY": 320
           }
         }
       }
