@@ -635,6 +635,81 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-02-18",
+      "fetched_at": "2026-02-18T08:45:27.404964+01:00",
+      "total_stock": 10,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | SATURDAY",
+            "stock": 3
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | SUNDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN | SUNDAY",
+            "stock": 8
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | SUNDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | SATURDAY",
+            "stock": 2
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | FRIDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | FRIDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | SUNDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | SUNDAY",
+            "stock": 7
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | SUNDAY",
+            "stock": 2
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | SATURDAY": 3,
+            "HYROX PRO WOMEN | SUNDAY": 1,
+            "HYROX PRO MEN | SUNDAY": 8,
+            "HYROX ADAPTIVE WOMEN | SATURDAY": 2,
+            "HYROX ADAPTIVE MEN | FRIDAY": 1,
+            "HYROX ADAPTIVE MEN | SUNDAY": 2
+          },
+          "Doubles": {
+            "HYROX DOUBLES MEN | SUNDAY": 1,
+            "HYROX DOUBLES WOMEN | FRIDAY": 1,
+            "HYROX PRO DOUBLES WOMEN | SUNDAY": 1,
+            "HYROX PRO DOUBLES MEN | SUNDAY": 7
+          }
+        }
+      }
     }
   ]
 }
