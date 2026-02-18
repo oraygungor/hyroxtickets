@@ -368,10 +368,15 @@
     },
     {
       "date": "2026-02-18",
-      "fetched_at": "2026-02-18T13:42:49.016204+01:00",
-      "total_stock": 11,
+      "fetched_at": "2026-02-18T19:41:55.628866+01:00",
+      "total_stock": 12,
       "data": {
         "tickets": [
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX WOMEN 女子公開組 | SATURDAY",
+            "stock": 2
+          },
           {
             "parkur": "Single Division 個人參賽",
             "ticket": "HYROX ADAPTIVE WOMEN 身障女子組 | SATURDAY",
@@ -380,7 +385,7 @@
           {
             "parkur": "Single Division 個人參賽",
             "ticket": "HYROX MEN 男子公開組 | SATURDAY",
-            "stock": 2
+            "stock": 1
           },
           {
             "parkur": "Double Division 雙人參賽",
@@ -405,7 +410,7 @@
           {
             "parkur": "Single Division 個人參賽",
             "ticket": "HYROX MEN 男子公開組 | SUNDAY",
-            "stock": 123
+            "stock": 122
           },
           {
             "parkur": "Single Division 個人參賽",
@@ -430,11 +435,12 @@
         ],
         "by_parkur": {
           "Single Division 個人參賽": {
+            "HYROX WOMEN 女子公開組 | SATURDAY": 2,
             "HYROX ADAPTIVE WOMEN 身障女子組 | SATURDAY": 8,
-            "HYROX MEN 男子公開組 | SATURDAY": 2,
+            "HYROX MEN 男子公開組 | SATURDAY": 1,
             "HYROX WOMEN 女子公開組 | SUNDAY": 59,
             "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY": 5,
-            "HYROX MEN 男子公開組 | SUNDAY": 123,
+            "HYROX MEN 男子公開組 | SUNDAY": 122,
             "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY": 4
           },
           "Double Division 雙人參賽": {
