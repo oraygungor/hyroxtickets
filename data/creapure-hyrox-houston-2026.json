@@ -1265,10 +1265,15 @@
     },
     {
       "date": "2026-02-19",
-      "fetched_at": "2026-02-19T10:33:27.578090+01:00",
-      "total_stock": 16,
+      "fetched_at": "2026-02-19T13:43:26.476394+01:00",
+      "total_stock": 17,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Friday",
+            "stock": 1
+          },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
@@ -1312,7 +1317,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 85
+            "stock": 84
           },
           {
             "parkur": "Singles",
@@ -1351,6 +1356,18 @@
           }
         ],
         "by_parkur": {
+          "Singles": {
+            "HYROX PRO WOMEN | Friday": 1,
+            "HYROX ADAPTIVE WOMEN | Sunday": 1,
+            "CHARITY | HYROX PRO WOMEN | Friday": 29,
+            "HYROX ADAPTIVE MEN | Friday": 3,
+            "ADAPTIVE HYROX WOMEN | Friday": 4,
+            "HYROX ADAPTIVE MEN | Thursday": 6,
+            "CHARITY | HYROX MEN | Thursday": 25,
+            "HYROX WOMEN | Thursday": 84,
+            "ADAPTIVE HYROX WOMEN | Thursday": 9,
+            "CHARITY | HYROX WOMEN | Thursday": 38
+          },
           "Doubles": {
             "HYROX DOUBLES MEN | Sunday": 1,
             "HYROX PRO DOUBLES WOMEN | Saturday": 1,
@@ -1359,17 +1376,6 @@
             "HYROX DOUBLES WOMEN | Thursday": 1,
             "HYROX DOUBLES MIXED | Thursday": 44,
             "CHARITY | HYROX DOUBLES MIXED | Thursday": 25
-          },
-          "Singles": {
-            "HYROX ADAPTIVE WOMEN | Sunday": 1,
-            "CHARITY | HYROX PRO WOMEN | Friday": 29,
-            "HYROX ADAPTIVE MEN | Friday": 3,
-            "ADAPTIVE HYROX WOMEN | Friday": 4,
-            "HYROX ADAPTIVE MEN | Thursday": 6,
-            "CHARITY | HYROX MEN | Thursday": 25,
-            "HYROX WOMEN | Thursday": 85,
-            "ADAPTIVE HYROX WOMEN | Thursday": 9,
-            "CHARITY | HYROX WOMEN | Thursday": 38
           }
         }
       }
