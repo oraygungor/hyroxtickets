@@ -368,81 +368,75 @@
     },
     {
       "date": "2026-02-20",
-      "fetched_at": "2026-02-20T10:29:56.071047+01:00",
-      "total_stock": 11,
+      "fetched_at": "2026-02-20T13:39:31.899122+01:00",
+      "total_stock": 10,
       "data": {
         "tickets": [
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 34
+            "stock": 30
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 8
+            "stock": 7
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Thursday",
-            "stock": 40
+            "stock": 35
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 5
+            "stock": 1
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 27
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 4
+            "stock": 26
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 62
+            "stock": 60
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Thursday",
-            "stock": 23
+            "stock": 17
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday",
-            "stock": 27
+            "stock": 25
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 22
+            "stock": 21
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Friday",
-            "stock": 39
+            "stock": 36
           }
         ],
         "by_parkur": {
           "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Saturday": 34,
-            "HYROX DOUBLES MIXED | Thursday": 40,
-            "HYROX PRO DOUBLES MEN | Saturday": 27,
-            "HYROX DOUBLES MIXED | Saturday": 4,
-            "HYROX DOUBLES MEN | Sunday": 62,
-            "HYROX DOUBLES MEN | Thursday": 23,
-            "HYROX DOUBLES WOMEN | Thursday": 27,
-            "HYROX DOUBLES WOMEN | Sunday": 22,
-            "HYROX DOUBLES MIXED | Friday": 39
+            "HYROX PRO DOUBLES WOMEN | Saturday": 30,
+            "HYROX DOUBLES MIXED | Thursday": 35,
+            "HYROX PRO DOUBLES MEN | Saturday": 26,
+            "HYROX DOUBLES MEN | Sunday": 60,
+            "HYROX DOUBLES MEN | Thursday": 17,
+            "HYROX DOUBLES WOMEN | Thursday": 25,
+            "HYROX DOUBLES WOMEN | Sunday": 21,
+            "HYROX DOUBLES MIXED | Friday": 36
           },
           "Singles": {
-            "HYROX PRO WOMEN | Friday": 8,
-            "HYROX PRO MEN | Friday": 5
+            "HYROX PRO WOMEN | Friday": 7,
+            "HYROX PRO MEN | Friday": 1
           }
         }
       }
