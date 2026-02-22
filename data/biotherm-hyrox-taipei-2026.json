@@ -659,6 +659,63 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-02-22",
+      "fetched_at": "2026-02-22T08:31:12.915236+01:00",
+      "total_stock": 7,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX WOMEN 女子公開組 | SUNDAY",
+            "stock": 57
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY",
+            "stock": 5
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX MEN 男子公開組 | SUNDAY",
+            "stock": 112
+          },
+          {
+            "parkur": "Single Division 個人參賽",
+            "ticket": "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY",
+            "stock": 4
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY",
+            "stock": 73
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES MEN 男子公開雙人組 | SUNDAY",
+            "stock": 190
+          },
+          {
+            "parkur": "Double Division 雙人參賽",
+            "ticket": "HYROX DOUBLES MIXED 混合雙人組 | SUNDAY",
+            "stock": 185
+          }
+        ],
+        "by_parkur": {
+          "Single Division 個人參賽": {
+            "HYROX WOMEN 女子公開組 | SUNDAY": 57,
+            "HYROX ADAPTIVE WOMEN 身障女子組 | SUNDAY": 5,
+            "HYROX MEN 男子公開組 | SUNDAY": 112,
+            "HYROX ADAPTIVE MEN 身障男子組 | SUNDAY": 4
+          },
+          "Double Division 雙人參賽": {
+            "HYROX DOUBLES WOMEN 女子公開雙人組 | SUNDAY": 73,
+            "HYROX DOUBLES MEN 男子公開雙人組 | SUNDAY": 190,
+            "HYROX DOUBLES MIXED 混合雙人組 | SUNDAY": 185
+          }
+        }
+      }
     }
   ]
 }
