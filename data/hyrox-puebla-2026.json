@@ -1301,7 +1301,7 @@
     },
     {
       "date": "2026-02-23",
-      "fetched_at": "2026-02-23T13:43:38.340530+01:00",
+      "fetched_at": "2026-02-23T19:53:12.245493+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
@@ -1313,7 +1313,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 584
+            "stock": 583
           },
           {
             "parkur": "Doubles",
@@ -1328,7 +1328,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 226
+            "stock": 225
           },
           {
             "parkur": "Singles",
@@ -1348,34 +1348,34 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 430
+            "stock": 428
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 181
+            "stock": 180
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 535
+            "stock": 534
           }
         ],
         "by_parkur": {
           "Singles": {
             "HYROX ADAPTIVE WOMEN | Sunday": 8,
-            "HYROX MEN | Saturday": 584,
+            "HYROX MEN | Saturday": 583,
             "HYROX ADAPTIVE MEN | Saturday": 8,
-            "HYROX PRO WOMEN | Saturday": 226,
+            "HYROX PRO WOMEN | Saturday": 225,
             "HYROX PRO MEN | Saturday": 457,
-            "HYROX WOMEN | Sunday": 430
+            "HYROX WOMEN | Sunday": 428
           },
           "Doubles": {
             "HYROX PRO DOUBLES MEN | Saturday": 130,
             "HYROX PRO DOUBLES WOMEN | Saturday": 102,
             "HYROX DOUBLES MIXED | Saturday": 86,
-            "HYROX DOUBLES WOMEN | Sunday": 181,
-            "HYROX DOUBLES MEN | Sunday": 535
+            "HYROX DOUBLES WOMEN | Sunday": 180,
+            "HYROX DOUBLES MEN | Sunday": 534
           }
         }
       }
