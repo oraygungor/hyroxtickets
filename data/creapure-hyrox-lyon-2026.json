@@ -1397,14 +1397,14 @@
     },
     {
       "date": "2026-02-23",
-      "fetched_at": "2026-02-23T10:41:06.187537+01:00",
+      "fetched_at": "2026-02-23T13:43:38.844160+01:00",
       "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 231
+            "stock": 229
           },
           {
             "parkur": "SINGLES",
@@ -1419,7 +1419,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 13
+            "stock": 10
           },
           {
             "parkur": "SINGLES",
@@ -1434,7 +1434,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "HYROX WOMEN PRO | Friday",
-            "stock": 146
+            "stock": 144
           },
           {
             "parkur": "SINGLES",
@@ -1454,7 +1454,7 @@
           {
             "parkur": "DOUBLES",
             "ticket": "HYROX DOUBLES WOMEN PRO | Saturday",
-            "stock": 18
+            "stock": 16
           },
           {
             "parkur": "DOUBLES",
@@ -1464,19 +1464,19 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "HYROX WOMEN | Wednesday": 231,
+            "HYROX WOMEN | Wednesday": 229,
             "CHARITY | HYROX WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Wednesday": 9,
-            "HYROX WOMEN | Thursday": 13,
+            "HYROX WOMEN | Thursday": 10,
             "CHARITY | HYROX WOMEN | Thursday": 12,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
-            "HYROX WOMEN PRO | Friday": 146,
+            "HYROX WOMEN PRO | Friday": 144,
             "CHARITY | HYROX WOMEN PRO | Friday": 30,
             "CHARITY | HYROX WOMEN | Friday": 3,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "DOUBLES": {
-            "HYROX DOUBLES WOMEN PRO | Saturday": 18,
+            "HYROX DOUBLES WOMEN PRO | Saturday": 16,
             "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 18
           }
         }
