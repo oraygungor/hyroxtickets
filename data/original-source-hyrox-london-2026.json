@@ -1343,14 +1343,19 @@
     },
     {
       "date": "2026-02-25",
-      "fetched_at": "2026-02-25T08:47:19.507979+01:00",
-      "total_stock": 7,
+      "fetched_at": "2026-02-25T10:40:24.861226+01:00",
+      "total_stock": 8,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
             "stock": 12
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday",
+            "stock": 1
           },
           {
             "parkur": "Doubles",
@@ -1392,6 +1397,7 @@
             "HYROX WOMEN | Friday": 3
           },
           "Doubles": {
+            "HYROX DOUBLES MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 1,
             "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 1,
             "HYROX PRO DOUBLES WOMEN | Saturday": 26
           }
