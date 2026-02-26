@@ -4052,14 +4052,14 @@
     },
     {
       "date": "2026-02-26",
-      "fetched_at": "2026-02-26T13:44:38.456319+01:00",
-      "total_stock": 69,
+      "fetched_at": "2026-02-26T19:41:19.971852+01:00",
+      "total_stock": 68,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday, 22 May 2026",
-            "stock": 87
+            "stock": 85
           },
           {
             "parkur": "Singles",
@@ -4079,12 +4079,12 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX PRO MEN | Friday, 22 May 2026",
-            "stock": 32
+            "stock": 31
           },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Saturday, 23 May 2026",
-            "stock": 29
+            "stock": 28
           },
           {
             "parkur": "Singles",
@@ -4094,7 +4094,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday, 24 May 2026",
-            "stock": 379
+            "stock": 377
           },
           {
             "parkur": "Singles",
@@ -4109,7 +4109,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Monday, 25 May 2026",
-            "stock": 419
+            "stock": 418
           },
           {
             "parkur": "Singles",
@@ -4134,12 +4134,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Thursday, 28 May 2026",
-            "stock": 165
+            "stock": 152
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday, 28 May 2026",
-            "stock": 423
+            "stock": 422
           },
           {
             "parkur": "Singles",
@@ -4154,7 +4154,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday, 29 May 2026",
-            "stock": 84
+            "stock": 83
           },
           {
             "parkur": "Singles",
@@ -4218,11 +4218,6 @@
           },
           {
             "parkur": "Doubles",
-            "ticket": "CHARITY | HYROX DOUBLES MEN | Friday, 22 May 2026",
-            "stock": 1
-          },
-          {
-            "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES WOMEN | Friday, 22 May 2026",
             "stock": 3
           },
@@ -4234,7 +4229,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday, 23 May 2026",
-            "stock": 82
+            "stock": 81
           },
           {
             "parkur": "Doubles",
@@ -4259,12 +4254,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday, 24 May 2026",
-            "stock": 57
+            "stock": 51
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday, 24 May 2026",
-            "stock": 58
+            "stock": 55
           },
           {
             "parkur": "Doubles",
@@ -4279,17 +4274,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Monday, 25 May 2026",
-            "stock": 331
+            "stock": 328
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Monday, 25 May 2026",
-            "stock": 262
+            "stock": 261
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Monday, 25 May 2026",
-            "stock": 8
+            "stock": 6
           },
           {
             "parkur": "Doubles",
@@ -4319,7 +4314,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Thursday, 28 May 2026",
-            "stock": 260
+            "stock": 258
           },
           {
             "parkur": "Doubles",
@@ -4354,7 +4349,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday, 30 May 2026",
-            "stock": 127
+            "stock": 126
           },
           {
             "parkur": "Doubles",
@@ -4384,7 +4379,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday, 31 May 2026",
-            "stock": 34
+            "stock": 32
           },
           {
             "parkur": "Doubles",
@@ -4404,26 +4399,26 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO WOMEN | Friday, 22 May 2026": 87,
+            "HYROX PRO WOMEN | Friday, 22 May 2026": 85,
             "CHARITY | HYROX WOMEN | Friday, 22 May 2026": 10,
             "CHARITY | HYROX MEN | Friday, 22 May 2026": 13,
             "CHARITY | HYROX PRO WOMEN | Friday, 22 May 2026": 34,
-            "CHARITY | HYROX PRO MEN | Friday, 22 May 2026": 32,
-            "CHARITY | HYROX MEN | Saturday, 23 May 2026": 29,
+            "CHARITY | HYROX PRO MEN | Friday, 22 May 2026": 31,
+            "CHARITY | HYROX MEN | Saturday, 23 May 2026": 28,
             "HYROX ADAPTIVE MEN | Saturday, 23 May 2026": 2,
-            "HYROX WOMEN | Sunday, 24 May 2026": 379,
+            "HYROX WOMEN | Sunday, 24 May 2026": 377,
             "CHARITY | HYROX WOMEN | Sunday, 24 May 2026": 38,
             "HYROX ADAPTIVE WOMEN | Sunday, 24 May 2026": 6,
-            "HYROX WOMEN | Monday, 25 May 2026": 419,
+            "HYROX WOMEN | Monday, 25 May 2026": 418,
             "CHARITY | HYROX WOMEN | Monday, 25 May 2026": 40,
             "CHARITY | HYROX MEN | Monday, 25 May 2026": 37,
             "HYROX ADAPTIVE MEN | Monday, 25 May 2026": 5,
             "HYROX ADAPTIVE WOMEN | Monday, 25 May 2026": 5,
-            "HYROX MEN | Thursday, 28 May 2026": 165,
-            "HYROX WOMEN | Thursday, 28 May 2026": 423,
+            "HYROX MEN | Thursday, 28 May 2026": 152,
+            "HYROX WOMEN | Thursday, 28 May 2026": 422,
             "CHARITY | HYROX WOMEN | Thursday, 28 May 2026": 17,
             "CHARITY | HYROX MEN | Thursday, 28 May 2026": 16,
-            "HYROX PRO MEN | Friday, 29 May 2026": 84,
+            "HYROX PRO MEN | Friday, 29 May 2026": 83,
             "HYROX PRO WOMEN | Friday, 29 May 2026": 245,
             "CHARITY | HYROX WOMEN | Friday, 29 May 2026": 37,
             "CHARITY | HYROX MEN | Friday, 29 May 2026": 38,
@@ -4438,40 +4433,39 @@
             "HYROX ADAPTIVE WOMEN | Sunday, 31 May 2026": 9
           },
           "Doubles": {
-            "CHARITY | HYROX DOUBLES MEN | Friday, 22 May 2026": 1,
             "CHARITY | HYROX DOUBLES WOMEN | Friday, 22 May 2026": 3,
             "CHARITY | HYROX DOUBLES MIXED | Friday, 22 May 2026": 1,
-            "HYROX PRO DOUBLES MEN | Saturday, 23 May 2026": 82,
+            "HYROX PRO DOUBLES MEN | Saturday, 23 May 2026": 81,
             "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026": 163,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026": 20,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday, 23 May 2026": 19,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday, 23 May 2026": 19,
-            "HYROX DOUBLES MEN | Sunday, 24 May 2026": 57,
-            "HYROX DOUBLES WOMEN | Sunday, 24 May 2026": 58,
+            "HYROX DOUBLES MEN | Sunday, 24 May 2026": 51,
+            "HYROX DOUBLES WOMEN | Sunday, 24 May 2026": 55,
             "CHARITY | HYROX DOUBLES MEN | Sunday, 24 May 2026": 16,
             "CHARITY | HYROX DOUBLES WOMEN | Sunday, 24 May 2026": 15,
-            "HYROX DOUBLES MEN | Monday, 25 May 2026": 331,
-            "HYROX DOUBLES WOMEN | Monday, 25 May 2026": 262,
-            "HYROX DOUBLES MIXED | Monday, 25 May 2026": 8,
+            "HYROX DOUBLES MEN | Monday, 25 May 2026": 328,
+            "HYROX DOUBLES WOMEN | Monday, 25 May 2026": 261,
+            "HYROX DOUBLES MIXED | Monday, 25 May 2026": 6,
             "CHARITY | HYROX DOUBLES MEN | Monday, 25 May 2026": 20,
             "CHARITY | HYROX DOUBLES WOMEN | Monday, 25 May 2026": 19,
             "CHARITY | HYROX DOUBLES MIXED | Monday, 25 May 2026": 17,
             "HYROX DOUBLES MEN | Thursday, 28 May 2026": 345,
             "HYROX DOUBLES WOMEN | Thursday, 28 May 2026": 315,
-            "HYROX DOUBLES MIXED | Thursday, 28 May 2026": 260,
+            "HYROX DOUBLES MIXED | Thursday, 28 May 2026": 258,
             "CHARITY | HYROX DOUBLES MEN | Thursday, 28 May 2026": 14,
             "CHARITY | HYROX DOUBLES WOMEN | Thursday, 28 May 2026": 12,
             "CHARITY | HYROX DOUBLES MIXED | Thursday, 28 May 2026": 13,
             "CHARITY | HYROX DOUBLES MEN | Friday, 29 May 2026": 7,
             "CHARITY | HYROX DOUBLES WOMEN | Friday, 29 May 2026": 11,
             "CHARITY | HYROX DOUBLES MIXED | Friday, 29 May 2026": 11,
-            "HYROX PRO DOUBLES MEN | Saturday, 30 May 2026": 127,
+            "HYROX PRO DOUBLES MEN | Saturday, 30 May 2026": 126,
             "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026": 197,
             "CHARITY | HYROX DOUBLES MIXED | Saturday, 30 May 2026": 7,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026": 19,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday, 30 May 2026": 19,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday, 30 May 2026": 19,
-            "HYROX DOUBLES MEN | Sunday, 31 May 2026": 34,
+            "HYROX DOUBLES MEN | Sunday, 31 May 2026": 32,
             "HYROX DOUBLES WOMEN | Sunday, 31 May 2026": 199,
             "CHARITY | HYROX DOUBLES MEN | Sunday, 31 May 2026": 13,
             "CHARITY | HYROX DOUBLES WOMEN | Sunday, 31 May 2026": 15
