@@ -1379,14 +1379,14 @@
     },
     {
       "date": "2026-02-27",
-      "fetched_at": "2026-02-27T10:29:16.161048+01:00",
+      "fetched_at": "2026-02-27T13:39:04.577977+01:00",
       "total_stock": 15,
       "data": {
         "tickets": [
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 8
+            "stock": 5
           },
           {
             "parkur": "Doubles",
@@ -1401,7 +1401,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 15
+            "stock": 12
           },
           {
             "parkur": "Singles",
@@ -1431,7 +1431,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 52
+            "stock": 51
           },
           {
             "parkur": "Singles",
@@ -1446,7 +1446,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 35
+            "stock": 32
           },
           {
             "parkur": "Singles",
@@ -1461,7 +1461,7 @@
         ],
         "by_parkur": {
           "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 8,
+            "HYROX DOUBLES MIXED | Saturday": 5,
             "HYROX DOUBLES WOMEN | Sunday": 26,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 19,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 5,
@@ -1469,14 +1469,14 @@
           },
           "Singles": {
             "HYROX PRO WOMEN | Friday": 17,
-            "HYROX PRO MEN | Friday": 15,
+            "HYROX PRO MEN | Friday": 12,
             "HYROX ADAPTIVE MEN | Friday": 3,
             "HYROX ADAPTIVE WOMEN | Friday": 7,
             "CHARITY | HYROX PRO WOMEN | Friday": 18,
-            "HYROX WOMEN | Sunday": 52,
+            "HYROX WOMEN | Sunday": 51,
             "CHARITY | HYROX WOMEN | Sunday": 27,
             "HYROX ADAPTIVE WOMEN | Sunday": 2,
-            "HYROX MEN | Saturday": 35,
+            "HYROX MEN | Saturday": 32,
             "HYROX ADAPTIVE MEN | Saturday": 2
           }
         }
