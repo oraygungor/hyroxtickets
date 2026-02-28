@@ -1,25 +1,115 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | SATURDAY at BYD HYROX Bangkok!",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at HYROX Cardiff!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN | Saturday at HYROX Málaga!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN 남자 오픈 | SATURDAY at AirAsia HYROX Incheon!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN | Saturday, May 30, 2026 at NYU Langone Health HYROX New York!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 35 tickets released for DOUBLES MIXED | Saturday at HYROX Rimini!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 28 tickets released for DOUBLES WOMEN | Friday at HYROX Rimini!",
+    "date": "2026-02-28",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES WOMEN | Saturday at HYROX HELSINKI!",
+    "date": "2026-02-28",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Sunday at HYROX Cardiff is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO WOMEN | SUNDAY at BYD HYROX Bangkok is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | SATURDAY at BYD HYROX Bangkok is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Lisboa is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Lisboa is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX WARSAW is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Friday at HYROX WARSAW is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Sunday at Smart Fit HYROX Cancun is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at Smart Fit HYROX Cancun is gone.",
+    "date": "2026-02-28",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for WOMEN | SATURDAY at BYD HYROX Bangkok!",
     "date": "2026-02-27",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at HYROX Mechelen!",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Friday at HYROX Lisboa!",
     "date": "2026-02-27",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Saturday at Creapure® HYROX Houston!",
-    "date": "2026-02-27",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Friday at Creapure® HYROX Houston!",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES MEN | Saturday at HYROX Lisboa!",
     "date": "2026-02-27",
     "priority": 3
   },
@@ -28,95 +118,5 @@
     "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at Smart Fit HYROX Cancun!",
     "date": "2026-02-27",
     "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Sunday at HYROX Cardiff!",
-    "date": "2026-02-27",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at Virgin Active HYROX Cape Town 25/26!",
-    "date": "2026-02-27",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-02-27",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for DOUBLES MIXED | Monday, 25 May 2026 at GilletteLabs HYROX Berlin!",
-    "date": "2026-02-27",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Sunday at HYROX Cardiff is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at Virgin Active HYROX Cape Town 25/26 is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | SUNDAY at BYD HYROX Bangkok is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Thursday at Creapure® HYROX Houston is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at Biotherm HYROX Barcelona is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Friday at HYROX WARSAW is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Barcelona is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES WOMEN | Saturday at Legendz HYROX Miami Beach is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at HYROX Rimini is gone.",
-    "date": "2026-02-27",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday at HYROX Rimini is gone.",
-    "date": "2026-02-27",
-    "priority": 0
   }
 ]
