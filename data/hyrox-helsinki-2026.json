@@ -1640,14 +1640,14 @@
     },
     {
       "date": "2026-02-28",
-      "fetched_at": "2026-02-28T13:29:19.460411+01:00",
+      "fetched_at": "2026-02-28T19:22:01.336410+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 120
+            "stock": 117
           },
           {
             "parkur": "Singles",
@@ -1667,22 +1667,22 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 90
+            "stock": 89
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 46
+            "stock": 45
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 235
+            "stock": 234
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 118
+            "stock": 115
           },
           {
             "parkur": "Doubles",
@@ -1702,18 +1702,18 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 120,
+            "HYROX MEN | Saturday": 117,
             "HYROX PRO WOMEN | Saturday": 73,
             "HYROX PRO MEN | Saturday": 67,
-            "HYROX WOMEN | Sunday": 235,
+            "HYROX WOMEN | Sunday": 234,
             "HYROX ADAPTIVE MEN | Saturday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Saturday": 6,
-            "HYROX DOUBLES MIXED | Sunday": 90,
-            "HYROX PRO DOUBLES MEN | Saturday": 46,
-            "HYROX DOUBLES WOMEN | Saturday": 118,
+            "HYROX DOUBLES MIXED | Sunday": 89,
+            "HYROX PRO DOUBLES MEN | Saturday": 45,
+            "HYROX DOUBLES WOMEN | Saturday": 115,
             "HYROX DOUBLES MEN | Sunday": 281
           }
         }
