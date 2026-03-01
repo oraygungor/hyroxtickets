@@ -1,19 +1,55 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at HYROX Cardiff!",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | SUNDAY at BYD HYROX Bangkok!",
+    "date": "2026-03-01",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Saturday at Smart Fit HYROX Cancun!",
+    "date": "2026-03-01",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday, June 6, 2026 at NYU Langone Health HYROX New York!",
+    "date": "2026-03-01",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for DOUBLES MIXED | Saturday at HYROX Rimini!",
+    "date": "2026-03-01",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Thursday at HYROX Málaga is gone.",
+    "date": "2026-03-01",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at Smart Fit HYROX Cancun is gone.",
+    "date": "2026-03-01",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Friday at HYROX Rimini is gone.",
+    "date": "2026-03-01",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for ADAPTIVE MEN | Saturday at HYROX Málaga!",
     "date": "2026-02-28",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN | Saturday at HYROX Málaga!",
-    "date": "2026-02-28",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN 남자 오픈 | SATURDAY at AirAsia HYROX Incheon!",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at Smart Fit HYROX Cancun!",
     "date": "2026-02-28",
     "priority": 3
   },
@@ -25,19 +61,25 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 35 tickets released for DOUBLES MIXED | Saturday at HYROX Rimini!",
+    "message": "RESTOCK: 7 tickets released for DOUBLES WOMEN | Friday at HYROX Rimini!",
     "date": "2026-02-28",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 28 tickets released for DOUBLES WOMEN | Friday at HYROX Rimini!",
+    "message": "RESTOCK: 11 tickets released for DOUBLES MIXED | Saturday at HYROX Rimini!",
     "date": "2026-02-28",
     "priority": 3
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES WOMEN | Saturday at HYROX HELSINKI!",
+    "message": "HURRY UP: Only 2 tickets left for DOUBLES MIXED | Thursday at HYROX Cardiff!",
+    "date": "2026-02-28",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES MEN | SUNDAY at BYD HYROX Bangkok!",
     "date": "2026-02-28",
     "priority": 2
   },
@@ -61,62 +103,20 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Lisboa is gone.",
-    "date": "2026-02-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
     "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Lisboa is gone.",
     "date": "2026-02-28",
     "priority": 0
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX WARSAW is gone.",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Lisboa is gone.",
     "date": "2026-02-28",
     "priority": 0
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at HYROX WARSAW is gone.",
+    "message": "SOLD OUT: DOUBLES MIXED | Saturday at HYROX Lisboa is gone.",
     "date": "2026-02-28",
     "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at Smart Fit HYROX Cancun is gone.",
-    "date": "2026-02-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Saturday at Smart Fit HYROX Cancun is gone.",
-    "date": "2026-02-28",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 2 tickets released for WOMEN | SATURDAY at BYD HYROX Bangkok!",
-    "date": "2026-02-27",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Friday at HYROX Lisboa!",
-    "date": "2026-02-27",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO DOUBLES MEN | Saturday at HYROX Lisboa!",
-    "date": "2026-02-27",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at Smart Fit HYROX Cancun!",
-    "date": "2026-02-27",
-    "priority": 3
   }
 ]
