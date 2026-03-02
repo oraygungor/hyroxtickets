@@ -2912,15 +2912,10 @@
     },
     {
       "date": "2026-03-02",
-      "fetched_at": "2026-03-02T10:35:50.762209+01:00",
-      "total_stock": 12,
+      "fetched_at": "2026-03-02T13:38:42.176863+01:00",
+      "total_stock": 11,
       "data": {
         "tickets": [
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Friday",
-            "stock": 1
-          },
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Friday",
@@ -2944,12 +2939,12 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX PRO WOMEN | Saturday",
-            "stock": 8
+            "stock": 9
           },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX PRO MEN | Saturday",
-            "stock": 4
+            "stock": 3
           },
           {
             "parkur": "Singles",
@@ -2974,25 +2969,24 @@
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 4
+            "stock": 5
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX ADAPTIVE MEN | Friday": 1,
             "HYROX ADAPTIVE WOMEN | Friday": 7,
             "HYROX ADAPTIVE WOMEN | Sunday": 2,
             "HYROX ADAPTIVE MEN | Saturday": 1,
             "CHARITY | HYROX WOMEN | Friday": 6,
-            "CHARITY | HYROX PRO WOMEN | Saturday": 8,
-            "CHARITY | HYROX PRO MEN | Saturday": 4,
+            "CHARITY | HYROX PRO WOMEN | Saturday": 9,
+            "CHARITY | HYROX PRO MEN | Saturday": 3,
             "CHARITY | HYROX WOMEN | Sunday": 9
           },
           "Doubles": {
             "CHARITY | HYROX DOUBLES MIXED | Friday": 7,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 8,
             "CHARITY | HYROX DOUBLES MIXED | Saturday": 12,
-            "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 4
+            "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 5
           }
         }
       }
