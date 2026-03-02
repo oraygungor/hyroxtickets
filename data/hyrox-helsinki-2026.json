@@ -1802,19 +1802,19 @@
     },
     {
       "date": "2026-03-02",
-      "fetched_at": "2026-03-02T08:43:35.937153+01:00",
+      "fetched_at": "2026-03-02T10:35:51.487563+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 108
+            "stock": 107
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 73
+            "stock": 72
           },
           {
             "parkur": "Singles",
@@ -1839,17 +1839,17 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 229
+            "stock": 230
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 108
+            "stock": 107
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 277
+            "stock": 275
           },
           {
             "parkur": "Singles",
@@ -1864,10 +1864,10 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 108,
-            "HYROX PRO WOMEN | Saturday": 73,
+            "HYROX MEN | Saturday": 107,
+            "HYROX PRO WOMEN | Saturday": 72,
             "HYROX PRO MEN | Saturday": 66,
-            "HYROX WOMEN | Sunday": 229,
+            "HYROX WOMEN | Sunday": 230,
             "HYROX ADAPTIVE MEN | Saturday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
@@ -1875,8 +1875,8 @@
             "HYROX PRO DOUBLES WOMEN | Saturday": 6,
             "HYROX DOUBLES MIXED | Sunday": 86,
             "HYROX PRO DOUBLES MEN | Saturday": 44,
-            "HYROX DOUBLES WOMEN | Saturday": 108,
-            "HYROX DOUBLES MEN | Sunday": 277
+            "HYROX DOUBLES WOMEN | Saturday": 107,
+            "HYROX DOUBLES MEN | Sunday": 275
           }
         }
       }
