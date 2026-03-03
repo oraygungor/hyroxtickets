@@ -1032,6 +1032,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-03",
+      "fetched_at": "2026-03-03T08:37:24.955164+01:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
+            "stock": 9
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN | Saturday": 9
+          }
+        }
+      }
     }
   ]
 }
