@@ -1745,14 +1745,14 @@
     },
     {
       "date": "2026-03-06",
-      "fetched_at": "2026-03-06T08:34:00.385758+01:00",
+      "fetched_at": "2026-03-06T10:26:58.388986+01:00",
       "total_stock": 10,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Monday, June 1, 2026",
-            "stock": 12
+            "stock": 8
           },
           {
             "parkur": "Singles",
@@ -1772,7 +1772,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Wednesday, June 3, 2026",
-            "stock": 21
+            "stock": 20
           },
           {
             "parkur": "Singles",
@@ -1782,7 +1782,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Monday, June 1, 2026",
-            "stock": 20
+            "stock": 18
           },
           {
             "parkur": "Doubles",
@@ -1797,23 +1797,23 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Wednesday, June 3, 2026",
-            "stock": 25
+            "stock": 24
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Monday, June 1, 2026": 12,
+            "HYROX MEN | Monday, June 1, 2026": 8,
             "HYROX ADAPTIVE MEN | Monday, June 1, 2026": 10,
             "HYROX ADAPTIVE MEN | Wednesday, June 3, 2026": 9,
             "HYROX ADAPTIVE WOMEN | Monday, June 1, 2026": 9,
-            "HYROX WOMEN | Wednesday, June 3, 2026": 21,
+            "HYROX WOMEN | Wednesday, June 3, 2026": 20,
             "HYROX ADAPTIVE WOMEN | Wednesday, June 3, 2026": 10
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Monday, June 1, 2026": 20,
+            "HYROX DOUBLES WOMEN | Monday, June 1, 2026": 18,
             "HYROX DOUBLES WOMEN | Wednesday, June 3, 2026": 16,
             "HYROX DOUBLES MEN | Wednesday, June 3, 2026": 71,
-            "HYROX DOUBLES MIXED | Wednesday, June 3, 2026": 25
+            "HYROX DOUBLES MIXED | Wednesday, June 3, 2026": 24
           }
         }
       }
