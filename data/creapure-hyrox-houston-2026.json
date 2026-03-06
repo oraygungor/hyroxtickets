@@ -2420,8 +2420,8 @@
     },
     {
       "date": "2026-03-06",
-      "fetched_at": "2026-03-06T10:26:41.232567+01:00",
-      "total_stock": 10,
+      "fetched_at": "2026-03-06T13:36:11.977405+01:00",
+      "total_stock": 11,
       "data": {
         "tickets": [
           {
@@ -2471,6 +2471,11 @@
           },
           {
             "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Thursday",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MIXED | Thursday",
             "stock": 16
           }
@@ -2488,6 +2493,7 @@
           "Doubles": {
             "HYROX DOUBLES MEN | Thursday": 103,
             "CHARITY | HYROX DOUBLES MEN | Thursday": 20,
+            "HYROX DOUBLES MIXED | Thursday": 1,
             "CHARITY | HYROX DOUBLES MIXED | Thursday": 16
           }
         }
