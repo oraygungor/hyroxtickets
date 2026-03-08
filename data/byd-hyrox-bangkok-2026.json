@@ -1760,10 +1760,15 @@
     },
     {
       "date": "2026-03-08",
-      "fetched_at": "2026-03-08T10:17:47.719292+01:00",
-      "total_stock": 7,
+      "fetched_at": "2026-03-08T13:31:03.586827+01:00",
+      "total_stock": 8,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | SATURDAY",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | SUNDAY",
@@ -1772,7 +1777,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | SUNDAY",
-            "stock": 5
+            "stock": 4
           },
           {
             "parkur": "Singles",
@@ -1782,7 +1787,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | FRIDAY",
-            "stock": 93
+            "stock": 92
           },
           {
             "parkur": "Singles",
@@ -1802,10 +1807,11 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX WOMEN | SATURDAY": 1,
             "HYROX PRO WOMEN | SUNDAY": 4,
-            "HYROX PRO MEN | SUNDAY": 5,
+            "HYROX PRO MEN | SUNDAY": 4,
             "HYROX ADAPTIVE WOMEN | SATURDAY": 3,
-            "HYROX MEN | FRIDAY": 93,
+            "HYROX MEN | FRIDAY": 92,
             "HYROX ADAPTIVE MEN | FRIDAY": 3,
             "HYROX ADAPTIVE MEN | SUNDAY": 2
           },
