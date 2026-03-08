@@ -1771,6 +1771,67 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-08",
+      "fetched_at": "2026-03-08T08:26:10.908029+01:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 115
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 163
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 132
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 207
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 16
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 39
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 82
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 96
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 115,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 163,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 132,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 207,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 16,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 39,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 82,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 96
+          }
+        }
+      }
     }
   ]
 }
