@@ -1,6 +1,102 @@
 [
   {
     "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at HYROX Cardiff!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Saturday at HYROX Lisboa!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at HYROX Rotterdam!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at Creapure® HYROX Houston!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Sunday at Creapure® HYROX Houston!",
+    "date": "2026-03-09",
+    "priority": 3
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Friday at HYROX Cardiff is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Lisboa is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Saturday at HYROX Málaga is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES WOMEN | Saturday at Creapure® HYROX Houston is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Monday, June 1, 2026 at NYU Langone Health HYROX New York is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Wednesday, June 3, 2026 at NYU Langone Health HYROX New York is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE WOMEN | Wednesday, June 3, 2026 at NYU Langone Health HYROX New York is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE WOMEN | Monday, June 1, 2026 at NYU Langone Health HYROX New York is gone.",
+    "date": "2026-03-09",
+    "priority": 0
+  },
+  {
+    "type": "restock",
     "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday at HYROX Rotterdam!",
     "date": "2026-03-08",
     "priority": 3
@@ -13,110 +109,14 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 52 tickets released for WOMEN | Friday at HYROX Rimini!",
+    "message": "RESTOCK: 50 tickets released for WOMEN | Friday at HYROX Rimini!",
     "date": "2026-03-08",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 39 tickets released for DOUBLES MIXED | Friday at HYROX Rimini!",
+    "message": "RESTOCK: 70 tickets released for DOUBLES MIXED | Saturday at HYROX Rimini!",
     "date": "2026-03-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 41 tickets released for DOUBLES WOMEN | Friday at HYROX Rimini!",
-    "date": "2026-03-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 40 tickets released for DOUBLES MEN | Friday at HYROX Rimini!",
-    "date": "2026-03-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 40 tickets released for DOUBLES WOMEN | Sunday at HYROX Rimini!",
-    "date": "2026-03-08",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 79 tickets released for DOUBLES MIXED | Saturday at HYROX Rimini!",
-    "date": "2026-03-08",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 3 tickets left for DOUBLES MIXED | Saturday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-03-08",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | SATURDAY at BYD HYROX Bangkok is gone.",
-    "date": "2026-03-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Lisboa is gone.",
-    "date": "2026-03-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at HYROX Lisboa is gone.",
-    "date": "2026-03-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Wednesday, June 3, 2026 at NYU Langone Health HYROX New York is gone.",
-    "date": "2026-03-08",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at HYROX Cardiff!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | SATURDAY at BYD HYROX Bangkok!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Lisboa!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at HYROX Rotterdam!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Friday at HYROX Mechelen!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Saturday at HYROX Mechelen!",
-    "date": "2026-03-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday at Legendz HYROX Miami Beach!",
-    "date": "2026-03-07",
     "priority": 3
   }
 ]
