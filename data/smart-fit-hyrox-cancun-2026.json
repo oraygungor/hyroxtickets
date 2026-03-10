@@ -2000,25 +2000,19 @@
     },
     {
       "date": "2026-03-10",
-      "fetched_at": "2026-03-10T13:40:35.583045+01:00",
-      "total_stock": 2,
+      "fetched_at": "2026-03-10T19:37:16.443837+01:00",
+      "total_stock": 1,
       "data": {
         "tickets": [
           {
             "parkur": "HYROX After Party ",
             "ticket": "HYROX Station 9 Entry | Saturday",
-            "stock": 117
-          },
-          {
-            "parkur": "HYROX After Party ",
-            "ticket": "Official HYROX After Party Entry | Sunday",
-            "stock": 32
+            "stock": 21
           }
         ],
         "by_parkur": {
           "HYROX After Party ": {
-            "HYROX Station 9 Entry | Saturday": 117,
-            "Official HYROX After Party Entry | Sunday": 32
+            "HYROX Station 9 Entry | Saturday": 21
           }
         }
       }
