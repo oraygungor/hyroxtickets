@@ -2345,77 +2345,11 @@
     },
     {
       "date": "2026-03-11",
-      "fetched_at": "2026-03-11T13:40:16.492748+01:00",
-      "total_stock": 10,
+      "fetched_at": "2026-03-11T19:43:30.445673+01:00",
+      "total_stock": 0,
       "data": {
-        "tickets": [
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES WOMEN | Thursday",
-            "stock": 19
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX DOUBLES WOMEN | Friday",
-            "stock": 52
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES WOMEN | Friday",
-            "stock": 67
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Sunday",
-            "stock": 1
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES MEN | Friday",
-            "stock": 311
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "CHARITY | HYROX PRO WOMEN | Thursday",
-            "stock": 7
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "CHARITY | HYROX DOUBLES WOMEN | Friday",
-            "stock": 13
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "CHARITY | HYROX PRO DOUBLES WOMEN | Friday",
-            "stock": 5
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "CHARITY | HYROX PRO WOMEN | Sunday",
-            "stock": 23
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "CHARITY | HYROX WOMEN | Sunday",
-            "stock": 11
-          }
-        ],
-        "by_parkur": {
-          "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Thursday": 19,
-            "HYROX DOUBLES WOMEN | Friday": 52,
-            "HYROX PRO DOUBLES WOMEN | Friday": 67,
-            "HYROX PRO DOUBLES MEN | Friday": 311,
-            "CHARITY | HYROX DOUBLES WOMEN | Friday": 13,
-            "CHARITY | HYROX PRO DOUBLES WOMEN | Friday": 5
-          },
-          "Singles": {
-            "HYROX PRO MEN | Sunday": 1,
-            "CHARITY | HYROX PRO WOMEN | Thursday": 7,
-            "CHARITY | HYROX PRO WOMEN | Sunday": 23,
-            "CHARITY | HYROX WOMEN | Sunday": 11
-          }
-        }
+        "tickets": [],
+        "by_parkur": {}
       }
     }
   ]
