@@ -2137,6 +2137,67 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-14",
+      "fetched_at": "2026-03-14T08:30:56.010721+01:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 33
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 25
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 21
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 28
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 17
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 22
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 27
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 25
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 33,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 25,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 21,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 28,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 17,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 22,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 27,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 25
+          }
+        }
+      }
     }
   ]
 }
