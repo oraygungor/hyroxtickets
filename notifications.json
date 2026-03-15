@@ -1,5 +1,29 @@
 [
   {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Saturday at HYROX Wuhan!",
+    "date": "2026-03-15",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at HYROX WARSAW!",
+    "date": "2026-03-15",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Friday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-03-15",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Rimini is gone.",
+    "date": "2026-03-15",
+    "priority": 0
+  },
+  {
     "type": "restock",
     "message": "RESTOCK: 4 tickets released for PRO MEN | Friday at HYROX Mechelen!",
     "date": "2026-03-14",
@@ -7,19 +31,7 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Mechelen!",
-    "date": "2026-03-14",
-    "priority": 3
-  },
-  {
-    "type": "restock",
     "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN | Saturday at HYROX Málaga!",
-    "date": "2026-03-14",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO WOMEN | Friday at HYROX Málaga!",
     "date": "2026-03-14",
     "priority": 3
   },
@@ -31,7 +43,7 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at HYROX WARSAW!",
+    "message": "HURRY UP: Only 5 tickets left for MEN | Saturday at HYROX Rimini!",
     "date": "2026-03-14",
     "priority": 2
   },
@@ -49,7 +61,25 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Thursday at HYROX Rotterdam is gone.",
+    "message": "SOLD OUT: WOMEN | Saturday at HYROX São Paulo is gone.",
+    "date": "2026-03-14",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Wednesday at HYROX Cardiff is gone.",
+    "date": "2026-03-14",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Saturday at HYROX Mechelen is gone.",
+    "date": "2026-03-14",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Thursday at HYROX Málaga is gone.",
     "date": "2026-03-14",
     "priority": 0
   },
@@ -86,36 +116,6 @@
   {
     "type": "restock",
     "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Sunday at GoodLife HYROX Ottawa!",
-    "date": "2026-03-13",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 7 tickets released for ADAPTIVE MEN | Thursday at HYROX WARSAW!",
-    "date": "2026-03-13",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 4 tickets released for ADAPTIVE MEN | Saturday at HYROX WARSAW!",
-    "date": "2026-03-13",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 9 tickets released for ADAPTIVE WOMEN | Sunday at HYROX WARSAW!",
-    "date": "2026-03-13",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 18 tickets released for DOUBLES WOMEN | Saturday at HYROX WARSAW!",
-    "date": "2026-03-13",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 10 tickets released for ADAPTIVE WOMEN | Friday at HYROX WARSAW!",
     "date": "2026-03-13",
     "priority": 3
   }
