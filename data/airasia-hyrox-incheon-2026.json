@@ -2489,10 +2489,15 @@
     },
     {
       "date": "2026-03-15",
-      "fetched_at": "2026-03-15T10:22:28.621225+01:00",
-      "total_stock": 9,
+      "fetched_at": "2026-03-15T13:34:33.225683+01:00",
+      "total_stock": 10,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN 남자 오픈 | SATURDAY",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY",
@@ -2526,12 +2531,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN 더블 남자 | FRIDAY",
-            "stock": 186
+            "stock": 183
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY",
-            "stock": 309
+            "stock": 308
           },
           {
             "parkur": "Doubles",
@@ -2541,6 +2546,7 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX MEN 남자 오픈 | SATURDAY": 1,
             "HYROX ADAPTIVE MEN 어뎁티브 남자 | SATURDAY": 3,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY": 6,
             "HYROX MEN 남자 오픈 | FRIDAY": 283,
@@ -2549,8 +2555,8 @@
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | FRIDAY": 4
           },
           "Doubles": {
-            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 186,
-            "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY": 309,
+            "HYROX DOUBLES MEN 더블 남자 | FRIDAY": 183,
+            "HYROX DOUBLES MIXED 더블 혼성 | FRIDAY": 308,
             "HYROX DOUBLES WOMEN 더블 여자 | FRIDAY": 251
           }
         }
