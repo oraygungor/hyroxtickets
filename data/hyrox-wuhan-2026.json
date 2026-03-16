@@ -1261,6 +1261,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-16",
+      "fetched_at": "2026-03-16T09:03:37.596144+01:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday",
+            "stock": 4
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Saturday": 4
+          }
+        }
+      }
     }
   ]
 }
