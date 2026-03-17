@@ -4379,14 +4379,14 @@
     },
     {
       "date": "2026-03-17",
-      "fetched_at": "2026-03-17T08:50:19.453603+01:00",
-      "total_stock": 13,
+      "fetched_at": "2026-03-17T10:42:52.952686+01:00",
+      "total_stock": 12,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN | Friday",
-            "stock": 2
+            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -4396,17 +4396,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 27
+            "stock": 26
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
             "stock": 2
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX DOUBLES WOMEN | Friday",
-            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -4441,7 +4436,7 @@
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MIXED | Saturday",
-            "stock": 8
+            "stock": 7
           },
           {
             "parkur": "Doubles",
@@ -4451,20 +4446,19 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX ADAPTIVE MEN | Friday": 2,
+            "HYROX ADAPTIVE MEN | Friday": 1,
             "HYROX ADAPTIVE WOMEN | Friday": 7,
-            "HYROX WOMEN | Sunday": 27,
+            "HYROX WOMEN | Sunday": 26,
             "HYROX ADAPTIVE WOMEN | Sunday": 2,
             "CHARITY | HYROX WOMEN | Friday": 4,
             "CHARITY | HYROX PRO WOMEN | Saturday": 8,
             "CHARITY | HYROX WOMEN | Sunday": 8
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Friday": 1,
             "CHARITY | HYROX DOUBLES MIXED | Friday": 6,
             "CHARITY | HYROX DOUBLES MEN | Friday": 1,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 8,
-            "CHARITY | HYROX DOUBLES MIXED | Saturday": 8,
+            "CHARITY | HYROX DOUBLES MIXED | Saturday": 7,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 2
           }
         }
