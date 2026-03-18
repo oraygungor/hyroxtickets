@@ -1,7 +1,103 @@
 [
   {
     "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Thursday at HYROX Málaga!",
+    "date": "2026-03-18",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX WARSAW!",
+    "date": "2026-03-18",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES MEN | SUNDAY at BYD HYROX Bangkok!",
+    "date": "2026-03-18",
+    "priority": 2
+  },
+  {
+    "type": "new_event",
+    "message": "NEW EVENT: Virgin Active HYROX Johannesburg 25/26 added to calendar.",
+    "date": "2026-03-18",
+    "priority": 1
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Sunday at HYROX Cardiff is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at HYROX Cardiff is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Friday at HYROX Mechelen is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Mechelen is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Friday at Creapure® HYROX Houston is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN 여자 오픈 | SUNDAY at AirAsia HYROX Incheon is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN 남자 오픈 | SATURDAY at AirAsia HYROX Incheon is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Friday, 29 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-03-18",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at HYROX Cardiff!",
+    "date": "2026-03-17",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for DOUBLES WOMEN | Sunday at HYROX Mechelen!",
+    "date": "2026-03-17",
+    "priority": 3
+  },
+  {
+    "type": "restock",
     "message": "RESTOCK: 1 tickets released for MEN | Friday at HYROX Mechelen!",
+    "date": "2026-03-17",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for ADAPTIVE MEN | Saturday at Creapure® HYROX Houston!",
+    "date": "2026-03-17",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at Creapure® HYROX Houston!",
     "date": "2026-03-17",
     "priority": 3
   },
@@ -19,104 +115,8 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 5 tickets released for PRO WOMEN | Friday at HYROX WARSAW!",
+    "message": "RESTOCK: 3 tickets released for PRO WOMEN | Friday at HYROX WARSAW!",
     "date": "2026-03-17",
     "priority": 3
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Saturday at HYROX São Paulo is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | SUNDAY at BYD HYROX Bangkok is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at HYROX Mechelen is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN 남자 오픈 | SATURDAY at AirAsia HYROX Incheon is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Friday at HYROX WARSAW is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE WOMEN | Friday at HYROX WARSAW is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Saturday at HYROX WARSAW is gone.",
-    "date": "2026-03-17",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Mechelen!",
-    "date": "2026-03-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN 남자 오픈 | SATURDAY at AirAsia HYROX Incheon!",
-    "date": "2026-03-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 35 tickets released for DOUBLES MEN | Friday at HYROX Rimini!",
-    "date": "2026-03-16",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for WOMEN | Sunday at HYROX Lisboa!",
-    "date": "2026-03-16",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 3 tickets left for MEN | Saturday at HYROX WARSAW!",
-    "date": "2026-03-16",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO WOMEN | Saturday at HYROX São Paulo is gone.",
-    "date": "2026-03-16",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Friday at HYROX Lisboa is gone.",
-    "date": "2026-03-16",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Lisboa is gone.",
-    "date": "2026-03-16",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Thursday at HYROX Málaga is gone.",
-    "date": "2026-03-16",
-    "priority": 0
   }
 ]
