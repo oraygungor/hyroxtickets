@@ -410,24 +410,24 @@
     },
     {
       "date": "2026-03-19",
-      "fetched_at": "2026-03-19T13:42:43.712930+01:00",
+      "fetched_at": "2026-03-19T19:45:01.875542+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 321
+            "stock": 322
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 66
+            "stock": 65
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 257
+            "stock": 256
           },
           {
             "parkur": "Doubles",
@@ -447,7 +447,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 148
+            "stock": 147
           },
           {
             "parkur": "Doubles",
@@ -457,7 +457,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 83
+            "stock": 82
           },
           {
             "parkur": "Singles",
@@ -472,10 +472,10 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 321,
-            "HYROX PRO WOMEN | Saturday": 66,
-            "HYROX PRO MEN | Saturday": 257,
-            "HYROX WOMEN | Sunday": 148,
+            "HYROX MEN | Saturday": 322,
+            "HYROX PRO WOMEN | Saturday": 65,
+            "HYROX PRO MEN | Saturday": 256,
+            "HYROX WOMEN | Sunday": 147,
             "HYROX ADAPTIVE MEN | Saturday": 2,
             "HYROX ADAPTIVE WOMEN | Sunday": 4
           },
@@ -484,7 +484,7 @@
             "HYROX DOUBLES MIXED | Saturday": 519,
             "HYROX PRO DOUBLES MEN | Saturday": 228,
             "HYROX DOUBLES WOMEN | Sunday": 160,
-            "HYROX DOUBLES MEN | Sunday": 83
+            "HYROX DOUBLES MEN | Sunday": 82
           }
         }
       }
