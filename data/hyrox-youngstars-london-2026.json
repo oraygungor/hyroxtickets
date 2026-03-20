@@ -2503,6 +2503,67 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-20",
+      "fetched_at": "2026-03-20T08:40:40.546686+01:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 13
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 9
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 3
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 10
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 11
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 7
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 9
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 10
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 13,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 9,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 3,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 10,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 11,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 7,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 9,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 10
+          }
+        }
+      }
     }
   ]
 }
