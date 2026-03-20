@@ -4890,8 +4890,8 @@
     },
     {
       "date": "2026-03-20",
-      "fetched_at": "2026-03-20T10:28:56.079118+01:00",
-      "total_stock": 17,
+      "fetched_at": "2026-03-20T13:39:31.775560+01:00",
+      "total_stock": 16,
       "data": {
         "tickets": [
           {
@@ -4911,18 +4911,13 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Friday",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 15
+            "stock": 14
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 23
+            "stock": 22
           },
           {
             "parkur": "Singles",
@@ -4952,7 +4947,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 127
+            "stock": 128
           },
           {
             "parkur": "Singles",
@@ -4977,7 +4972,7 @@
           {
             "parkur": "Corporate Challenge",
             "ticket": "HYROX Doubles Men | Team Member 1",
-            "stock": 21
+            "stock": 20
           }
         ],
         "by_parkur": {
@@ -4989,20 +4984,19 @@
             "HYROX DOUBLES MEN | Sunday": 285
           },
           "Singles": {
-            "HYROX WOMEN | Friday": 1,
-            "HYROX PRO WOMEN | Friday": 15,
-            "HYROX PRO MEN | Friday": 23,
+            "HYROX PRO WOMEN | Friday": 14,
+            "HYROX PRO MEN | Friday": 22,
             "HYROX ADAPTIVE MEN | Friday": 10,
             "HYROX ADAPTIVE WOMEN | Friday": 10,
             "HYROX WOMEN | Sunday": 108,
             "HYROX ADAPTIVE WOMEN | Sunday": 9,
-            "HYROX MEN | Saturday": 127,
+            "HYROX MEN | Saturday": 128,
             "HYROX ADAPTIVE MEN | Saturday": 8
           },
           "Corporate Challenge": {
             "HYROX Doubles Women | Team Member 1": 26,
             "HYROX Doubles Mixed |Team Member 1": 20,
-            "HYROX Doubles Men | Team Member 1": 21
+            "HYROX Doubles Men | Team Member 1": 20
           }
         }
       }
