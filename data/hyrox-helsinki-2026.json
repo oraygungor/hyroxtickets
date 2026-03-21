@@ -3317,14 +3317,14 @@
     },
     {
       "date": "2026-03-21",
-      "fetched_at": "2026-03-21T13:31:17.534996+01:00",
+      "fetched_at": "2026-03-21T19:25:38.392086+01:00",
       "total_stock": 10,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 26
+            "stock": 25
           },
           {
             "parkur": "Singles",
@@ -3334,7 +3334,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 28
+            "stock": 26
           },
           {
             "parkur": "Doubles",
@@ -3349,17 +3349,17 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 190
+            "stock": 191
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 49
+            "stock": 48
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 243
+            "stock": 242
           },
           {
             "parkur": "Singles",
@@ -3374,18 +3374,18 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 26,
+            "HYROX MEN | Saturday": 25,
             "HYROX PRO WOMEN | Saturday": 88,
-            "HYROX PRO MEN | Saturday": 28,
-            "HYROX WOMEN | Sunday": 190,
+            "HYROX PRO MEN | Saturday": 26,
+            "HYROX WOMEN | Sunday": 191,
             "HYROX ADAPTIVE MEN | Saturday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "Doubles": {
             "HYROX DOUBLES MIXED | Sunday": 44,
             "HYROX PRO DOUBLES MEN | Saturday": 56,
-            "HYROX DOUBLES WOMEN | Saturday": 49,
-            "HYROX DOUBLES MEN | Sunday": 243
+            "HYROX DOUBLES WOMEN | Saturday": 48,
+            "HYROX DOUBLES MEN | Sunday": 242
           }
         }
       }
