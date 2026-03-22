@@ -1,15 +1,75 @@
 [
   {
     "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Wednesday at HYROX Cardiff!",
+    "date": "2026-03-22",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-22",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for MEN | Saturday at HYROX Mechelen!",
+    "date": "2026-03-22",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for PRO DOUBLES MEN | Saturday at HYROX Rimini!",
+    "date": "2026-03-22",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Lisboa is gone.",
+    "date": "2026-03-22",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Friday at HYROX Lisboa is gone.",
+    "date": "2026-03-22",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-03-22",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE WOMEN | Sunday, June 7, 2026 at NYU Langone Health HYROX New York is gone.",
+    "date": "2026-03-22",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Rimini is gone.",
+    "date": "2026-03-22",
+    "priority": 0
+  },
+  {
+    "type": "restock",
     "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Monday at HYROX Cardiff!",
     "date": "2026-03-21",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at LEMON GYM HYROX RIGA!",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Sunday at HYROX Mechelen!",
     "date": "2026-03-21",
     "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for PRO WOMEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-21",
+    "priority": 2
   },
   {
     "type": "low_stock",
@@ -19,7 +79,7 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
+    "message": "HURRY UP: Only 2 tickets left for DOUBLES MIXED | Friday at HYROX Rimini!",
     "date": "2026-03-21",
     "priority": 2
   },
@@ -31,7 +91,7 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Thursday at Leapmotor HYROX Málaga is gone.",
+    "message": "SOLD OUT: WOMEN | Friday at Leapmotor HYROX Málaga is gone.",
     "date": "2026-03-21",
     "priority": 0
   },
@@ -43,7 +103,7 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Friday at Leapmotor HYROX Málaga is gone.",
+    "message": "SOLD OUT: DOUBLES MEN | Thursday at Leapmotor HYROX Málaga is gone.",
     "date": "2026-03-21",
     "priority": 0
   },
@@ -55,67 +115,7 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at HYROX Mechelen is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
     "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Mechelen is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Thursday at HYROX Málaga is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Friday at HYROX Málaga is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Friday at HYROX Málaga is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at HYROX Wuhan is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (8-9 Years) | Saturday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS BOYS (14-15 Years) | Sunday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS BOYS (12-13 Years) | Sunday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (10-11 Years) | Saturday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-21",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (12-13 Years) | Sunday at HYROX YOUNGSTARS London is gone.",
     "date": "2026-03-21",
     "priority": 0
   }
