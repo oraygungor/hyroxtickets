@@ -9653,8 +9653,8 @@
     },
     {
       "date": "2026-03-23",
-      "fetched_at": "2026-03-23T13:46:04.945533+01:00",
-      "total_stock": 26,
+      "fetched_at": "2026-03-23T19:40:58.863778+01:00",
+      "total_stock": 28,
       "data": {
         "tickets": [
           {
@@ -9679,13 +9679,18 @@
           },
           {
             "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Thursday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday",
             "stock": 45
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Wednesday",
-            "stock": 10
+            "stock": 12
           },
           {
             "parkur": "Singles",
@@ -9705,12 +9710,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Wednesday",
-            "stock": 9
+            "stock": 11
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
-            "stock": 45
+            "stock": 44
           },
           {
             "parkur": "Singles",
@@ -9765,7 +9770,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
-            "stock": 154
+            "stock": 153
           },
           {
             "parkur": "Singles",
@@ -9779,8 +9784,13 @@
           },
           {
             "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday",
-            "stock": 10
+            "stock": 9
           },
           {
             "parkur": "Doubles",
@@ -9791,20 +9801,22 @@
         "by_parkur": {
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Sunday": 19,
-            "HYROX DOUBLES MIXED | Wednesday": 10,
+            "HYROX DOUBLES MIXED | Wednesday": 12,
             "HYROX DOUBLES MIXED  | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 3,
-            "HYROX DOUBLES MEN | Wednesday": 9,
-            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 10,
+            "HYROX DOUBLES MEN | Wednesday": 11,
+            "HYROX DOUBLES MIXED | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 1,
+            "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 9,
             "HYROX DOUBLES MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 19
           },
           "Singles": {
             "HYROX ADAPTIVE MEN | Saturday": 1,
             "HYROX ADAPTIVE MEN | Thursday": 8,
             "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 40,
+            "HYROX WOMEN | Thursday": 1,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday": 45,
             "HYROX ADAPTIVE MEN | Wednesday": 7,
             "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 39,
-            "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 45,
+            "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 44,
             "HYROX ADAPTIVE WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Thursday": 7,
             "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday": 22,
@@ -9815,7 +9827,7 @@
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday": 96,
             "HYROX ADAPTIVE WOMEN | Saturday": 3,
             "HYROX ADAPTIVE MEN | Sunday": 6,
-            "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 154,
+            "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 153,
             "HYROX ADAPTIVE WOMEN | Monday": 7,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 149
           }
