@@ -896,24 +896,24 @@
     },
     {
       "date": "2026-03-25",
-      "fetched_at": "2026-03-25T10:40:58.531194+01:00",
+      "fetched_at": "2026-03-25T13:49:01.891018+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 250
+            "stock": 248
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 62
+            "stock": 61
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 241
+            "stock": 240
           },
           {
             "parkur": "Doubles",
@@ -933,7 +933,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 124
+            "stock": 123
           },
           {
             "parkur": "Doubles",
@@ -943,7 +943,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 110
+            "stock": 107
           },
           {
             "parkur": "Singles",
@@ -958,10 +958,10 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 250,
-            "HYROX PRO WOMEN | Saturday": 62,
-            "HYROX PRO MEN | Saturday": 241,
-            "HYROX WOMEN | Sunday": 124,
+            "HYROX MEN | Saturday": 248,
+            "HYROX PRO WOMEN | Saturday": 61,
+            "HYROX PRO MEN | Saturday": 240,
+            "HYROX WOMEN | Sunday": 123,
             "HYROX ADAPTIVE MEN | Saturday": 1,
             "HYROX ADAPTIVE WOMEN | Sunday": 4
           },
@@ -970,7 +970,7 @@
             "HYROX DOUBLES MIXED | Saturday": 491,
             "HYROX PRO DOUBLES MEN | Saturday": 222,
             "HYROX DOUBLES WOMEN | Sunday": 143,
-            "HYROX DOUBLES MEN | Sunday": 110
+            "HYROX DOUBLES MEN | Sunday": 107
           }
         }
       }
