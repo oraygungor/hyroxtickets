@@ -1,0 +1,34 @@
+{
+  "event_id": "ultrahuman-hyrox-bengaluru-2026",
+  "event_name": "Ultrahuman HYROX Bengaluru",
+  "url": "https://india.hyrox.co.in/checkout/hyrox-bengaluru-season-25-26-uivi1l",
+  "history": [
+    {
+      "date": "2026-03-27",
+      "fetched_at": "2026-03-27T08:55:44.009198+01:00",
+      "total_stock": 2,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN  | Saturday",
+            "stock": 5
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES WOMEN  | Saturday": 5
+          },
+          "Singles": {
+            "HYROX ADAPTIVE WOMEN | Saturday": 1
+          }
+        }
+      }
+    }
+  ]
+}
