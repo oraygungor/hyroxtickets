@@ -2817,6 +2817,43 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-28",
+      "fetched_at": "2026-03-28T08:39:34.774533+01:00",
+      "total_stock": 4,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 12
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 4
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 5
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 8
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 12,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 4,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 5,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 8
+          }
+        }
+      }
     }
   ]
 }
