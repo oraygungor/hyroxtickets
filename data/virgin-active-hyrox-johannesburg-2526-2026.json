@@ -815,7 +815,7 @@
     },
     {
       "date": "2026-03-28",
-      "fetched_at": "2026-03-28T13:36:40.531760+01:00",
+      "fetched_at": "2026-03-28T19:29:23.450009+01:00",
       "total_stock": 11,
       "data": {
         "tickets": [
@@ -842,7 +842,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 378
+            "stock": 376
           },
           {
             "parkur": "Singles",
@@ -852,7 +852,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 142
+            "stock": 137
           },
           {
             "parkur": "Doubles",
@@ -862,17 +862,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 24
+            "stock": 23
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 187
+            "stock": 185
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 327
+            "stock": 323
           }
         ],
         "by_parkur": {
@@ -881,15 +881,15 @@
             "HYROX PRO MEN | Saturday": 125,
             "HYROX PRO WOMEN | Saturday": 32,
             "HYROX ADAPTIVE MEN | Saturday": 3,
-            "HYROX WOMEN | Sunday": 378,
+            "HYROX WOMEN | Sunday": 376,
             "HYROX ADAPTIVE WOMEN | Sunday": 1
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Saturday": 142,
+            "HYROX DOUBLES WOMEN | Saturday": 137,
             "HYROX PRO DOUBLES MEN | Saturday": 80,
-            "HYROX PRO DOUBLES WOMEN | Saturday": 24,
-            "HYROX DOUBLES MEN | Sunday": 187,
-            "HYROX DOUBLES MIXED | Sunday": 327
+            "HYROX PRO DOUBLES WOMEN | Saturday": 23,
+            "HYROX DOUBLES MEN | Sunday": 185,
+            "HYROX DOUBLES MIXED | Sunday": 323
           }
         }
       }
