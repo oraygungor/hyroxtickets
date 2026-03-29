@@ -1,7 +1,91 @@
 [
   {
     "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at HYROX Málaga!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Thursday at HYROX Málaga!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO WOMEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at Leapmotor HYROX Málaga!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Thursday at Leapmotor HYROX Málaga!",
+    "date": "2026-03-29",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MEN | Sunday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-03-29",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Sunday at HYROX Tenerife is gone.",
+    "date": "2026-03-29",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Thursday at HYROX Málaga is gone.",
+    "date": "2026-03-29",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Friday at BYD HYROX Sydney is gone.",
+    "date": "2026-03-29",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at BYD HYROX Sydney is gone.",
+    "date": "2026-03-29",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Thursday at Leapmotor HYROX Málaga is gone.",
+    "date": "2026-03-29",
+    "priority": 0
+  },
+  {
+    "type": "restock",
     "message": "RESTOCK: 14 tickets released for PRO DOUBLES WOMEN | Sunday at HYROX Bologna!",
+    "date": "2026-03-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Thursday at HYROX Málaga!",
+    "date": "2026-03-28",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Thursday at Leapmotor HYROX Málaga!",
     "date": "2026-03-28",
     "priority": 3
   },
@@ -13,110 +97,26 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for WOMEN | Sunday, 24 May 2026 at GilletteLabs HYROX Berlin!",
+    "message": "HURRY UP: Only 2 tickets left for WOMEN | Sunday, 24 May 2026 at GilletteLabs HYROX Berlin!",
     "date": "2026-03-28",
     "priority": 2
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for WOMEN | Sunday at HYROX Tenerife!",
+    "message": "HURRY UP: Only 3 tickets left for WOMEN | Sunday at HYROX Tenerife!",
     "date": "2026-03-28",
     "priority": 2
   },
   {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Sunday at HYROX Bologna is gone.",
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Saturday at HYROX Málaga!",
     "date": "2026-03-28",
-    "priority": 0
+    "priority": 2
   },
   {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Sunday at HYROX Bologna is gone.",
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for WOMEN | Sunday at HYROX Málaga!",
     "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday, 30 May 2026 at GilletteLabs HYROX Berlin is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX Málaga is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Thursday at HYROX Málaga is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Friday at BYD HYROX Sydney is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Sunday at BYD HYROX Sydney is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at BYD HYROX Sydney is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at BYD HYROX Sydney is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Friday at Leapmotor HYROX Málaga is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Thursday at Leapmotor HYROX Málaga is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (10-11 Years) | Saturday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS BOYS (8-9 Years) | Saturday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (14-15 Years) | Sunday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (8-9 Years) | Saturday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-28",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: YOUNGSTARS GIRLS (12-13 Years) | Sunday at HYROX YOUNGSTARS London is gone.",
-    "date": "2026-03-28",
-    "priority": 0
+    "priority": 2
   }
 ]
