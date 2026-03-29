@@ -10673,8 +10673,8 @@
     },
     {
       "date": "2026-03-29",
-      "fetched_at": "2026-03-29T14:36:15.922802+02:00",
-      "total_stock": 23,
+      "fetched_at": "2026-03-29T20:30:33.890600+02:00",
+      "total_stock": 24,
       "data": {
         "tickets": [
           {
@@ -10701,6 +10701,11 @@
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday",
             "stock": 44
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Wednesday",
+            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -10750,12 +10755,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 34
+            "stock": 33
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday",
-            "stock": 92
+            "stock": 91
           },
           {
             "parkur": "Singles",
@@ -10796,6 +10801,7 @@
         "by_parkur": {
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Sunday": 11,
+            "HYROX DOUBLES MIXED | Wednesday": 1,
             "HYROX DOUBLES WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 5,
             "HYROX DOUBLES MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Monday": 19
           },
@@ -10813,8 +10819,8 @@
             "HYROX ADAPTIVE  MEN | Friday": 2,
             "HYROX ADAPTIVE  WOMEN | Friday": 4,
             "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday": 28,
-            "HYROX PRO WOMEN | Saturday": 34,
-            "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday": 92,
+            "HYROX PRO WOMEN | Saturday": 33,
+            "HYROX WOMEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday": 91,
             "HYROX ADAPTIVE WOMEN | Saturday": 4,
             "HYROX ADAPTIVE MEN | Sunday": 6,
             "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday": 149,
