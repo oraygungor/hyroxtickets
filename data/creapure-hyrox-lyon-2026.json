@@ -2499,6 +2499,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-03-30",
+      "fetched_at": "2026-03-30T10:18:06.441538+02:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "DOUBLES",
+            "ticket": "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday",
+            "stock": 17
+          }
+        ],
+        "by_parkur": {
+          "DOUBLES": {
+            "CHARITY | HYROX DOUBLES WOMEN PRO | Saturday": 17
+          }
+        }
+      }
     }
   ]
 }
