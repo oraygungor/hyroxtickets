@@ -1101,25 +1101,19 @@
     },
     {
       "date": "2026-04-02",
-      "fetched_at": "2026-04-02T14:53:54.956748+02:00",
-      "total_stock": 2,
+      "fetched_at": "2026-04-02T20:44:34.504428+02:00",
+      "total_stock": 1,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
-            "ticket": "HYROX MEN | Thursday",
-            "stock": 5
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 9
+            "stock": 5
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Thursday": 5,
-            "HYROX PRO MEN | Friday": 9
+            "HYROX PRO MEN | Friday": 5
           }
         }
       }
