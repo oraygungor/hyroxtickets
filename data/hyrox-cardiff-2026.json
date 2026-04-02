@@ -10990,6 +10990,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-02",
+      "fetched_at": "2026-04-02T10:00:25.842855+02:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday": 1
+          }
+        }
+      }
     }
   ]
 }
