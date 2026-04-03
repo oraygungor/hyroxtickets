@@ -6472,33 +6472,11 @@
     },
     {
       "date": "2026-04-03",
-      "fetched_at": "2026-04-03T14:43:18.270446+02:00",
-      "total_stock": 3,
+      "fetched_at": "2026-04-03T20:36:11.139927+02:00",
+      "total_stock": 0,
       "data": {
-        "tickets": [
-          {
-            "parkur": "Corporate Challenge",
-            "ticket": "HYROX Doubles Women | Team Member 1",
-            "stock": 23
-          },
-          {
-            "parkur": "Corporate Challenge",
-            "ticket": "HYROX Doubles Mixed |Team Member 1",
-            "stock": 15
-          },
-          {
-            "parkur": "Corporate Challenge",
-            "ticket": "HYROX Doubles Men | Team Member 1",
-            "stock": 14
-          }
-        ],
-        "by_parkur": {
-          "Corporate Challenge": {
-            "HYROX Doubles Women | Team Member 1": 23,
-            "HYROX Doubles Mixed |Team Member 1": 15,
-            "HYROX Doubles Men | Team Member 1": 14
-          }
-        }
+        "tickets": [],
+        "by_parkur": {}
       }
     }
   ]
