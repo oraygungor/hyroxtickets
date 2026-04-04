@@ -1415,11 +1415,21 @@
     },
     {
       "date": "2026-04-04",
-      "fetched_at": "2026-04-04T14:36:09.834944+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-04-04T20:29:54.705480+02:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX MEN | Saturday": 1
+          }
+        }
       }
     }
   ]
