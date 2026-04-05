@@ -1,19 +1,91 @@
 [
   {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for PRO MEN | Saturday at HYROX Tenerife!",
-    "date": "2026-04-04",
-    "priority": 2
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Friday at HYROX Málaga!",
+    "date": "2026-04-05",
+    "priority": 3
   },
   {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for WOMEN | Friday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-04-04",
-    "priority": 2
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Friday at Leapmotor HYROX Málaga!",
+    "date": "2026-04-05",
+    "priority": 3
   },
   {
     "type": "low_stock",
     "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Wednesday at BYD HYROX Sydney!",
+    "date": "2026-04-05",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for DOUBLES MEN | Sunday at AirAsia HYROX Jakarta!",
+    "date": "2026-04-05",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at HYROX Tenerife is gone.",
+    "date": "2026-04-05",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Barcelona is gone.",
+    "date": "2026-04-05",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at Biotherm HYROX Barcelona is gone.",
+    "date": "2026-04-05",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX HELSINKI is gone.",
+    "date": "2026-04-05",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Barcelona!",
+    "date": "2026-04-04",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at Biotherm HYROX Barcelona!",
+    "date": "2026-04-04",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX HELSINKI!",
+    "date": "2026-04-04",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES MEN | Saturday at 24/7 FITNESS HYROX Shanghai!",
+    "date": "2026-04-04",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 3 tickets left for PRO MEN | Saturday at HYROX Tenerife!",
+    "date": "2026-04-04",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES WOMEN | Sunday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-04-04",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 3 tickets left for WOMEN | Friday at Cigna Healthcare HYROX Hong Kong!",
     "date": "2026-04-04",
     "priority": 2
   },
@@ -45,78 +117,6 @@
     "type": "soldout",
     "message": "SOLD OUT: MEN | Thursday at Leapmotor HYROX Málaga is gone.",
     "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Friday at HYROX Lisboa is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at HYROX Lisboa is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at HYROX Barcelona is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Friday at HYROX Barcelona is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at Biotherm HYROX Barcelona is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Friday at Biotherm HYROX Barcelona is gone.",
-    "date": "2026-04-04",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-04-03",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Friday at HYROX Barcelona!",
-    "date": "2026-04-03",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Friday at Biotherm HYROX Barcelona!",
-    "date": "2026-04-03",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for MEN | Thursday at GoodLife HYROX Ottawa!",
-    "date": "2026-04-03",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Wednesday at INTERSPORT HYROX BORDEAUX is gone.",
-    "date": "2026-04-03",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Friday at Virgin Active HYROX Cape Town is gone.",
-    "date": "2026-04-03",
     "priority": 0
   }
 ]
