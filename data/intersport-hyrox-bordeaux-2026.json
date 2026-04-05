@@ -755,14 +755,14 @@
     },
     {
       "date": "2026-04-05",
-      "fetched_at": "2026-04-05T11:28:12.442668+02:00",
-      "total_stock": 19,
+      "fetched_at": "2026-04-05T14:38:28.460410+02:00",
+      "total_stock": 18,
       "data": {
         "tickets": [
           {
             "parkur": "SINGLES",
             "ticket": "CHARITY | HYROX MEN | Wednesday",
-            "stock": 14
+            "stock": 13
           },
           {
             "parkur": "SINGLES",
@@ -817,7 +817,7 @@
           {
             "parkur": "SINGLES",
             "ticket": "CHARITY | HYROX WOMEN | Friday",
-            "stock": 25
+            "stock": 24
           },
           {
             "parkur": "SINGLES",
@@ -841,11 +841,6 @@
           },
           {
             "parkur": "DOUBLES",
-            "ticket": "CHARITY | HYROX DOUBLES WOMEN | Thursday",
-            "stock": 1
-          },
-          {
-            "parkur": "DOUBLES",
             "ticket": "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday",
             "stock": 17
           },
@@ -857,7 +852,7 @@
         ],
         "by_parkur": {
           "SINGLES": {
-            "CHARITY | HYROX MEN | Wednesday": 14,
+            "CHARITY | HYROX MEN | Wednesday": 13,
             "HYROX WOMEN | Wednesday": 60,
             "ADAPTIVE HYROX WOMEN | Wednesday": 9,
             "CHARITY | HYROX WOMEN | Wednesday": 24,
@@ -868,14 +863,13 @@
             "CHARITY | HYROX PRO MEN | Friday": 51,
             "CHARITY | HYROX PRO WOMEN | Friday": 69,
             "ADAPTIVE HYROX WOMEN | Friday": 9,
-            "CHARITY | HYROX WOMEN | Friday": 25,
+            "CHARITY | HYROX WOMEN | Friday": 24,
             "ADAPTIVE HYROX WOMEN | Sunday": 3,
             "CHARITY | HYROX WOMEN | Sunday": 18
           },
           "DOUBLES": {
             "CHARITY | HYROX DOUBLES MEN | Wednesday": 3,
             "CHARITY | HYROX DOUBLES MEN | Thursday": 2,
-            "CHARITY | HYROX DOUBLES WOMEN | Thursday": 1,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 17,
             "CHARITY | HYROX DOUBLES MIXED ATHLETE 2 | Thursday": 1
           }
