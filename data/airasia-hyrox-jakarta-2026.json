@@ -1820,14 +1820,14 @@
     },
     {
       "date": "2026-04-06",
-      "fetched_at": "2026-04-06T14:51:57.191118+02:00",
+      "fetched_at": "2026-04-06T20:45:24.328939+02:00",
       "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 42
+            "stock": 31
           },
           {
             "parkur": "Singles",
@@ -1842,17 +1842,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 80
+            "stock": 79
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 392
+            "stock": 383
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 205
+            "stock": 202
           },
           {
             "parkur": "Singles",
@@ -1862,7 +1862,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 48
+            "stock": 45
           },
           {
             "parkur": "Singles",
@@ -1872,17 +1872,17 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 42,
+            "HYROX MEN | Saturday": 31,
             "HYROX PRO WOMEN | Saturday": 55,
             "HYROX PRO MEN | Saturday": 218,
             "HYROX WOMEN | Sunday": 33,
             "HYROX ADAPTIVE WOMEN | Sunday": 6
           },
           "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Saturday": 80,
-            "HYROX DOUBLES MIXED | Saturday": 392,
-            "HYROX PRO DOUBLES MEN | Saturday": 205,
-            "HYROX DOUBLES WOMEN | Sunday": 48
+            "HYROX PRO DOUBLES WOMEN | Saturday": 79,
+            "HYROX DOUBLES MIXED | Saturday": 383,
+            "HYROX PRO DOUBLES MEN | Saturday": 202,
+            "HYROX DOUBLES WOMEN | Sunday": 45
           }
         }
       }
