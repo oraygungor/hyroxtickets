@@ -1820,19 +1820,19 @@
     },
     {
       "date": "2026-04-06",
-      "fetched_at": "2026-04-06T11:57:26.534567+02:00",
+      "fetched_at": "2026-04-06T14:51:57.191118+02:00",
       "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 47
+            "stock": 42
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 56
+            "stock": 55
           },
           {
             "parkur": "Singles",
@@ -1847,12 +1847,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 394
+            "stock": 392
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 206
+            "stock": 205
           },
           {
             "parkur": "Singles",
@@ -1862,7 +1862,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 49
+            "stock": 48
           },
           {
             "parkur": "Singles",
@@ -1872,17 +1872,17 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 47,
-            "HYROX PRO WOMEN | Saturday": 56,
+            "HYROX MEN | Saturday": 42,
+            "HYROX PRO WOMEN | Saturday": 55,
             "HYROX PRO MEN | Saturday": 218,
             "HYROX WOMEN | Sunday": 33,
             "HYROX ADAPTIVE WOMEN | Sunday": 6
           },
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Saturday": 80,
-            "HYROX DOUBLES MIXED | Saturday": 394,
-            "HYROX PRO DOUBLES MEN | Saturday": 206,
-            "HYROX DOUBLES WOMEN | Sunday": 49
+            "HYROX DOUBLES MIXED | Saturday": 392,
+            "HYROX PRO DOUBLES MEN | Saturday": 205,
+            "HYROX DOUBLES WOMEN | Sunday": 48
           }
         }
       }
