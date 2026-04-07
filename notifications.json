@@ -1,7 +1,103 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Sunday at Virgin Active HYROX Johannesburg 25/26!",
+    "date": "2026-04-07",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-04-07",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 48 tickets released for DOUBLES MEN | Sunday at AirAsia HYROX Jakarta!",
+    "date": "2026-04-07",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Thursday at GoodLife HYROX Ottawa!",
+    "date": "2026-04-07",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES MEN | Sunday at 24/7 FITNESS HYROX Shanghai!",
+    "date": "2026-04-07",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for PRO DOUBLES WOMEN | Saturday at HYROX WARSAW!",
+    "date": "2026-04-07",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES MEN | Saturday at HYROX WARSAW!",
+    "date": "2026-04-07",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for WOMEN | Sunday at HYROX Rimini!",
+    "date": "2026-04-07",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Saturday, 23 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Thursday at HYROX WARSAW is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Friday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MEN | Friday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Wednesday at HYROX Rotterdam is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Wednesday at BYD HYROX Sydney is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN 여자 오픈 | SUNDAY at AirAsia HYROX Incheon is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Friday at HYROX Lisboa is gone.",
+    "date": "2026-04-07",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Friday at Cigna Healthcare HYROX Hong Kong!",
     "date": "2026-04-06",
     "priority": 3
   },
@@ -13,7 +109,7 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 2 tickets released for WOMEN 여자 오픈 | SUNDAY at AirAsia HYROX Incheon!",
+    "message": "RESTOCK: 1 tickets released for WOMEN 여자 오픈 | SUNDAY at AirAsia HYROX Incheon!",
     "date": "2026-04-06",
     "priority": 3
   },
@@ -22,101 +118,5 @@
     "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Friday at HYROX Lisboa!",
     "date": "2026-04-06",
     "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 3 tickets left for DOUBLES MEN | Friday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-04-06",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE WOMEN | Sunday at Virgin Active HYROX Johannesburg 25/26 is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday at HYROX Puebla is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO WOMEN | Friday at HYROX Málaga is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO WOMEN | Friday at HYROX WARSAW is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO WOMEN | Friday at Leapmotor HYROX Málaga is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday at HYROX Barcelona is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday at Biotherm HYROX Barcelona is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at HYROX HELSINKI is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Thursday at GoodLife HYROX Ottawa is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday at GoodLife HYROX Ottawa is gone.",
-    "date": "2026-04-06",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO WOMEN | Friday, 22 May 2026 at GilletteLabs HYROX Berlin!",
-    "date": "2026-04-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Thursday at HYROX Barcelona!",
-    "date": "2026-04-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Thursday at Biotherm HYROX Barcelona!",
-    "date": "2026-04-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 2 tickets released for WOMEN | Thursday at GoodLife HYROX Ottawa!",
-    "date": "2026-04-05",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Wednesday at BYD HYROX Sydney!",
-    "date": "2026-04-05",
-    "priority": 2
   }
 ]
