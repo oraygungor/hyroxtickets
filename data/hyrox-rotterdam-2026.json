@@ -7319,8 +7319,8 @@
     },
     {
       "date": "2026-04-08",
-      "fetched_at": "2026-04-08T15:03:15.087104+02:00",
-      "total_stock": 18,
+      "fetched_at": "2026-04-08T21:05:01.815124+02:00",
+      "total_stock": 19,
       "data": {
         "tickets": [
           {
@@ -7331,7 +7331,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
-            "stock": 1
+            "stock": 2
           },
           {
             "parkur": "Singles",
@@ -7360,13 +7360,18 @@
           },
           {
             "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Thursday",
+            "stock": 4
+          },
+          {
+            "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN | Wednesday",
             "stock": 7
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Wednesday",
-            "stock": 1
+            "stock": 2
           },
           {
             "parkur": "Singles",
@@ -7396,7 +7401,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 182
+            "stock": 183
           },
           {
             "parkur": "Singles",
@@ -7417,17 +7422,18 @@
         "by_parkur": {
           "Singles": {
             "HYROX ADAPTIVE MEN | Saturday": 4,
-            "HYROX ADAPTIVE WOMEN | Sunday": 1,
+            "HYROX ADAPTIVE WOMEN | Sunday": 2,
             "HYROX ADAPTIVE MEN | Thursday": 7,
             "CHARITY | HYROX MEN | Saturday": 18,
             "CHARITY | HYROX PRO WOMEN | Friday": 20,
             "CHARITY | HYROX PRO MEN | Friday": 9,
             "CHARITY | HYROX WOMEN | Sunday": 48,
+            "HYROX WOMEN | Thursday": 4,
             "HYROX ADAPTIVE MEN | Wednesday": 7,
-            "HYROX WOMEN | Wednesday": 1,
+            "HYROX WOMEN | Wednesday": 2,
             "HYROX ADAPTIVE WOMEN | Wednesday": 8,
             "HYROX ADAPTIVE WOMEN | Thursday": 10,
-            "HYROX PRO WOMEN | Friday": 182,
+            "HYROX PRO WOMEN | Friday": 183,
             "HYROX PRO MEN | Friday": 2,
             "HYROX ADAPTIVE MEN | Friday": 10,
             "HYROX ADAPTIVE WOMEN | Friday": 10
