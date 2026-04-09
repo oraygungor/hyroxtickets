@@ -63,6 +63,67 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-09",
+      "fetched_at": "2026-04-09T10:14:35.290113+02:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 596
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 599
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 594
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 592
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 315
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 300
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 287
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 277
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 596,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 599,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 594,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 592,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 315,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 300,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 287,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 277
+          }
+        }
+      }
     }
   ]
 }
