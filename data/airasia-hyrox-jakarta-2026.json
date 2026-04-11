@@ -2177,14 +2177,14 @@
     },
     {
       "date": "2026-04-11",
-      "fetched_at": "2026-04-11T14:38:37.837946+02:00",
+      "fetched_at": "2026-04-11T20:32:26.928261+02:00",
       "total_stock": 8,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 117
+            "stock": 110
           },
           {
             "parkur": "Singles",
@@ -2194,7 +2194,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 205
+            "stock": 204
           },
           {
             "parkur": "Doubles",
@@ -2204,17 +2204,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 328
+            "stock": 325
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 189
+            "stock": 186
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 5
+            "stock": 3
           },
           {
             "parkur": "Singles",
@@ -2224,16 +2224,16 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 117,
+            "HYROX MEN | Saturday": 110,
             "HYROX PRO WOMEN | Saturday": 45,
-            "HYROX PRO MEN | Saturday": 205,
+            "HYROX PRO MEN | Saturday": 204,
             "HYROX ADAPTIVE WOMEN | Sunday": 4
           },
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Saturday": 71,
-            "HYROX DOUBLES MIXED | Saturday": 328,
-            "HYROX PRO DOUBLES MEN | Saturday": 189,
-            "HYROX DOUBLES WOMEN | Sunday": 5
+            "HYROX DOUBLES MIXED | Saturday": 325,
+            "HYROX PRO DOUBLES MEN | Saturday": 186,
+            "HYROX DOUBLES WOMEN | Sunday": 3
           }
         }
       }

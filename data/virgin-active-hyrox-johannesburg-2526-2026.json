@@ -1913,19 +1913,19 @@
     },
     {
       "date": "2026-04-11",
-      "fetched_at": "2026-04-11T14:38:38.162317+02:00",
+      "fetched_at": "2026-04-11T20:32:27.377962+02:00",
       "total_stock": 8,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 400
+            "stock": 395
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 106
+            "stock": 104
           },
           {
             "parkur": "Singles",
@@ -1935,7 +1935,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 248
+            "stock": 246
           },
           {
             "parkur": "Doubles",
@@ -1945,31 +1945,31 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 5
+            "stock": 4
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 72
+            "stock": 70
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 201
+            "stock": 199
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 400,
-            "HYROX PRO MEN | Saturday": 106,
+            "HYROX MEN | Saturday": 395,
+            "HYROX PRO MEN | Saturday": 104,
             "HYROX PRO WOMEN | Saturday": 19,
-            "HYROX WOMEN | Sunday": 248
+            "HYROX WOMEN | Sunday": 246
           },
           "Doubles": {
             "HYROX PRO DOUBLES MEN | Saturday": 63,
-            "HYROX PRO DOUBLES WOMEN | Saturday": 5,
-            "HYROX DOUBLES MEN | Sunday": 72,
-            "HYROX DOUBLES MIXED | Sunday": 201
+            "HYROX PRO DOUBLES WOMEN | Saturday": 4,
+            "HYROX DOUBLES MEN | Sunday": 70,
+            "HYROX DOUBLES MIXED | Sunday": 199
           }
         }
       }
