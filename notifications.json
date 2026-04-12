@@ -1,15 +1,57 @@
 [
   {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at HYROX Rotterdam!",
+    "date": "2026-04-12",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES WOMEN | Saturday at HYROX Maastricht!",
+    "date": "2026-04-12",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for PRO DOUBLES WOMEN | Saturday at 24/7 FITNESS HYROX Shanghai!",
+    "date": "2026-04-12",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at AirAsia HYROX Jakarta is gone.",
+    "date": "2026-04-12",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED 더블 혼성 | SATURDAY at AirAsia HYROX Incheon is gone.",
+    "date": "2026-04-12",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN 여자 오픈 | SUNDAY at AirAsia HYROX Incheon is gone.",
+    "date": "2026-04-12",
+    "priority": 0
+  },
+  {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
+    "message": "RESTOCK: 110 tickets released for MEN | Saturday at AirAsia HYROX Jakarta!",
     "date": "2026-04-11",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 120 tickets released for MEN | Saturday at AirAsia HYROX Jakarta!",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED 더블 혼성 | SATURDAY at AirAsia HYROX Incheon!",
     "date": "2026-04-11",
     "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for WOMEN | Sunday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-04-11",
+    "priority": 2
   },
   {
     "type": "low_stock",
@@ -19,13 +61,13 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 2 tickets left for WOMEN | Sunday at AirAsia HYROX Jakarta!",
+    "message": "HURRY UP: Only 3 tickets left for DOUBLES WOMEN | Sunday at AirAsia HYROX Jakarta!",
     "date": "2026-04-11",
     "priority": 2
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for PRO MEN | Friday at Masters’ Union HYROX Delhi!",
+    "message": "HURRY UP: Only 5 tickets left for WOMEN | Thursday at HYROX WARSAW!",
     "date": "2026-04-11",
     "priority": 2
   },
@@ -43,9 +85,27 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO DOUBLES WOMEN | Saturday at Virgin Active HYROX Johannesburg 25/26!",
+    "message": "HURRY UP: Only 4 tickets left for PRO DOUBLES WOMEN | Saturday at Virgin Active HYROX Johannesburg 25/26!",
     "date": "2026-04-11",
     "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Sunday at AirAsia HYROX Jakarta is gone.",
+    "date": "2026-04-11",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MEN | Sunday at HYROX WARSAW is gone.",
+    "date": "2026-04-11",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX São Paulo is gone.",
+    "date": "2026-04-11",
+    "priority": 0
   },
   {
     "type": "soldout",
@@ -55,68 +115,8 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at 24/7 FITNESS HYROX Shanghai is gone.",
+    "message": "SOLD OUT: PRO MEN | Friday at Masters’ Union HYROX Delhi is gone.",
     "date": "2026-04-11",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Saturday at HYROX Rimini is gone.",
-    "date": "2026-04-11",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN 더블 여자 | SUNDAY at AirAsia HYROX Incheon is gone.",
-    "date": "2026-04-11",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 20 tickets released for DOUBLES WOMEN | Saturday at HYROX São Paulo!",
-    "date": "2026-04-10",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 3 tickets released for WOMEN 여자 오픈 | FRIDAY at AirAsia HYROX Incheon!",
-    "date": "2026-04-10",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for MEN | Saturday at HYROX São Paulo!",
-    "date": "2026-04-10",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO WOMEN | Saturday at 24/7 FITNESS HYROX Shanghai!",
-    "date": "2026-04-10",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO WOMEN | Friday at HYROX Rimini!",
-    "date": "2026-04-10",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday at GoodLife HYROX Ottawa is gone.",
-    "date": "2026-04-10",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Saturday at GoodLife HYROX Ottawa is gone.",
-    "date": "2026-04-10",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at AirAsia HYROX Jakarta is gone.",
-    "date": "2026-04-10",
     "priority": 0
   }
 ]
