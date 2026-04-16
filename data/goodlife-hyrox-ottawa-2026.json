@@ -7356,6 +7356,43 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-16",
+      "fetched_at": "2026-04-16T10:24:00.683964+02:00",
+      "total_stock": 4,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Friday",
+            "stock": 6
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Thursday",
+            "stock": 9
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Thursday",
+            "stock": 10
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE WOMEN | Sunday": 1,
+            "HYROX ADAPTIVE WOMEN | Friday": 6,
+            "HYROX ADAPTIVE MEN | Thursday": 9,
+            "HYROX ADAPTIVE WOMEN | Thursday": 10
+          }
+        }
+      }
     }
   ]
 }
