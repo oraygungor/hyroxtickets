@@ -4793,14 +4793,19 @@
     },
     {
       "date": "2026-04-16",
-      "fetched_at": "2026-04-16T10:24:00.101583+02:00",
-      "total_stock": 7,
+      "fetched_at": "2026-04-16T12:04:45.707302+02:00",
+      "total_stock": 8,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
+            "ticket": "HYROX WOMEN 여자 오픈 | SUNDAY",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY",
-            "stock": 6
+            "stock": 5
           },
           {
             "parkur": "Singles",
@@ -4835,7 +4840,8 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY": 6,
+            "HYROX WOMEN 여자 오픈 | SUNDAY": 1,
+            "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | SUNDAY": 5,
             "HYROX MEN 남자 오픈 | FRIDAY": 76,
             "HYROX ADAPTIVE MEN 어뎁티브 남자 | FRIDAY": 4,
             "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | FRIDAY": 4

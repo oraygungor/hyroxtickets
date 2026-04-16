@@ -428,29 +428,29 @@
     },
     {
       "date": "2026-04-16",
-      "fetched_at": "2026-04-16T10:24:18.184626+02:00",
-      "total_stock": 21,
+      "fetched_at": "2026-04-16T12:04:59.037731+02:00",
+      "total_stock": 20,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 1566
+            "stock": 1458
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 761
+            "stock": 696
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 328
+            "stock": 299
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 98
+            "stock": 79
           },
           {
             "parkur": "Singles",
@@ -485,27 +485,22 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 621
+            "stock": 583
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 571
+            "stock": 475
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 801
+            "stock": 700
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 160
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 18
+            "stock": 139
           },
           {
             "parkur": "Doubles",
@@ -520,7 +515,7 @@
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MIXED | Sunday",
-            "stock": 30
+            "stock": 29
           },
           {
             "parkur": "Doubles",
@@ -540,10 +535,10 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 1566,
-            "HYROX WOMEN | Sunday": 761,
-            "HYROX PRO MEN | Saturday": 328,
-            "HYROX PRO WOMEN | Saturday": 98,
+            "HYROX MEN | Saturday": 1458,
+            "HYROX WOMEN | Sunday": 696,
+            "HYROX PRO MEN | Saturday": 299,
+            "HYROX PRO WOMEN | Saturday": 79,
             "CHARITY | HYROX WOMEN | Sunday": 50,
             "CHARITY | HYROX MEN | Saturday": 50,
             "CHARITY | HYROX PRO WOMEN | Saturday": 20,
@@ -552,14 +547,13 @@
             "HYROX ADAPTIVE WOMEN | Sunday": 10
           },
           "Doubles": {
-            "HYROX DOUBLES MEN | Sunday": 621,
-            "HYROX DOUBLES WOMEN | Saturday": 571,
-            "HYROX DOUBLES MIXED | Sunday": 801,
-            "HYROX PRO DOUBLES MEN | Saturday": 160,
-            "HYROX PRO DOUBLES WOMEN | Saturday": 18,
+            "HYROX DOUBLES MEN | Sunday": 583,
+            "HYROX DOUBLES WOMEN | Saturday": 475,
+            "HYROX DOUBLES MIXED | Sunday": 700,
+            "HYROX PRO DOUBLES MEN | Saturday": 139,
             "CHARITY | HYROX DOUBLES MEN | Sunday": 30,
             "CHARITY | HYROX DOUBLES WOMEN | Saturday": 30,
-            "CHARITY | HYROX DOUBLES MIXED | Sunday": 30,
+            "CHARITY | HYROX DOUBLES MIXED | Sunday": 29,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 20,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 20,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 20
