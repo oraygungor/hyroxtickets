@@ -1363,7 +1363,7 @@
     },
     {
       "date": "2026-04-16",
-      "fetched_at": "2026-04-16T12:04:49.303755+02:00",
+      "fetched_at": "2026-04-16T15:12:30.203317+02:00",
       "total_stock": 10,
       "data": {
         "tickets": [
@@ -1380,12 +1380,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Friday",
-            "stock": 17
+            "stock": 14
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 8
+            "stock": 6
           },
           {
             "parkur": "Doubles",
@@ -1395,7 +1395,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 12
+            "stock": 11
           },
           {
             "parkur": "Doubles",
@@ -1405,12 +1405,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday",
-            "stock": 3
+            "stock": 1
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 26
+            "stock": 24
           },
           {
             "parkur": "Doubles",
@@ -1421,17 +1421,17 @@
         "by_parkur": {
           "Doubles": {
             "HYROX PRO DOUBLES WOMEN | Saturday": 6,
-            "HYROX DOUBLES MIXED | Saturday": 8,
+            "HYROX DOUBLES MIXED | Saturday": 6,
             "HYROX DOUBLES MEN | Sunday": 20,
             "HYROX DOUBLES MEN | Thursday": 3,
-            "HYROX DOUBLES WOMEN | Thursday": 3,
+            "HYROX DOUBLES WOMEN | Thursday": 1,
             "HYROX DOUBLES WOMEN | Sunday": 10
           },
           "Singles": {
             "HYROX PRO WOMEN | Friday": 10,
-            "HYROX PRO MEN | Friday": 17,
-            "HYROX WOMEN | Sunday": 12,
-            "HYROX WOMEN | Thursday": 26
+            "HYROX PRO MEN | Friday": 14,
+            "HYROX WOMEN | Sunday": 11,
+            "HYROX WOMEN | Thursday": 24
           }
         }
       }
