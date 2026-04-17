@@ -4411,6 +4411,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-17",
+      "fetched_at": "2026-04-17T10:22:38.991116+02:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Sunday",
+            "stock": 18
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MEN | Sunday": 18
+          }
+        }
+      }
     }
   ]
 }
