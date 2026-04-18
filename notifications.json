@@ -1,9 +1,105 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Sunday at HYROX Puebla!",
+    "message": "RESTOCK: 8 tickets released for DOUBLES MIXED | Saturday at HYROX Buenos Aires!",
+    "date": "2026-04-18",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 160 tickets released for MEN | Saturday at Amazfit HYROX Washington D.C.!",
+    "date": "2026-04-18",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 42 tickets released for WOMEN | Sunday at Amazfit HYROX Washington D.C.!",
+    "date": "2026-04-18",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at LEMON GYM HYROX RIGA!",
+    "date": "2026-04-18",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES MEN | Sunday at Biotherm HYROX Barcelona!",
+    "date": "2026-04-18",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES MEN | Sunday at HYROX Barcelona!",
+    "date": "2026-04-18",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES MEN | Saturday at HYROX Buenos Aires!",
+    "date": "2026-04-18",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 1 tickets left for WOMEN | Saturday at HYROX Buenos Aires!",
+    "date": "2026-04-18",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at Biotherm HYROX Barcelona is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Barcelona is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Saturday at HYROX Buenos Aires is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Buenos Aires is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Saturday at Masters’ Union HYROX Delhi is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES WOMEN  | Saturday at Masters’ Union HYROX Delhi is gone.",
+    "date": "2026-04-18",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at Biotherm HYROX Barcelona!",
     "date": "2026-04-17",
     "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for MEN | Saturday at HYROX Barcelona!",
+    "date": "2026-04-17",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 3 tickets left for WOMEN | Sunday at Biotherm HYROX Barcelona!",
+    "date": "2026-04-17",
+    "priority": 2
   },
   {
     "type": "low_stock",
@@ -13,7 +109,7 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at Biotherm HYROX Barcelona!",
+    "message": "HURRY UP: Only 3 tickets left for WOMEN | Sunday at HYROX Barcelona!",
     "date": "2026-04-17",
     "priority": 2
   },
@@ -22,101 +118,5 @@
     "message": "HURRY UP: Only 5 tickets left for PRO WOMEN | Friday at HYROX Barcelona!",
     "date": "2026-04-17",
     "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at HYROX Barcelona!",
-    "date": "2026-04-17",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for WOMEN | Sunday at Amazfit HYROX Washington D.C.!",
-    "date": "2026-04-17",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at Biotherm HYROX Barcelona is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Barcelona is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at Amazfit HYROX Washington D.C. is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday at HYROX Maastricht is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Saturday at 24/7 FITNESS HYROX Shanghai is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at Virgin Active HYROX Johannesburg 25/26 is gone.",
-    "date": "2026-04-17",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Saturday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 35 tickets released for MEN | Saturday at HYROX Buenos Aires!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 26 tickets released for WOMEN | Saturday at HYROX Buenos Aires!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 17 tickets released for DOUBLES WOMEN | Saturday at HYROX Buenos Aires!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at 24/7 FITNESS HYROX Shanghai!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at LEMON GYM HYROX RIGA!",
-    "date": "2026-04-16",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 2 tickets released for ADAPTIVE WOMEN | Sunday at Virgin Active HYROX Johannesburg 25/26!",
-    "date": "2026-04-16",
-    "priority": 3
   }
 ]
