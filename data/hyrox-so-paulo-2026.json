@@ -4196,6 +4196,39 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-22",
+      "fetched_at": "2026-04-22T10:25:46.657507+02:00",
+      "total_stock": 3,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Saturday",
+            "stock": 22
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Saturday",
+            "stock": 22
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Saturday",
+            "stock": 15
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | Saturday": 22,
+            "HYROX PRO WOMEN | Saturday": 22
+          },
+          "Doubles": {
+            "HYROX DOUBLES WOMEN | Saturday": 15
+          }
+        }
+      }
     }
   ]
 }
