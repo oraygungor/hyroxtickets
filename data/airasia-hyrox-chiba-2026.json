@@ -95,6 +95,99 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-23",
+      "fetched_at": "2026-04-23T10:29:49.716138+02:00",
+      "total_stock": 13,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN ウィメンズ | SATURDAY",
+            "stock": 241
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN プロウィメンズ | SATURDAY",
+            "stock": 56
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN プロメンズ | SATURDAY",
+            "stock": 46
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN ダブルスメンズ | FRIDAY",
+            "stock": 522
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY",
+            "stock": 7
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN メンズ | FRIDAY",
+            "stock": 79
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY",
+            "stock": 7
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED ダブルスミックス | SUNDAY",
+            "stock": 495
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN ダブルスウィメンズ | FRIDAY",
+            "stock": 88
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN プロダブルスウィメンズ | SATURDAY",
+            "stock": 67
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN プロダブルスメンズ | SATURDAY",
+            "stock": 66
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN メンズ | SATURDAY",
+            "stock": 342
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | SATURDAY",
+            "stock": 5
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN ウィメンズ | SATURDAY": 241,
+            "HYROX PRO WOMEN プロウィメンズ | SATURDAY": 56,
+            "HYROX PRO MEN プロメンズ | SATURDAY": 46,
+            "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY": 7,
+            "HYROX MEN メンズ | FRIDAY": 79,
+            "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY": 7,
+            "HYROX MEN メンズ | SATURDAY": 342,
+            "HYROX ADAPTIVE MEN 障がい者メンズ | SATURDAY": 5
+          },
+          "Doubles": {
+            "HYROX DOUBLES MEN ダブルスメンズ | FRIDAY": 522,
+            "HYROX DOUBLES MIXED ダブルスミックス | SUNDAY": 495,
+            "HYROX DOUBLES WOMEN ダブルスウィメンズ | FRIDAY": 88,
+            "HYROX PRO DOUBLES WOMEN プロダブルスウィメンズ | SATURDAY": 67,
+            "HYROX PRO DOUBLES MEN プロダブルスメンズ | SATURDAY": 66
+          }
+        }
+      }
     }
   ]
 }
