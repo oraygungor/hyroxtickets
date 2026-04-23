@@ -98,23 +98,18 @@
     },
     {
       "date": "2026-04-23",
-      "fetched_at": "2026-04-23T12:11:55.341594+02:00",
-      "total_stock": 4,
+      "fetched_at": "2026-04-23T15:06:29.019397+02:00",
+      "total_stock": 3,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY",
+            "ticket": "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY",
             "stock": 2
           },
           {
-            "parkur": "Doubles",
-            "ticket": "HYROX DOUBLES MIXED ダブルスミックス | SUNDAY",
-            "stock": 5
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES WOMEN プロダブルスウィメンズ | SATURDAY",
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY",
             "stock": 2
           },
           {
@@ -125,12 +120,9 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY": 2,
             "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY": 2,
             "HYROX ADAPTIVE MEN 障がい者メンズ | SATURDAY": 1
-          },
-          "Doubles": {
-            "HYROX DOUBLES MIXED ダブルスミックス | SUNDAY": 5,
-            "HYROX PRO DOUBLES WOMEN プロダブルスウィメンズ | SATURDAY": 2
           }
         }
       }

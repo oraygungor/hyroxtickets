@@ -1900,11 +1900,21 @@
     },
     {
       "date": "2026-04-23",
-      "fetched_at": "2026-04-23T12:11:42.113883+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-04-23T15:06:15.241144+02:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Thursday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Thursday": 1
+          }
+        }
       }
     }
   ]
