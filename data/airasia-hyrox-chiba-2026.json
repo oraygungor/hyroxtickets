@@ -126,6 +126,37 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-24",
+      "fetched_at": "2026-04-24T10:56:26.150532+02:00",
+      "total_stock": 3,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY",
+            "stock": 3
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY",
+            "stock": 4
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 障がい者メンズ | SATURDAY",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE WOMEN 障がい者ウィメンズ | SATURDAY": 3,
+            "HYROX ADAPTIVE MEN 障がい者メンズ | FRIDAY": 4,
+            "HYROX ADAPTIVE MEN 障がい者メンズ | SATURDAY": 1
+          }
+        }
+      }
     }
   ]
 }
