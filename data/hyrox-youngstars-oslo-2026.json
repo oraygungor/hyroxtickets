@@ -1039,6 +1039,67 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-04-25",
+      "fetched_at": "2026-04-25T10:01:09.264480+02:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 587
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 593
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 583
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 585
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 308
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 288
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 279
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 266
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 587,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 593,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 583,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 585,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 308,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 288,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 279,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 266
+          }
+        }
+      }
     }
   ]
 }
