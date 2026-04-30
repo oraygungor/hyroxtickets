@@ -2704,29 +2704,29 @@
     },
     {
       "date": "2026-04-30",
-      "fetched_at": "2026-04-30T15:23:49.779955+02:00",
-      "total_stock": 12,
+      "fetched_at": "2026-04-30T21:08:23.717757+02:00",
+      "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Saturday",
-            "stock": 378
+            "stock": 313
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Sunday",
-            "stock": 74
+            "stock": 71
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Sunday",
-            "stock": 20
+            "stock": 15
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 193
+            "stock": 78
           },
           {
             "parkur": "Singles",
@@ -2736,22 +2736,17 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Friday",
-            "stock": 778
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Friday",
-            "stock": 1
+            "stock": 629
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 573
+            "stock": 507
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Friday",
-            "stock": 385
+            "stock": 323
           },
           {
             "parkur": "Doubles",
@@ -2761,32 +2756,31 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Sunday",
-            "stock": 34
+            "stock": 26
           },
           {
             "parkur": "Station 9 - The Official Afterparty",
             "ticket": "STATION 9 | Sunday",
-            "stock": 960
+            "stock": 947
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX WOMEN | Saturday": 378,
-            "HYROX PRO WOMEN | Sunday": 74,
-            "HYROX PRO MEN | Sunday": 20,
+            "HYROX WOMEN | Saturday": 313,
+            "HYROX PRO WOMEN | Sunday": 71,
+            "HYROX PRO MEN | Sunday": 15,
             "HYROX ADAPTIVE WOMEN | Saturday": 7,
-            "HYROX MEN | Friday": 778,
-            "HYROX ADAPTIVE MEN | Friday": 1
+            "HYROX MEN | Friday": 629
           },
           "Doubles": {
-            "HYROX DOUBLES MEN | Sunday": 193,
-            "HYROX DOUBLES MIXED | Saturday": 573,
-            "HYROX DOUBLES WOMEN | Friday": 385,
+            "HYROX DOUBLES MEN | Sunday": 78,
+            "HYROX DOUBLES MIXED | Saturday": 507,
+            "HYROX DOUBLES WOMEN | Friday": 323,
             "HYROX PRO DOUBLES WOMEN | Sunday": 28,
-            "HYROX PRO DOUBLES MEN | Sunday": 34
+            "HYROX PRO DOUBLES MEN | Sunday": 26
           },
           "Station 9 - The Official Afterparty": {
-            "STATION 9 | Sunday": 960
+            "STATION 9 | Sunday": 947
           }
         }
       }
