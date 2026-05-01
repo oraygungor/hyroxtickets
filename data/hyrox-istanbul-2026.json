@@ -935,14 +935,14 @@
     },
     {
       "date": "2026-05-01",
-      "fetched_at": "2026-05-01T12:13:34.524320+02:00",
+      "fetched_at": "2026-05-01T14:59:32.891821+02:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 583
+            "stock": 577
           },
           {
             "parkur": "Singles",
@@ -972,7 +972,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 276
+            "stock": 274
           },
           {
             "parkur": "Doubles",
@@ -982,22 +982,22 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday",
-            "stock": 75
+            "stock": 73
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 415
+            "stock": 412
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 241
+            "stock": 238
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 583,
+            "HYROX MEN | Saturday": 577,
             "HYROX PRO MEN | Saturday": 169,
             "HYROX PRO WOMEN | Saturday": 61,
             "HYROX ADAPTIVE MEN | Saturday": 2,
@@ -1005,11 +1005,11 @@
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 276,
+            "HYROX DOUBLES MIXED | Saturday": 274,
             "HYROX PRO DOUBLES MEN | Saturday": 149,
-            "HYROX PRO DOUBLES WOMEN | Saturday": 75,
-            "HYROX DOUBLES MEN | Sunday": 415,
-            "HYROX DOUBLES WOMEN | Sunday": 241
+            "HYROX PRO DOUBLES WOMEN | Saturday": 73,
+            "HYROX DOUBLES MEN | Sunday": 412,
+            "HYROX DOUBLES WOMEN | Sunday": 238
           }
         }
       }
