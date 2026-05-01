@@ -3209,24 +3209,24 @@
     },
     {
       "date": "2026-05-01",
-      "fetched_at": "2026-05-01T14:59:43.876961+02:00",
+      "fetched_at": "2026-05-01T20:59:32.229934+02:00",
       "total_stock": 7,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 23
+            "stock": 19
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 47
+            "stock": 46
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 14
+            "stock": 12
           },
           {
             "parkur": "Singles",
@@ -3236,30 +3236,30 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Saturday",
-            "stock": 245
+            "stock": 238
           },
           {
             "parkur": "Doubles",
-            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 1
+            "ticket": "HYROX DOUBLES MEN | Sunday",
+            "stock": 20
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 12
+            "stock": 6
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 23,
-            "HYROX PRO MEN | Saturday": 47,
-            "HYROX PRO WOMEN | Saturday": 14,
+            "HYROX MEN | Saturday": 19,
+            "HYROX PRO MEN | Saturday": 46,
+            "HYROX PRO WOMEN | Saturday": 12,
             "HYROX ADAPTIVE WOMEN | Sunday": 3
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Saturday": 245,
-            "HYROX PRO DOUBLES MEN | Saturday": 1,
-            "HYROX DOUBLES MIXED | Sunday": 12
+            "HYROX DOUBLES WOMEN | Saturday": 238,
+            "HYROX DOUBLES MEN | Sunday": 20,
+            "HYROX DOUBLES MIXED | Sunday": 6
           }
         }
       }
