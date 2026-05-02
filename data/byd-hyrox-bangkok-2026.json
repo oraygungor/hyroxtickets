@@ -2861,6 +2861,71 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-02",
+      "fetched_at": "2026-05-02T10:18:00.478910+02:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Saturday",
+            "stock": 190
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Sunday",
+            "stock": 65
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Saturday",
+            "stock": 5
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Friday",
+            "stock": 349
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday",
+            "stock": 389
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Friday",
+            "stock": 182
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Sunday",
+            "stock": 22
+          },
+          {
+            "parkur": "Station 9 - The Official Afterparty",
+            "ticket": "STATION 9 | Sunday",
+            "stock": 940
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | Saturday": 190,
+            "HYROX PRO WOMEN | Sunday": 65,
+            "HYROX ADAPTIVE WOMEN | Saturday": 5,
+            "HYROX MEN | Friday": 349
+          },
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Saturday": 389,
+            "HYROX DOUBLES WOMEN | Friday": 182,
+            "HYROX PRO DOUBLES WOMEN | Sunday": 22
+          },
+          "Station 9 - The Official Afterparty": {
+            "STATION 9 | Sunday": 940
+          }
+        }
+      }
     }
   ]
 }
