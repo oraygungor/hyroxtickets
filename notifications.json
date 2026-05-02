@@ -1,85 +1,97 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Friday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-05-01",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Sunday at Cigna Healthcare HYROX Hong Kong!",
+    "date": "2026-05-02",
     "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Saturday at BYD HYROX Sydney!",
+    "date": "2026-05-02",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at HYROX Karlsruhe!",
+    "date": "2026-05-02",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 3 tickets left for WOMEN | Sunday at AirAsia HYROX Jakarta!",
+    "date": "2026-05-02",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 3 tickets left for DOUBLES WOMEN | Saturday at AirAsia HYROX Perth!",
+    "date": "2026-05-02",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 2 tickets left for DOUBLES MIXED | Sunday at Virgin Active HYROX Johannesburg 25/26!",
+    "date": "2026-05-02",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE WOMEN | Saturday at BYD HYROX Bangkok!",
+    "date": "2026-05-02",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at Cigna Healthcare HYROX Hong Kong is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE WOMEN | Sunday at HWPO HYROX Boston is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE WOMEN | Sunday at Masters’ Union HYROX Delhi is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO WOMEN | Friday, 22 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MEN | Friday, 29 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Sunday at BYD HYROX Bangkok is gone.",
+    "date": "2026-05-02",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Sunday at BYD HYROX Bangkok is gone.",
+    "date": "2026-05-02",
+    "priority": 0
   },
   {
     "type": "restock",
     "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at Cigna Healthcare HYROX Hong Kong!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 393 tickets released for MEN | Friday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 383 tickets released for PRO DOUBLES MEN | Saturday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 550 tickets released for DOUBLES MIXED | Thursday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 416 tickets released for DOUBLES WOMEN | Thursday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 10 tickets released for ADAPTIVE WOMEN | Friday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 10 tickets released for ADAPTIVE WOMEN | Sunday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 639 tickets released for MEN | Thursday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 169 tickets released for WOMEN | Friday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 106 tickets released for PRO DOUBLES WOMEN | Saturday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 378 tickets released for PRO MEN | Friday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 447 tickets released for DOUBLES MEN | Thursday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 281 tickets released for DOUBLES MIXED | Friday at TRAINSWEATEAT HYROX NICE!",
     "date": "2026-05-01",
     "priority": 3
   },
@@ -91,31 +103,19 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 704 tickets released for DOUBLES MEN | Sunday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 857 tickets released for WOMEN | Sunday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 741 tickets released for DOUBLES WOMEN | Sunday at TRAINSWEATEAT HYROX NICE!",
-    "date": "2026-05-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 214 tickets released for DOUBLES MEN | Friday at TRAINSWEATEAT HYROX NICE!",
+    "message": "RESTOCK: 447 tickets released for DOUBLES MEN | Thursday at TRAINSWEATEAT HYROX NICE!",
     "date": "2026-05-01",
     "priority": 3
   },
   {
     "type": "restock",
     "message": "RESTOCK: 10 tickets released for ADAPTIVE MEN | Thursday at TRAINSWEATEAT HYROX NICE!",
+    "date": "2026-05-01",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 281 tickets released for DOUBLES MIXED | Friday at TRAINSWEATEAT HYROX NICE!",
     "date": "2026-05-01",
     "priority": 3
   }
