@@ -4394,14 +4394,14 @@
     },
     {
       "date": "2026-05-03",
-      "fetched_at": "2026-05-03T11:57:24.118232+02:00",
-      "total_stock": 37,
+      "fetched_at": "2026-05-03T14:51:35.498694+02:00",
+      "total_stock": 38,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 29
+            "stock": 27
           },
           {
             "parkur": "Singles",
@@ -4515,6 +4515,11 @@
           },
           {
             "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Thursday",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MEN | Thursday",
             "stock": 17
           },
@@ -4571,7 +4576,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Monday",
-            "stock": 218
+            "stock": 216
           },
           {
             "parkur": "Doubles",
@@ -4586,7 +4591,7 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX WOMEN | Thursday": 29,
+            "HYROX WOMEN | Thursday": 27,
             "CHARITY | HYROX WOMEN | Thursday": 110,
             "CHARITY | HYROX MEN | Thursday": 111,
             "HYROX ADAPTIVE MEN | Thursday": 9,
@@ -4611,6 +4616,7 @@
           },
           "Doubles": {
             "HYROX DOUBLES MEN | Thursday": 139,
+            "HYROX DOUBLES WOMEN | Thursday": 1,
             "CHARITY | HYROX DOUBLES MEN | Thursday": 17,
             "CHARITY | HYROX DOUBLES MIXED | Thursday": 14,
             "CHARITY | HYROX DOUBLES MIXED | Friday": 1,
@@ -4622,7 +4628,7 @@
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 25,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 25,
             "HYROX DOUBLES MEN | Monday": 483,
-            "HYROX DOUBLES MIXED | Monday": 218,
+            "HYROX DOUBLES MIXED | Monday": 216,
             "CHARITY | HYROX DOUBLES MEN | Monday": 21,
             "CHARITY | HYROX DOUBLES MIXED | Monday": 20
           }
