@@ -2994,14 +2994,14 @@
     },
     {
       "date": "2026-05-04",
-      "fetched_at": "2026-05-04T11:12:07.597846+02:00",
+      "fetched_at": "2026-05-04T12:52:19.812774+02:00",
       "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Saturday",
-            "stock": 133
+            "stock": 131
           },
           {
             "parkur": "Singles",
@@ -3016,7 +3016,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Friday",
-            "stock": 142
+            "stock": 135
           },
           {
             "parkur": "Singles",
@@ -3026,12 +3026,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 308
+            "stock": 310
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Friday",
-            "stock": 104
+            "stock": 99
           },
           {
             "parkur": "Doubles",
@@ -3041,24 +3041,24 @@
           {
             "parkur": "Station 9 - The Official Afterparty",
             "ticket": "STATION 9 | Sunday",
-            "stock": 938
+            "stock": 937
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX WOMEN | Saturday": 133,
+            "HYROX WOMEN | Saturday": 131,
             "HYROX PRO WOMEN | Sunday": 59,
             "HYROX ADAPTIVE WOMEN | Saturday": 6,
-            "HYROX MEN | Friday": 142,
+            "HYROX MEN | Friday": 135,
             "HYROX ADAPTIVE MEN | Friday": 3
           },
           "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 308,
-            "HYROX DOUBLES WOMEN | Friday": 104,
+            "HYROX DOUBLES MIXED | Saturday": 310,
+            "HYROX DOUBLES WOMEN | Friday": 99,
             "HYROX PRO DOUBLES WOMEN | Sunday": 18
           },
           "Station 9 - The Official Afterparty": {
-            "STATION 9 | Sunday": 938
+            "STATION 9 | Sunday": 937
           }
         }
       }
