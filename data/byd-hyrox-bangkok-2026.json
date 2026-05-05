@@ -3062,6 +3062,77 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-05",
+      "fetched_at": "2026-05-05T11:03:56.444460+02:00",
+      "total_stock": 9,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Saturday",
+            "stock": 115
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Sunday",
+            "stock": 59
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Saturday",
+            "stock": 7
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Friday",
+            "stock": 71
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Friday",
+            "stock": 3
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday",
+            "stock": 279
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Friday",
+            "stock": 68
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Sunday",
+            "stock": 17
+          },
+          {
+            "parkur": "Station 9 - The Official Afterparty",
+            "ticket": "STATION 9 | Sunday",
+            "stock": 937
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | Saturday": 115,
+            "HYROX PRO WOMEN | Sunday": 59,
+            "HYROX ADAPTIVE WOMEN | Saturday": 7,
+            "HYROX MEN | Friday": 71,
+            "HYROX ADAPTIVE MEN | Friday": 3
+          },
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Saturday": 279,
+            "HYROX DOUBLES WOMEN | Friday": 68,
+            "HYROX PRO DOUBLES WOMEN | Sunday": 17
+          },
+          "Station 9 - The Official Afterparty": {
+            "STATION 9 | Sunday": 937
+          }
+        }
+      }
     }
   ]
 }

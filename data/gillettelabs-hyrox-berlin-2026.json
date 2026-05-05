@@ -25697,6 +25697,117 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-05",
+      "fetched_at": "2026-05-05T11:04:02.435711+02:00",
+      "total_stock": 16,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday, 24 May 2026",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Monday, 25 May 2026",
+            "stock": 18
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Thursday, 28 May 2026",
+            "stock": 30
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday, 23 May 2026",
+            "stock": 2
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026",
+            "stock": 8
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Sunday, 24 May 2026",
+            "stock": 54
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Monday, 25 May 2026",
+            "stock": 38
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Monday, 25 May 2026",
+            "stock": 34
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Thursday, 28 May 2026",
+            "stock": 118
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Thursday, 28 May 2026",
+            "stock": 91
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Thursday, 28 May 2026",
+            "stock": 114
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Friday, 29 May 2026",
+            "stock": 15
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday, 30 May 2026",
+            "stock": 16
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday, 30 May 2026",
+            "stock": 2
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026",
+            "stock": 11
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Sunday, 31 May 2026",
+            "stock": 25
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | Sunday, 24 May 2026": 1,
+            "HYROX WOMEN | Monday, 25 May 2026": 18,
+            "HYROX WOMEN | Thursday, 28 May 2026": 30
+          },
+          "Doubles": {
+            "HYROX PRO DOUBLES MEN | Saturday, 23 May 2026": 2,
+            "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026": 8,
+            "HYROX DOUBLES WOMEN | Sunday, 24 May 2026": 54,
+            "HYROX DOUBLES WOMEN | Monday, 25 May 2026": 38,
+            "HYROX DOUBLES MIXED | Monday, 25 May 2026": 34,
+            "HYROX DOUBLES MEN | Thursday, 28 May 2026": 118,
+            "HYROX DOUBLES WOMEN | Thursday, 28 May 2026": 91,
+            "HYROX DOUBLES MIXED | Thursday, 28 May 2026": 114,
+            "HYROX DOUBLES WOMEN | Friday, 29 May 2026": 15,
+            "HYROX DOUBLES MIXED | Saturday, 30 May 2026": 16,
+            "HYROX PRO DOUBLES MEN | Saturday, 30 May 2026": 2,
+            "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026": 11,
+            "HYROX DOUBLES WOMEN | Sunday, 31 May 2026": 25
+          }
+        }
+      }
     }
   ]
 }
