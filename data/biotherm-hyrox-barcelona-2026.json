@@ -1806,25 +1806,19 @@
     },
     {
       "date": "2026-05-05",
-      "fetched_at": "2026-05-05T15:18:24.765124+02:00",
-      "total_stock": 2,
+      "fetched_at": "2026-05-05T21:06:52.664437+02:00",
+      "total_stock": 1,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
             "stock": 4
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Friday",
-            "stock": 2
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO WOMEN | Friday": 4,
-            "HYROX WOMEN | Friday": 2
+            "HYROX PRO WOMEN | Friday": 4
           }
         }
       }
