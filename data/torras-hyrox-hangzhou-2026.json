@@ -1,0 +1,70 @@
+{
+  "event_id": "torras-hyrox-hangzhou-2026",
+  "event_name": "TORRAS HYROX Hangzhou",
+  "url": "https://china.hyrox.com/checkout/hyrox-hangzhou-season-26-27-0bxk9i",
+  "history": [
+    {
+      "date": "2026-05-07",
+      "fetched_at": "2026-05-07T11:26:54.794332+02:00",
+      "total_stock": 8,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Saturday",
+            "stock": 18
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN | Saturday",
+            "stock": 2
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Saturday",
+            "stock": 3
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 14
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED | Saturday",
+            "stock": 16
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
+            "stock": 3
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN | Sunday",
+            "stock": 11
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Sunday",
+            "stock": 14
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX MEN | Saturday": 18,
+            "HYROX PRO MEN | Saturday": 2,
+            "HYROX PRO WOMEN | Saturday": 3,
+            "HYROX WOMEN | Sunday": 14
+          },
+          "Doubles": {
+            "HYROX DOUBLES MIXED | Saturday": 16,
+            "HYROX PRO DOUBLES MEN | Saturday": 3,
+            "HYROX DOUBLES MEN | Sunday": 11,
+            "HYROX DOUBLES WOMEN | Sunday": 14
+          }
+        }
+      }
+    }
+  ]
+}

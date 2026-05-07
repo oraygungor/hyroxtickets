@@ -1591,6 +1591,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-07",
+      "fetched_at": "2026-05-07T11:26:49.295716+02:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN | Saturday",
+            "stock": 6
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX PRO DOUBLES MEN | Saturday": 6
+          }
+        }
+      }
     }
   ]
 }
