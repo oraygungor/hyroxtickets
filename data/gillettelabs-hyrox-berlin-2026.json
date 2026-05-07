@@ -25922,18 +25922,13 @@
     },
     {
       "date": "2026-05-07",
-      "fetched_at": "2026-05-07T15:44:39.670010+02:00",
-      "total_stock": 16,
+      "fetched_at": "2026-05-07T21:28:03.767020+02:00",
+      "total_stock": 15,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Friday, 22 May 2026",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Friday, 22 May 2026",
             "stock": 1
           },
           {
@@ -25944,7 +25939,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Monday, 25 May 2026",
-            "stock": 5
+            "stock": 4
           },
           {
             "parkur": "Singles",
@@ -25953,13 +25948,13 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Sunday, 31 May 2026",
+            "ticket": "HYROX PRO WOMEN | Friday, 29 May 2026",
             "stock": 1
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026",
-            "stock": 5
+            "stock": 6
           },
           {
             "parkur": "Doubles",
@@ -25974,22 +25969,22 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Monday, 25 May 2026",
-            "stock": 33
+            "stock": 34
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Thursday, 28 May 2026",
-            "stock": 116
+            "stock": 114
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday, 28 May 2026",
-            "stock": 87
+            "stock": 86
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Thursday, 28 May 2026",
-            "stock": 109
+            "stock": 107
           },
           {
             "parkur": "Doubles",
@@ -25999,34 +25994,33 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026",
-            "stock": 5
+            "stock": 4
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday, 31 May 2026",
-            "stock": 23
+            "stock": 21
           }
         ],
         "by_parkur": {
           "Singles": {
             "HYROX WOMEN | Friday, 22 May 2026": 1,
-            "HYROX PRO MEN | Friday, 22 May 2026": 1,
             "HYROX PRO WOMEN | Friday, 22 May 2026": 1,
-            "HYROX WOMEN | Monday, 25 May 2026": 5,
+            "HYROX WOMEN | Monday, 25 May 2026": 4,
             "HYROX WOMEN | Thursday, 28 May 2026": 29,
-            "HYROX WOMEN | Sunday, 31 May 2026": 1
+            "HYROX PRO WOMEN | Friday, 29 May 2026": 1
           },
           "Doubles": {
-            "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026": 5,
+            "HYROX PRO DOUBLES WOMEN | Saturday, 23 May 2026": 6,
             "HYROX DOUBLES WOMEN | Sunday, 24 May 2026": 53,
             "HYROX DOUBLES WOMEN | Monday, 25 May 2026": 38,
-            "HYROX DOUBLES MIXED | Monday, 25 May 2026": 33,
-            "HYROX DOUBLES MEN | Thursday, 28 May 2026": 116,
-            "HYROX DOUBLES WOMEN | Thursday, 28 May 2026": 87,
-            "HYROX DOUBLES MIXED | Thursday, 28 May 2026": 109,
+            "HYROX DOUBLES MIXED | Monday, 25 May 2026": 34,
+            "HYROX DOUBLES MEN | Thursday, 28 May 2026": 114,
+            "HYROX DOUBLES WOMEN | Thursday, 28 May 2026": 86,
+            "HYROX DOUBLES MIXED | Thursday, 28 May 2026": 107,
             "HYROX DOUBLES WOMEN | Friday, 29 May 2026": 14,
-            "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026": 5,
-            "HYROX DOUBLES WOMEN | Sunday, 31 May 2026": 23
+            "HYROX PRO DOUBLES WOMEN | Saturday, 30 May 2026": 4,
+            "HYROX DOUBLES WOMEN | Sunday, 31 May 2026": 21
           }
         }
       }
