@@ -1,0 +1,44 @@
+{
+  "event_id": "myfitnesspal-hyrox-tampa-2026",
+  "event_name": "myfitnesspal HYROX Tampa",
+  "url": "https://usa.hyrox.com/checkout/hyrox-tampa-season-26-27-lbibjy",
+  "history": [
+    {
+      "date": "2026-05-09",
+      "fetched_at": "2026-05-09T10:24:14.618577+02:00",
+      "total_stock": 4,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Friday",
+            "stock": 6
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Friday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Saturday",
+            "stock": 2
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 2
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE MEN | Friday": 6,
+            "HYROX ADAPTIVE WOMEN | Friday": 1,
+            "HYROX ADAPTIVE MEN | Saturday": 2,
+            "HYROX ADAPTIVE WOMEN | Sunday": 2
+          }
+        }
+      }
+    }
+  ]
+}
