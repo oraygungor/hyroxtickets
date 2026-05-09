@@ -1,13 +1,55 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Sunday at HYROX Tampa!",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-09",
+    "priority": 3
+  },
+  {
+    "type": "new_event",
+    "message": "NEW EVENT: myfitnesspal HYROX Tampa added to calendar.",
+    "date": "2026-05-09",
+    "priority": 1
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO WOMEN | Friday at BYD HYROX Sydney is gone.",
+    "date": "2026-05-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX Valencia is gone.",
+    "date": "2026-05-09",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at 24/7 FITNESS HYROX Shanghai is gone.",
+    "date": "2026-05-09",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for ADAPTIVE WOMEN | Sunday at HYROX Tampa!",
     "date": "2026-05-08",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Friday, 22 May 2026 at GilletteLabs HYROX Berlin!",
+    "message": "RESTOCK: 1 tickets released for PRO WOMEN | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-08",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES MEN | Saturday at 24/7 FITNESS HYROX Shanghai!",
+    "date": "2026-05-08",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for DOUBLES MIXED | Friday, 22 May 2026 at GilletteLabs HYROX Berlin!",
     "date": "2026-05-08",
     "priority": 3
   },
@@ -19,13 +61,13 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Friday at HYROX Valencia!",
+    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Saturday at HYROX Valencia!",
     "date": "2026-05-08",
     "priority": 2
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Saturday at HYROX Valencia!",
+    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Friday at HYROX Valencia!",
     "date": "2026-05-08",
     "priority": 2
   },
@@ -34,12 +76,6 @@
     "message": "NEW EVENT: Bioterm HYROX Barcelona added to calendar.",
     "date": "2026-05-08",
     "priority": 1
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at TORRAS HYROX Hangzhou is gone.",
-    "date": "2026-05-08",
-    "priority": 0
   },
   {
     "type": "soldout",
@@ -55,7 +91,7 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday at TORRAS HYROX Hangzhou is gone.",
+    "message": "SOLD OUT: WOMEN | Sunday at TORRAS HYROX Hangzhou is gone.",
     "date": "2026-05-08",
     "priority": 0
   },
@@ -67,56 +103,20 @@
   },
   {
     "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Saturday at TORRAS HYROX Hangzhou is gone.",
+    "date": "2026-05-08",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Saturday at TRAINSWEATEAT HYROX NICE is gone.",
+    "date": "2026-05-08",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
     "message": "SOLD OUT: WOMEN | Thursday at Amazfit HYROX Washington D.C. is gone.",
     "date": "2026-05-08",
     "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at HYROX Puebla is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Friday, 22 May 2026 at GilletteLabs HYROX Berlin is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO WOMEN | Friday, 29 May 2026 at GilletteLabs HYROX Berlin is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at Let’s Go Fitness HYROX Geneva is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Friday at BYD HYROX Bangkok is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Friday at BYD HYROX Bangkok is gone.",
-    "date": "2026-05-08",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Thursday at Amazfit HYROX Washington D.C.!",
-    "date": "2026-05-07",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 22 tickets released for DOUBLES MEN | Thursday at HYROX Rimini!",
-    "date": "2026-05-07",
-    "priority": 3
   }
 ]
