@@ -26324,10 +26324,15 @@
     },
     {
       "date": "2026-05-11",
-      "fetched_at": "2026-05-11T12:29:45.847490+02:00",
-      "total_stock": 14,
+      "fetched_at": "2026-05-11T13:53:50.599245+02:00",
+      "total_stock": 16,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Friday, 22 May 2026",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday, 22 May 2026",
@@ -26336,7 +26341,12 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday, 28 May 2026",
-            "stock": 27
+            "stock": 28
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN | Friday, 29 May 2026",
+            "stock": 1
           },
           {
             "parkur": "Doubles",
@@ -26401,8 +26411,10 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX WOMEN | Friday, 22 May 2026": 1,
             "HYROX PRO WOMEN | Friday, 22 May 2026": 2,
-            "HYROX WOMEN | Thursday, 28 May 2026": 27
+            "HYROX WOMEN | Thursday, 28 May 2026": 28,
+            "HYROX PRO MEN | Friday, 29 May 2026": 1
           },
           "Doubles": {
             "HYROX DOUBLES MIXED | Friday, 22 May 2026": 3,
