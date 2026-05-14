@@ -3566,8 +3566,8 @@
     },
     {
       "date": "2026-05-14",
-      "fetched_at": "2026-05-14T11:28:05.487234+02:00",
-      "total_stock": 4,
+      "fetched_at": "2026-05-14T13:06:25.870196+02:00",
+      "total_stock": 5,
       "data": {
         "tickets": [
           {
@@ -3581,9 +3581,14 @@
             "stock": 5
           },
           {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN | Friday",
+            "stock": 1
+          },
+          {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 29
+            "stock": 28
           },
           {
             "parkur": "Station 9 - The Official Afterparty",
@@ -3594,10 +3599,11 @@
         "by_parkur": {
           "Singles": {
             "HYROX PRO WOMEN | Sunday": 45,
-            "HYROX ADAPTIVE WOMEN | Saturday": 5
+            "HYROX ADAPTIVE WOMEN | Saturday": 5,
+            "HYROX ADAPTIVE MEN | Friday": 1
           },
           "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 29
+            "HYROX DOUBLES MIXED | Saturday": 28
           },
           "Station 9 - The Official Afterparty": {
             "STATION 9 | Sunday": 925
