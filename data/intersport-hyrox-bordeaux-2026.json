@@ -4319,10 +4319,15 @@
     },
     {
       "date": "2026-05-15",
-      "fetched_at": "2026-05-15T15:46:38.881322+02:00",
-      "total_stock": 10,
+      "fetched_at": "2026-05-15T21:19:22.777841+02:00",
+      "total_stock": 11,
       "data": {
         "tickets": [
+          {
+            "parkur": "SINGLES",
+            "ticket": "HYROX WOMEN | Wednesday",
+            "stock": 1
+          },
           {
             "parkur": "SINGLES",
             "ticket": "ADAPTIVE HYROX WOMEN | Wednesday",
@@ -4376,6 +4381,7 @@
         ],
         "by_parkur": {
           "SINGLES": {
+            "HYROX WOMEN | Wednesday": 1,
             "ADAPTIVE HYROX WOMEN | Wednesday": 8,
             "CHARITY | HYROX WOMEN | Wednesday": 22,
             "CHARITY | HYROX WOMEN | Thursday": 13,
