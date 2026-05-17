@@ -26810,14 +26810,19 @@
     },
     {
       "date": "2026-05-17",
-      "fetched_at": "2026-05-17T10:58:36.712395+02:00",
-      "total_stock": 8,
+      "fetched_at": "2026-05-17T12:15:10.578229+02:00",
+      "total_stock": 9,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
+            "ticket": "HYROX MEN | Thursday, 28 May 2026",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday, 28 May 2026",
-            "stock": 16
+            "stock": 17
           },
           {
             "parkur": "Doubles",
@@ -26857,7 +26862,8 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX WOMEN | Thursday, 28 May 2026": 16
+            "HYROX MEN | Thursday, 28 May 2026": 1,
+            "HYROX WOMEN | Thursday, 28 May 2026": 17
           },
           "Doubles": {
             "HYROX DOUBLES MEN | Thursday, 28 May 2026": 104,
