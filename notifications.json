@@ -1,19 +1,103 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for PRO WOMEN | Saturday at HYROX GDAŃSK!",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN  | Saturday at Masters’ Union HYROX Delhi!",
+    "date": "2026-05-20",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-20",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES WOMEN | Friday at AirAsia HYROX Perth!",
+    "date": "2026-05-20",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Saturday at LEMON GYM HYROX RIGA!",
+    "date": "2026-05-20",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Saturday at HYROX Rome is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at HYROX Tenerife is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Friday, 29 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday, 31 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: MEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday, 30 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
+    "date": "2026-05-20",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for PRO MEN | Saturday at HYROX Buenos Aires!",
+    "date": "2026-05-19",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Sunday at HYROX Tenerife!",
     "date": "2026-05-19",
     "priority": 3
   },
   {
     "type": "restock",
     "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Sunday at Masters’ Union HYROX Mumbai!",
-    "date": "2026-05-19",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Sunday at Masters’ Union HYROX Mumbai!",
     "date": "2026-05-19",
     "priority": 3
   },
@@ -25,7 +109,7 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO WOMEN | Saturday at AirAsia HYROX Jakarta!",
+    "message": "HURRY UP: Only 4 tickets left for PRO DOUBLES MEN | Saturday at AirAsia HYROX Jakarta!",
     "date": "2026-05-19",
     "priority": 2
   },
@@ -34,89 +118,5 @@
     "message": "HURRY UP: Only 5 tickets left for WOMEN | Sunday at LEMON GYM HYROX RIGA!",
     "date": "2026-05-19",
     "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 3 tickets left for MEN | Thursday at HYROX Rimini!",
-    "date": "2026-05-19",
-    "priority": 2
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Saturday at HYROX Rome is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Saturday at HYROX Buenos Aires is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at HYROX Tenerife is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Friday at InBody HYROX Salt Lake City is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at BYD HYROX Sydney is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Wednesday at BYD HYROX Sydney is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: MEN | Saturday at Amazfit HYROX Washington D.C. is gone.",
-    "date": "2026-05-19",
-    "priority": 0
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 33 tickets released for WOMEN | Friday at HYROX Rome!",
-    "date": "2026-05-18",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 4 tickets released for WOMEN | Saturday at HYROX Buenos Aires!",
-    "date": "2026-05-18",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 21 tickets released for DOUBLES MIXED | Saturday at HYROX São Paulo!",
-    "date": "2026-05-18",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at HYROX Tenerife!",
-    "date": "2026-05-18",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Thursday, 28 May 2026 at GilletteLabs HYROX Berlin!",
-    "date": "2026-05-18",
-    "priority": 3
   }
 ]
