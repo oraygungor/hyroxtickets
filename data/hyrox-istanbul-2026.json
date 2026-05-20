@@ -2444,14 +2444,14 @@
     },
     {
       "date": "2026-05-20",
-      "fetched_at": "2026-05-20T16:40:17.619230+02:00",
+      "fetched_at": "2026-05-20T22:03:11.021223+02:00",
       "total_stock": 11,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 254
+            "stock": 250
           },
           {
             "parkur": "Singles",
@@ -2481,12 +2481,12 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Saturday",
-            "stock": 172
+            "stock": 173
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 126
+            "stock": 125
           },
           {
             "parkur": "Doubles",
@@ -2496,17 +2496,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 304
+            "stock": 302
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Sunday",
-            "stock": 184
+            "stock": 180
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 254,
+            "HYROX MEN | Saturday": 250,
             "HYROX PRO MEN | Saturday": 91,
             "HYROX PRO WOMEN | Saturday": 57,
             "HYROX ADAPTIVE MEN | Saturday": 1,
@@ -2514,11 +2514,11 @@
             "HYROX ADAPTIVE WOMEN | Sunday": 5
           },
           "Doubles": {
-            "HYROX DOUBLES MIXED | Saturday": 172,
-            "HYROX PRO DOUBLES MEN | Saturday": 126,
+            "HYROX DOUBLES MIXED | Saturday": 173,
+            "HYROX PRO DOUBLES MEN | Saturday": 125,
             "HYROX PRO DOUBLES WOMEN | Saturday": 69,
-            "HYROX DOUBLES MEN | Sunday": 304,
-            "HYROX DOUBLES WOMEN | Sunday": 184
+            "HYROX DOUBLES MEN | Sunday": 302,
+            "HYROX DOUBLES WOMEN | Sunday": 180
           }
         }
       }
