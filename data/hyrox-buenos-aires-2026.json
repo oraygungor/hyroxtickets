@@ -1528,6 +1528,25 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-20",
+      "fetched_at": "2026-05-20T12:20:24.261480+02:00",
+      "total_stock": 1,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX PRO MEN | Saturday": 1
+          }
+        }
+      }
     }
   ]
 }

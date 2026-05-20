@@ -87,6 +87,33 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-05-20",
+      "fetched_at": "2026-05-20T12:20:34.594085+02:00",
+      "total_stock": 2,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Sunday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE WOMEN | Sunday": 1
+          },
+          "Doubles": {
+            "HYROX DOUBLES WOMEN | Sunday": 1
+          }
+        }
+      }
     }
   ]
 }
