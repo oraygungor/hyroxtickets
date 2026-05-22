@@ -3894,14 +3894,14 @@
     },
     {
       "date": "2026-05-22",
-      "fetched_at": "2026-05-22T16:21:18.521218+02:00",
+      "fetched_at": "2026-05-22T21:24:18.976711+02:00",
       "total_stock": 10,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Sunday",
-            "stock": 23
+            "stock": 22
           },
           {
             "parkur": "Singles",
@@ -3916,7 +3916,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Thursday",
-            "stock": 1006
+            "stock": 1002
           },
           {
             "parkur": "Singles",
@@ -3936,24 +3936,24 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday",
-            "stock": 294
+            "stock": 293
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Thursday",
-            "stock": 646
+            "stock": 644
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Thursday",
-            "stock": 473
+            "stock": 469
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO WOMEN | Sunday": 23,
+            "HYROX PRO WOMEN | Sunday": 22,
             "HYROX ADAPTIVE WOMEN | Saturday": 4,
-            "HYROX MEN | Thursday": 1006,
+            "HYROX MEN | Thursday": 1002,
             "HYROX ADAPTIVE MEN | Thursday": 7,
             "HYROX WOMEN | Thursday": 394,
             "HYROX ADAPTIVE WOMEN | Thursday": 7
@@ -3962,9 +3962,9 @@
             "STATION 9 | Sunday": 907
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Thursday": 294,
-            "HYROX DOUBLES MIXED | Thursday": 646,
-            "HYROX DOUBLES MEN | Thursday": 473
+            "HYROX DOUBLES WOMEN | Thursday": 293,
+            "HYROX DOUBLES MIXED | Thursday": 644,
+            "HYROX DOUBLES MEN | Thursday": 469
           }
         }
       }
