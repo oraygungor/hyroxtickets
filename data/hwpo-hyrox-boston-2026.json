@@ -1288,8 +1288,8 @@
     },
     {
       "date": "2026-05-23",
-      "fetched_at": "2026-05-23T15:05:11.976135+02:00",
-      "total_stock": 5,
+      "fetched_at": "2026-05-23T20:58:53.338681+02:00",
+      "total_stock": 6,
       "data": {
         "tickets": [
           {
@@ -1301,6 +1301,11 @@
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Thursday",
             "stock": 5
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN | Friday",
+            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -1322,6 +1327,7 @@
           "Singles": {
             "HYROX ADAPTIVE MEN | Thursday": 6,
             "HYROX ADAPTIVE WOMEN | Thursday": 5,
+            "HYROX PRO WOMEN | Friday": 1,
             "HYROX ADAPTIVE MEN | Friday": 8,
             "HYROX ADAPTIVE WOMEN | Friday": 4,
             "HYROX ADAPTIVE MEN | Saturday": 7

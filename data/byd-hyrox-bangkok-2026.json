@@ -3971,10 +3971,15 @@
     },
     {
       "date": "2026-05-23",
-      "fetched_at": "2026-05-23T15:05:00.642227+02:00",
-      "total_stock": 10,
+      "fetched_at": "2026-05-23T20:58:43.872595+02:00",
+      "total_stock": 11,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Saturday",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Sunday",
@@ -3993,7 +3998,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Thursday",
-            "stock": 983
+            "stock": 976
           },
           {
             "parkur": "Singles",
@@ -4003,7 +4008,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Thursday",
-            "stock": 388
+            "stock": 385
           },
           {
             "parkur": "Singles",
@@ -4013,35 +4018,36 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday",
-            "stock": 282
+            "stock": 280
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Thursday",
-            "stock": 634
+            "stock": 626
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Thursday",
-            "stock": 458
+            "stock": 453
           }
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX WOMEN | Saturday": 1,
             "HYROX PRO WOMEN | Sunday": 20,
             "HYROX ADAPTIVE WOMEN | Saturday": 4,
-            "HYROX MEN | Thursday": 983,
+            "HYROX MEN | Thursday": 976,
             "HYROX ADAPTIVE MEN | Thursday": 7,
-            "HYROX WOMEN | Thursday": 388,
+            "HYROX WOMEN | Thursday": 385,
             "HYROX ADAPTIVE WOMEN | Thursday": 7
           },
           "Station 9 - The Official Afterparty": {
             "STATION 9 | Sunday": 907
           },
           "Doubles": {
-            "HYROX DOUBLES WOMEN | Thursday": 282,
-            "HYROX DOUBLES MIXED | Thursday": 634,
-            "HYROX DOUBLES MEN | Thursday": 458
+            "HYROX DOUBLES WOMEN | Thursday": 280,
+            "HYROX DOUBLES MIXED | Thursday": 626,
+            "HYROX DOUBLES MEN | Thursday": 453
           }
         }
       }
