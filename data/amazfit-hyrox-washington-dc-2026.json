@@ -8999,8 +8999,8 @@
     },
     {
       "date": "2026-05-24",
-      "fetched_at": "2026-05-24T15:04:00.697241+02:00",
-      "total_stock": 32,
+      "fetched_at": "2026-05-24T21:04:44.640074+02:00",
+      "total_stock": 31,
       "data": {
         "tickets": [
           {
@@ -9011,7 +9011,7 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Thursday",
-            "stock": 101
+            "stock": 100
           },
           {
             "parkur": "Singles",
@@ -9041,12 +9041,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Friday",
-            "stock": 8
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Sunday",
-            "stock": 1
+            "stock": 7
           },
           {
             "parkur": "Singles",
@@ -9056,12 +9051,12 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Sunday",
-            "stock": 66
+            "stock": 65
           },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Saturday",
-            "stock": 61
+            "stock": 60
           },
           {
             "parkur": "Singles",
@@ -9106,7 +9101,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Thursday",
-            "stock": 20
+            "stock": 21
           },
           {
             "parkur": "Doubles",
@@ -9141,17 +9136,17 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Monday",
-            "stock": 57
+            "stock": 56
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Monday",
-            "stock": 109
+            "stock": 108
           },
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Monday",
-            "stock": 60
+            "stock": 59
           },
           {
             "parkur": "Doubles",
@@ -9167,17 +9162,16 @@
         "by_parkur": {
           "Singles": {
             "CHARITY | HYROX WOMEN | Thursday": 98,
-            "CHARITY | HYROX MEN | Thursday": 101,
+            "CHARITY | HYROX MEN | Thursday": 100,
             "HYROX ADAPTIVE MEN | Thursday": 9,
             "HYROX ADAPTIVE WOMEN | Thursday": 9,
             "CHARITY | HYROX WOMEN | Friday": 48,
             "CHARITY | HYROX MEN | Friday": 97,
             "HYROX ADAPTIVE MEN | Friday": 10,
-            "HYROX ADAPTIVE WOMEN | Friday": 8,
-            "HYROX WOMEN | Sunday": 1,
+            "HYROX ADAPTIVE WOMEN | Friday": 7,
             "HYROX PRO WOMEN | Friday": 29,
-            "CHARITY | HYROX WOMEN | Sunday": 66,
-            "CHARITY | HYROX MEN | Saturday": 61,
+            "CHARITY | HYROX WOMEN | Sunday": 65,
+            "CHARITY | HYROX MEN | Saturday": 60,
             "CHARITY | HYROX PRO WOMEN | Friday": 218,
             "CHARITY | HYROX PRO MEN | Friday": 176,
             "HYROX ADAPTIVE MEN | Saturday": 3,
@@ -9188,16 +9182,16 @@
             "HYROX ADAPTIVE WOMEN | Monday": 10
           },
           "Doubles": {
-            "HYROX DOUBLES MEN | Thursday": 20,
+            "HYROX DOUBLES MEN | Thursday": 21,
             "CHARITY | HYROX DOUBLES MEN | Thursday": 11,
             "HYROX PRO DOUBLES MEN | Saturday": 46,
             "HYROX PRO DOUBLES WOMEN | Saturday": 50,
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 25,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 24,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 24,
-            "HYROX DOUBLES MEN | Monday": 57,
-            "HYROX DOUBLES WOMEN | Monday": 109,
-            "HYROX DOUBLES MIXED | Monday": 60,
+            "HYROX DOUBLES MEN | Monday": 56,
+            "HYROX DOUBLES WOMEN | Monday": 108,
+            "HYROX DOUBLES MIXED | Monday": 59,
             "CHARITY | HYROX DOUBLES MEN | Monday": 21,
             "CHARITY | HYROX DOUBLES MIXED | Monday": 17
           }
