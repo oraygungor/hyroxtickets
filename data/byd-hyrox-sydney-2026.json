@@ -10910,8 +10910,8 @@
     },
     {
       "date": "2026-05-24",
-      "fetched_at": "2026-05-24T12:24:23.620884+02:00",
-      "total_stock": 29,
+      "fetched_at": "2026-05-24T15:03:55.968937+02:00",
+      "total_stock": 28,
       "data": {
         "tickets": [
           {
@@ -10956,11 +10956,6 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Friday",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
             "stock": 2
           },
@@ -10986,7 +10981,7 @@
           },
           {
             "parkur": "Singles",
-            "ticket": "HYROX WOMEN | Sunday",
+            "ticket": "HYROX MEN | Sunday",
             "stock": 1
           },
           {
@@ -11057,7 +11052,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES WOMEN | Thursday",
-            "stock": 576
+            "stock": 575
           }
         ],
         "by_parkur": {
@@ -11070,13 +11065,12 @@
             "HYROX MEN | Thursday": 103,
             "CHARITY | HYROX MEN | Thursday": 147,
             "HYROX ADAPTIVE MEN | Thursday": 2,
-            "HYROX PRO MEN | Friday": 1,
             "HYROX PRO WOMEN | Friday": 2,
             "CHARITY | HYROX PRO WOMEN | Friday": 191,
             "CHARITY | HYROX PRO MEN | Friday": 171,
             "CHARITY | HYROX WOMEN | Saturday": 55,
             "HYROX ADAPTIVE WOMEN | Saturday": 3,
-            "HYROX WOMEN | Sunday": 1,
+            "HYROX MEN | Sunday": 1,
             "CHARITY | HYROX WOMEN | Sunday": 93,
             "CHARITY | HYROX MEN | Sunday": 46,
             "HYROX ADAPTIVE MEN | Sunday": 3,
@@ -11092,7 +11086,7 @@
             "CHARITY | HYROX PRO DOUBLES WOMEN | Friday": 65,
             "CHARITY | HYROX PRO DOUBLES MEN | Friday": 59,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Friday": 59,
-            "HYROX DOUBLES WOMEN | Thursday": 576
+            "HYROX DOUBLES WOMEN | Thursday": 575
           }
         }
       }
