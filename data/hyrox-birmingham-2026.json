@@ -848,14 +848,14 @@
     },
     {
       "date": "2026-05-24",
-      "fetched_at": "2026-05-24T11:15:20.414529+02:00",
-      "total_stock": 15,
+      "fetched_at": "2026-05-24T12:24:34.078061+02:00",
+      "total_stock": 13,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Tuesday",
-            "stock": 2
+            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -881,11 +881,6 @@
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE WOMEN | Wednesday",
             "stock": 7
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX ADAPTIVE MEN | Thursday",
-            "stock": 1
           },
           {
             "parkur": "Singles",
@@ -921,22 +916,16 @@
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MEN | Thursday",
             "stock": 1
-          },
-          {
-            "parkur": "Doubles",
-            "ticket": "CHARITY | HYROX DOUBLES MIXED | Thursday",
-            "stock": 1
           }
         ],
         "by_parkur": {
           "Singles": {
-            "CHARITY | HYROX WOMEN | Tuesday": 2,
+            "CHARITY | HYROX WOMEN | Tuesday": 1,
             "HYROX ADAPTIVE MEN | Tuesday": 1,
             "HYROX ADAPTIVE WOMEN | Tuesday": 7,
             "CHARITY | HYROX WOMEN | Wednesday": 6,
             "HYROX ADAPTIVE MEN | Wednesday": 6,
             "HYROX ADAPTIVE WOMEN | Wednesday": 7,
-            "HYROX ADAPTIVE MEN | Thursday": 1,
             "HYROX ADAPTIVE WOMEN | Thursday": 3
           },
           "Doubles": {
@@ -945,8 +934,7 @@
             "HYROX DOUBLES MIXED | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Tuesday": 2,
             "CHARITY | HYROX DOUBLES MEN | Wednesday": 18,
             "CHARITY | HYROX DOUBLES MIXED | Wednesday": 12,
-            "CHARITY | HYROX DOUBLES MEN | Thursday": 1,
-            "CHARITY | HYROX DOUBLES MIXED | Thursday": 1
+            "CHARITY | HYROX DOUBLES MEN | Thursday": 1
           }
         }
       }

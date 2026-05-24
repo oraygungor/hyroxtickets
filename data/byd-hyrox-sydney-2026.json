@@ -10910,10 +10910,15 @@
     },
     {
       "date": "2026-05-24",
-      "fetched_at": "2026-05-24T11:15:07.429940+02:00",
-      "total_stock": 27,
+      "fetched_at": "2026-05-24T12:24:23.620884+02:00",
+      "total_stock": 29,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Wednesday",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Wednesday",
@@ -10981,6 +10986,11 @@
           },
           {
             "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Sunday",
+            "stock": 1
+          },
+          {
+            "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Sunday",
             "stock": 93
           },
@@ -11007,7 +11017,7 @@
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX DOUBLES MEN | Wednesday",
-            "stock": 6
+            "stock": 7
           },
           {
             "parkur": "Doubles",
@@ -11052,6 +11062,7 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX MEN | Wednesday": 1,
             "CHARITY | HYROX WOMEN | Wednesday": 82,
             "CHARITY | HYROX MEN | Wednesday": 78,
             "HYROX ADAPTIVE MEN | Wednesday": 3,
@@ -11065,6 +11076,7 @@
             "CHARITY | HYROX PRO MEN | Friday": 171,
             "CHARITY | HYROX WOMEN | Saturday": 55,
             "HYROX ADAPTIVE WOMEN | Saturday": 3,
+            "HYROX WOMEN | Sunday": 1,
             "CHARITY | HYROX WOMEN | Sunday": 93,
             "CHARITY | HYROX MEN | Sunday": 46,
             "HYROX ADAPTIVE MEN | Sunday": 3,
@@ -11072,7 +11084,7 @@
           },
           "Doubles": {
             "HYROX DOUBLES WOMEN | Wednesday": 1,
-            "CHARITY | HYROX DOUBLES MEN | Wednesday": 6,
+            "CHARITY | HYROX DOUBLES MEN | Wednesday": 7,
             "CHARITY | HYROX DOUBLES WOMEN | Wednesday": 23,
             "HYROX DOUBLES MIXED | Thursday": 57,
             "CHARITY | HYROX DOUBLES MIXED | Thursday": 16,
