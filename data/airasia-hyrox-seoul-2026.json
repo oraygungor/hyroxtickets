@@ -1,0 +1,88 @@
+{
+  "event_id": "airasia-hyrox-seoul-2026",
+  "event_name": "AirAsia HYROX Seoul",
+  "url": "https://korea.hyrox.com/checkout/hyrox-seoul-season-26-27-vthaza",
+  "history": [
+    {
+      "date": "2026-05-27",
+      "fetched_at": "2026-05-27T12:50:58.081793+02:00",
+      "total_stock": 11,
+      "data": {
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN 남자 오픈 | Saturday",
+            "stock": 1037
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO MEN 남자 프로  | Saturday",
+            "stock": 152
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX PRO WOMEN 여자 프로 | Saturday",
+            "stock": 110
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 어뎁티브 남자 | Saturday",
+            "stock": 9
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN 여자 오픈 | Sunday",
+            "stock": 538
+          },
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | Sunday",
+            "stock": 9
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MIXED 더블 혼성 | Saturday",
+            "stock": 395
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES MEN 더블 남자 프로 | Saturday",
+            "stock": 56
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX PRO DOUBLES WOMEN 더블 여자 프로 | Saturday",
+            "stock": 64
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES MEN 더블 남자 | Sunday",
+            "stock": 599
+          },
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN 더블 여자 | Sunday",
+            "stock": 186
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX MEN 남자 오픈 | Saturday": 1037,
+            "HYROX PRO MEN 남자 프로  | Saturday": 152,
+            "HYROX PRO WOMEN 여자 프로 | Saturday": 110,
+            "HYROX ADAPTIVE MEN 어뎁티브 남자 | Saturday": 9,
+            "HYROX WOMEN 여자 오픈 | Sunday": 538,
+            "HYROX ADAPTIVE WOMEN 어뎁티브 여자 | Sunday": 9
+          },
+          "Doubles": {
+            "HYROX DOUBLES MIXED 더블 혼성 | Saturday": 395,
+            "HYROX PRO DOUBLES MEN 더블 남자 프로 | Saturday": 56,
+            "HYROX PRO DOUBLES WOMEN 더블 여자 프로 | Saturday": 64,
+            "HYROX DOUBLES MEN 더블 남자 | Sunday": 599,
+            "HYROX DOUBLES WOMEN 더블 여자 | Sunday": 186
+          }
+        }
+      }
+    }
+  ]
+}
