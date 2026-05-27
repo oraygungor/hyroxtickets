@@ -4976,27 +4976,11 @@
     },
     {
       "date": "2026-05-27",
-      "fetched_at": "2026-05-27T16:57:36.297299+02:00",
-      "total_stock": 2,
+      "fetched_at": "2026-05-27T22:02:35.032328+02:00",
+      "total_stock": 0,
       "data": {
-        "tickets": [
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX PRO MEN | Saturday",
-            "stock": 14
-          },
-          {
-            "parkur": "Singles",
-            "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 1
-          }
-        ],
-        "by_parkur": {
-          "Singles": {
-            "HYROX PRO MEN | Saturday": 14,
-            "HYROX PRO WOMEN | Saturday": 1
-          }
-        }
+        "tickets": [],
+        "by_parkur": {}
       }
     }
   ]
