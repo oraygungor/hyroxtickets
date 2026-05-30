@@ -1,31 +1,25 @@
 [
   {
-    "type": "restock",
-    "message": "RESTOCK: 42 tickets released for DOUBLES MEN | Friday at BYD HYROX Sydney!",
-    "date": "2026-05-29",
-    "priority": 3
+    "type": "new_event",
+    "message": "NEW EVENT: Leapmotor HYROX Barcelona added to calendar.",
+    "date": "2026-05-30",
+    "priority": 1
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Thursday at HYROX Denver is gone.",
+    "date": "2026-05-30",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Saturday at HYROX GDAŃSK is gone.",
+    "date": "2026-05-30",
+    "priority": 0
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 5 tickets released for DOUBLES MEN | Wednesday at BYD HYROX Sydney!",
-    "date": "2026-05-29",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 87 tickets released for WOMEN | Sunday at BYD HYROX Sydney!",
-    "date": "2026-05-29",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 47 tickets released for DOUBLES MIXED | Friday at BYD HYROX Sydney!",
-    "date": "2026-05-29",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 71 tickets released for DOUBLES WOMEN | Friday at BYD HYROX Sydney!",
+    "message": "RESTOCK: 1 tickets released for PRO DOUBLES WOMEN | Saturday at HYROX Maastricht!",
     "date": "2026-05-29",
     "priority": 3
   },
@@ -37,13 +31,43 @@
   },
   {
     "type": "restock",
+    "message": "RESTOCK: 46 tickets released for DOUBLES MIXED | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
     "message": "RESTOCK: 69 tickets released for PRO DOUBLES WOMEN | Friday at BYD HYROX Sydney!",
     "date": "2026-05-29",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 44 tickets released for WOMEN | Saturday at BYD HYROX Sydney!",
+    "message": "RESTOCK: 70 tickets released for DOUBLES WOMEN | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 87 tickets released for WOMEN | Sunday at BYD HYROX Sydney!",
+    "date": "2026-05-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 60 tickets released for PRO DOUBLES MEN | Friday at BYD HYROX Sydney!",
+    "date": "2026-05-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 43 tickets released for WOMEN | Saturday at BYD HYROX Sydney!",
+    "date": "2026-05-29",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 78 tickets released for WOMEN | Wednesday at BYD HYROX Sydney!",
     "date": "2026-05-29",
     "priority": 3
   },
@@ -55,13 +79,13 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 80 tickets released for WOMEN | Wednesday at BYD HYROX Sydney!",
+    "message": "RESTOCK: 42 tickets released for DOUBLES MEN | Friday at BYD HYROX Sydney!",
     "date": "2026-05-29",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 61 tickets released for PRO DOUBLES MEN | Friday at BYD HYROX Sydney!",
+    "message": "RESTOCK: 5 tickets released for DOUBLES MEN | Wednesday at BYD HYROX Sydney!",
     "date": "2026-05-29",
     "priority": 3
   },
@@ -79,44 +103,20 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for WOMEN | Thursday at HYROX Rome!",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Thursday at HYROX Rome!",
     "date": "2026-05-29",
     "priority": 2
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for DOUBLES WOMEN | Saturday at HYROX GDAŃSK!",
+    "message": "HURRY UP: Only 5 tickets left for WOMEN | Thursday at HYROX Denver!",
     "date": "2026-05-29",
     "priority": 2
   },
   {
-    "type": "soldout",
-    "message": "SOLD OUT: ADAPTIVE MEN | Tuesday at HYROX Birmingham is gone.",
+    "type": "low_stock",
+    "message": "HURRY UP: Only 1 tickets left for DOUBLES WOMEN | Saturday at HYROX GDAŃSK!",
     "date": "2026-05-29",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MIXED | Monday at Amazfit HYROX Washington D.C. is gone.",
-    "date": "2026-05-29",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO MEN | Friday at Let’s Go Fitness HYROX Geneva is gone.",
-    "date": "2026-05-29",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Friday at Masters’ Union HYROX Mumbai is gone.",
-    "date": "2026-05-29",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at Masters’ Union HYROX Mumbai is gone.",
-    "date": "2026-05-29",
-    "priority": 0
+    "priority": 2
   }
 ]
