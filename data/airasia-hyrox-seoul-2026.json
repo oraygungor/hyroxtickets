@@ -152,11 +152,21 @@
     },
     {
       "date": "2026-06-01",
-      "fetched_at": "2026-06-01T16:44:24.591027+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-06-01T23:22:35.873908+02:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX ADAPTIVE MEN 어뎁티브 남자 | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX ADAPTIVE MEN 어뎁티브 남자 | Saturday": 1
+          }
+        }
       }
     }
   ]
