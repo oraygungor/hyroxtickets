@@ -4919,14 +4919,14 @@
     },
     {
       "date": "2026-06-02",
-      "fetched_at": "2026-06-02T14:31:51.026908+02:00",
+      "fetched_at": "2026-06-02T18:04:42.881169+02:00",
       "total_stock": 13,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Friday",
-            "stock": 115
+            "stock": 113
           },
           {
             "parkur": "Singles",
@@ -4951,7 +4951,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN | Friday",
-            "stock": 4
+            "stock": 3
           },
           {
             "parkur": "Singles",
@@ -4981,22 +4981,22 @@
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX PRO DOUBLES MEN | Saturday",
-            "stock": 3
+            "stock": 4
           },
           {
             "parkur": "Doubles",
             "ticket": "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday",
-            "stock": 3
+            "stock": 4
           }
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX PRO WOMEN | Friday": 115,
+            "HYROX PRO WOMEN | Friday": 113,
             "CHARITY | HYROX WOMEN | Friday": 5,
             "CHARITY | HYROX MEN | Friday": 18,
             "CHARITY | HYROX PRO WOMEN | Friday": 20,
             "CHARITY | HYROX PRO MEN | Friday": 17,
-            "HYROX ADAPTIVE MEN | Friday": 4,
+            "HYROX ADAPTIVE MEN | Friday": 3,
             "HYROX ADAPTIVE WOMEN | Friday": 4,
             "CHARITY | HYROX MEN | Saturday": 8,
             "CHARITY | HYROX WOMEN | Sunday": 5,
@@ -5004,8 +5004,8 @@
           },
           "Doubles": {
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 8,
-            "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 3,
-            "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 3
+            "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 4,
+            "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 4
           }
         }
       }
