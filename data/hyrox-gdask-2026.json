@@ -6740,19 +6740,19 @@
     },
     {
       "date": "2026-06-03",
-      "fetched_at": "2026-06-03T15:03:12.876695+02:00",
+      "fetched_at": "2026-06-03T18:20:12.513685+02:00",
       "total_stock": 18,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
             "ticket": "HYROX MEN | Saturday",
-            "stock": 333
+            "stock": 330
           },
           {
             "parkur": "Singles",
             "ticket": "HYROX WOMEN | Sunday",
-            "stock": 138
+            "stock": 135
           },
           {
             "parkur": "Singles",
@@ -6772,7 +6772,7 @@
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX MEN | Saturday",
-            "stock": 45
+            "stock": 48
           },
           {
             "parkur": "Singles",
@@ -6802,7 +6802,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 34
+            "stock": 27
           },
           {
             "parkur": "Doubles",
@@ -6837,12 +6837,12 @@
         ],
         "by_parkur": {
           "Singles": {
-            "HYROX MEN | Saturday": 333,
-            "HYROX WOMEN | Sunday": 138,
+            "HYROX MEN | Saturday": 330,
+            "HYROX WOMEN | Sunday": 135,
             "HYROX PRO MEN | Saturday": 23,
             "HYROX PRO WOMEN | Saturday": 11,
             "CHARITY | HYROX WOMEN | Sunday": 50,
-            "CHARITY | HYROX MEN | Saturday": 45,
+            "CHARITY | HYROX MEN | Saturday": 48,
             "CHARITY | HYROX PRO WOMEN | Saturday": 8,
             "CHARITY | HYROX PRO MEN | Saturday": 19,
             "HYROX ADAPTIVE MEN | Saturday": 8,
@@ -6850,7 +6850,7 @@
           },
           "Doubles": {
             "HYROX DOUBLES MEN | Sunday": 252,
-            "HYROX DOUBLES MIXED | Sunday": 34,
+            "HYROX DOUBLES MIXED | Sunday": 27,
             "CHARITY | HYROX DOUBLES MEN | Sunday": 30,
             "CHARITY | HYROX DOUBLES WOMEN | Saturday": 23,
             "CHARITY | HYROX DOUBLES MIXED | Sunday": 27,
