@@ -5039,11 +5039,21 @@
     },
     {
       "date": "2026-06-03",
-      "fetched_at": "2026-06-03T13:50:38.751721+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-06-03T15:03:07.747903+02:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Doubles",
+            "ticket": "HYROX DOUBLES WOMEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Doubles": {
+            "HYROX DOUBLES WOMEN | Saturday": 1
+          }
+        }
       }
     }
   ]

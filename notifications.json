@@ -1,7 +1,49 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 3 tickets released for ADAPTIVE WOMEN 어뎁티브 여자 | Sunday at AirAsia HYROX Seoul!",
+    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Saturday at HYROX São Paulo!",
+    "date": "2026-06-03",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Sunday at Masters’ Union HYROX Mumbai!",
+    "date": "2026-06-03",
+    "priority": 3
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 1 tickets left for DOUBLES WOMEN | Monday at Amazfit HYROX Washington D.C.!",
+    "date": "2026-06-03",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Friday at HYROX POZNAŃ!",
+    "date": "2026-06-03",
+    "priority": 2
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at AirAsia HYROX Jakarta is gone.",
+    "date": "2026-06-03",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Sunday at HYROX Rome is gone.",
+    "date": "2026-06-03",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Sunday at BYD HYROX Sydney is gone.",
+    "date": "2026-06-03",
+    "priority": 0
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 4 tickets released for ADAPTIVE WOMEN 어뎁티브 여자 | Sunday at AirAsia HYROX Seoul!",
     "date": "2026-06-02",
     "priority": 3
   },
@@ -12,14 +54,20 @@
     "priority": 3
   },
   {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 4 tickets left for ADAPTIVE MEN | Saturday at HYROX Rome!",
+    "date": "2026-06-02",
+    "priority": 2
+  },
+  {
     "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES WOMEN | Saturday at HYROX Valencia is gone.",
+    "message": "SOLD OUT: WOMEN | Sunday at HYROX Valencia is gone.",
     "date": "2026-06-02",
     "priority": 0
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: WOMEN | Sunday at HYROX Valencia is gone.",
+    "message": "SOLD OUT: PRO DOUBLES WOMEN | Saturday at HYROX Valencia is gone.",
     "date": "2026-06-02",
     "priority": 0
   },
@@ -49,7 +97,7 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Wednesday at BYD HYROX Sydney is gone.",
+    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX GDAŃSK is gone.",
     "date": "2026-06-02",
     "priority": 0
   },
@@ -61,62 +109,14 @@
   },
   {
     "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at BYD HYROX Sydney is gone.",
+    "message": "SOLD OUT: DOUBLES MEN | Wednesday at BYD HYROX Sydney is gone.",
     "date": "2026-06-02",
     "priority": 0
   },
   {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Friday at AirAsia HYROX Perth!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for ADAPTIVE MEN 어뎁티브 남자 | Saturday at AirAsia HYROX Seoul!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for MEN | Saturday at InBody HYROX Salt Lake City!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Sunday at BYD HYROX Sydney!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES MEN | Sunday at BYD HYROX Sydney!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Sunday at BYD HYROX Sydney!",
-    "date": "2026-06-01",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for PRO DOUBLES WOMEN | Saturday at HYROX Valencia!",
-    "date": "2026-06-01",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 2 tickets left for WOMEN | Sunday at HYROX Valencia!",
-    "date": "2026-06-01",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 4 tickets left for PRO WOMEN | Saturday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-01",
-    "priority": 2
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at BYD HYROX Sydney is gone.",
+    "date": "2026-06-02",
+    "priority": 0
   }
 ]
