@@ -7319,10 +7319,15 @@
     },
     {
       "date": "2026-06-04",
-      "fetched_at": "2026-06-04T12:34:19.443726+02:00",
-      "total_stock": 28,
+      "fetched_at": "2026-06-04T13:42:02.780314+02:00",
+      "total_stock": 29,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Friday",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Friday",
@@ -7351,7 +7356,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX PRO WOMEN | Saturday",
-            "stock": 18
+            "stock": 19
           },
           {
             "parkur": "Singles",
@@ -7446,7 +7451,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MIXED | Sunday",
-            "stock": 50
+            "stock": 49
           },
           {
             "parkur": "Doubles",
@@ -7466,12 +7471,13 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX WOMEN | Friday": 1,
             "CHARITY | HYROX WOMEN | Friday": 67,
             "CHARITY | HYROX MEN | Friday": 53,
             "HYROX ADAPTIVE MEN | Friday": 8,
             "HYROX ADAPTIVE WOMEN | Friday": 8,
             "HYROX PRO MEN | Saturday": 25,
-            "HYROX PRO WOMEN | Saturday": 18,
+            "HYROX PRO WOMEN | Saturday": 19,
             "CHARITY | HYROX PRO WOMEN | Saturday": 44,
             "CHARITY | HYROX PRO MEN | Saturday": 39,
             "HYROX WOMEN | Sunday": 55,
@@ -7492,7 +7498,7 @@
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 40,
             "HYROX DOUBLES MEN | Sunday": 22,
             "HYROX DOUBLES WOMEN | Sunday": 10,
-            "HYROX DOUBLES MIXED | Sunday": 50,
+            "HYROX DOUBLES MIXED | Sunday": 49,
             "CHARITY | HYROX DOUBLES MEN | Sunday": 22,
             "CHARITY | HYROX DOUBLES WOMEN | Sunday": 13,
             "CHARITY | HYROX DOUBLES MIXED | Sunday": 29

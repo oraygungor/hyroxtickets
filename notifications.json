@@ -1,7 +1,25 @@
 [
   {
     "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Saturday at HYROX São Paulo!",
+    "message": "RESTOCK: 1 tickets released for WOMEN | Friday at AirAsia HYROX Perth!",
+    "date": "2026-06-04",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 2 tickets released for ADAPTIVE MEN | Friday at Virgin Active HYROX Cape Town | Season 26/27!",
+    "date": "2026-06-04",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 33 tickets released for DOUBLES MIXED | Thursday at HYROX Rome!",
+    "date": "2026-06-03",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 10 tickets released for PRO WOMEN | Friday at HYROX Rome!",
     "date": "2026-06-03",
     "priority": 3
   },
@@ -18,12 +36,6 @@
     "priority": 2
   },
   {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for DOUBLES MIXED | Friday at HYROX POZNAŃ!",
-    "date": "2026-06-03",
-    "priority": 2
-  },
-  {
     "type": "soldout",
     "message": "SOLD OUT: PRO MEN | Saturday at AirAsia HYROX Jakarta is gone.",
     "date": "2026-06-03",
@@ -31,7 +43,19 @@
   },
   {
     "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Friday at Virgin Active HYROX Cape Town | Season 26/27 is gone.",
+    "date": "2026-06-03",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
     "message": "SOLD OUT: WOMEN | Sunday at HYROX Rome is gone.",
+    "date": "2026-06-03",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Friday at HYROX POZNAŃ is gone.",
     "date": "2026-06-03",
     "priority": 0
   },
@@ -92,30 +116,6 @@
   {
     "type": "soldout",
     "message": "SOLD OUT: DOUBLES MIXED | Thursday at Leapmotor HYROX Barcelona is gone.",
-    "date": "2026-06-02",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: PRO DOUBLES MEN | Saturday at HYROX GDAŃSK is gone.",
-    "date": "2026-06-02",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Sunday at BYD HYROX Sydney is gone.",
-    "date": "2026-06-02",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES MEN | Wednesday at BYD HYROX Sydney is gone.",
-    "date": "2026-06-02",
-    "priority": 0
-  },
-  {
-    "type": "soldout",
-    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at BYD HYROX Sydney is gone.",
     "date": "2026-06-02",
     "priority": 0
   }
