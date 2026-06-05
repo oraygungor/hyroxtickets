@@ -8606,10 +8606,15 @@
     },
     {
       "date": "2026-06-05",
-      "fetched_at": "2026-06-05T13:54:27.980722+02:00",
-      "total_stock": 27,
+      "fetched_at": "2026-06-05T16:28:03.421114+02:00",
+      "total_stock": 28,
       "data": {
         "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX MEN | Thursday",
+            "stock": 1
+          },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX WOMEN | Thursday",
@@ -8658,7 +8663,7 @@
           {
             "parkur": "Singles",
             "ticket": "HYROX ADAPTIVE MEN | Saturday",
-            "stock": 5
+            "stock": 4
           },
           {
             "parkur": "Singles",
@@ -8733,7 +8738,7 @@
           {
             "parkur": "Doubles",
             "ticket": "HYROX DOUBLES MEN | Sunday",
-            "stock": 23
+            "stock": 22
           },
           {
             "parkur": "Doubles",
@@ -8748,6 +8753,7 @@
         ],
         "by_parkur": {
           "Singles": {
+            "HYROX MEN | Thursday": 1,
             "CHARITY | HYROX WOMEN | Thursday": 21,
             "CHARITY | HYROX MEN | Thursday": 25,
             "CHARITY | HYROX WOMEN | Friday": 25,
@@ -8757,7 +8763,7 @@
             "HYROX ADAPTIVE MEN | Friday": 4,
             "HYROX ADAPTIVE WOMEN | Friday": 3,
             "CHARITY | HYROX MEN | Saturday": 35,
-            "HYROX ADAPTIVE MEN | Saturday": 5,
+            "HYROX ADAPTIVE MEN | Saturday": 4,
             "CHARITY | HYROX WOMEN | Sunday": 43,
             "HYROX ADAPTIVE WOMEN | Sunday": 7
           },
@@ -8774,7 +8780,7 @@
             "CHARITY | HYROX PRO DOUBLES WOMEN | Saturday": 17,
             "CHARITY | HYROX PRO DOUBLES MEN | Saturday": 16,
             "CHARITY | HYROX PRO DOUBLES MEN ATHLETE 2 | Saturday": 16,
-            "HYROX DOUBLES MEN | Sunday": 23,
+            "HYROX DOUBLES MEN | Sunday": 22,
             "CHARITY | HYROX DOUBLES MEN | Sunday": 33,
             "CHARITY | HYROX DOUBLES WOMEN | Sunday": 16
           }
