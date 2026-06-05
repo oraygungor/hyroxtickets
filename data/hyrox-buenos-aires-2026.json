@@ -1675,11 +1675,21 @@
     },
     {
       "date": "2026-06-05",
-      "fetched_at": "2026-06-05T16:27:59.646890+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-06-05T21:42:48.855140+02:00",
+      "total_stock": 1,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "Singles",
+            "ticket": "HYROX WOMEN | Saturday",
+            "stock": 1
+          }
+        ],
+        "by_parkur": {
+          "Singles": {
+            "HYROX WOMEN | Saturday": 1
+          }
+        }
       }
     }
   ]
