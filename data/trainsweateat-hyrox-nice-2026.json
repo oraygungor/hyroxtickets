@@ -3839,24 +3839,19 @@
     },
     {
       "date": "2026-06-06",
-      "fetched_at": "2026-06-06T15:11:09.498998+02:00",
-      "total_stock": 6,
+      "fetched_at": "2026-06-06T21:07:08.053762+02:00",
+      "total_stock": 5,
       "data": {
         "tickets": [
           {
             "parkur": "Singles",
-            "ticket": "CHARITY | HYROX WOMEN | Thursday",
-            "stock": 1
-          },
-          {
-            "parkur": "Singles",
             "ticket": "CHARITY | HYROX PRO WOMEN | Friday",
-            "stock": 60
+            "stock": 59
           },
           {
             "parkur": "Singles",
             "ticket": "CHARITY | HYROX PRO MEN | Friday",
-            "stock": 31
+            "stock": 30
           },
           {
             "parkur": "Singles",
@@ -3876,9 +3871,8 @@
         ],
         "by_parkur": {
           "Singles": {
-            "CHARITY | HYROX WOMEN | Thursday": 1,
-            "CHARITY | HYROX PRO WOMEN | Friday": 60,
-            "CHARITY | HYROX PRO MEN | Friday": 31,
+            "CHARITY | HYROX PRO WOMEN | Friday": 59,
+            "CHARITY | HYROX PRO MEN | Friday": 30,
             "HYROX ADAPTIVE WOMEN | Friday": 6,
             "HYROX ADAPTIVE WOMEN | Sunday": 7
           },
