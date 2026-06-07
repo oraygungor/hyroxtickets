@@ -1,9 +1,39 @@
 [
   {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Thursday at HYROX Birmingham!",
-    "date": "2026-06-06",
-    "priority": 3
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES WOMEN | Sunday at AirAsia HYROX Jakarta is gone.",
+    "date": "2026-06-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MIXED | Monday at Amazfit HYROX Washington D.C. is gone.",
+    "date": "2026-06-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: WOMEN | Thursday at HYROX Rome is gone.",
+    "date": "2026-06-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO WOMEN | Friday at InBody HYROX Salt Lake City is gone.",
+    "date": "2026-06-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Saturday at HYROX GDAŃSK is gone.",
+    "date": "2026-06-07",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
+    "message": "SOLD OUT: DOUBLES MEN | Saturday at BYD HYROX Sydney is gone.",
+    "date": "2026-06-07",
+    "priority": 0
   },
   {
     "type": "restock",
@@ -13,13 +43,25 @@
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 26 tickets released for WOMEN | Thursday at HYROX Rome!",
+    "message": "RESTOCK: 1 tickets released for ADAPTIVE WOMEN | Thursday at HYROX Birmingham!",
     "date": "2026-06-06",
     "priority": 3
   },
   {
     "type": "restock",
-    "message": "RESTOCK: 43 tickets released for DOUBLES MIXED | Thursday at HYROX Rome!",
+    "message": "RESTOCK: 1 tickets released for DOUBLES MIXED | Monday at Amazfit HYROX Washington D.C.!",
+    "date": "2026-06-06",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 27 tickets released for DOUBLES MIXED | Thursday at HYROX Rome!",
+    "date": "2026-06-06",
+    "priority": 3
+  },
+  {
+    "type": "restock",
+    "message": "RESTOCK: 8 tickets released for WOMEN | Thursday at HYROX Rome!",
     "date": "2026-06-06",
     "priority": 3
   },
@@ -31,13 +73,19 @@
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for PRO MEN | Friday at Leapmotor HYROX Barcelona!",
+    "message": "HURRY UP: Only 4 tickets left for DOUBLES WOMEN | Sunday at AirAsia HYROX Jakarta!",
     "date": "2026-06-06",
     "priority": 2
   },
   {
     "type": "low_stock",
-    "message": "HURRY UP: Only 2 tickets left for PRO MEN | Saturday at HYROX GDAŃSK!",
+    "message": "HURRY UP: Only 2 tickets left for PRO DOUBLES MEN | Saturday at Let’s Go Fitness HYROX Geneva!",
+    "date": "2026-06-06",
+    "priority": 2
+  },
+  {
+    "type": "low_stock",
+    "message": "HURRY UP: Only 1 tickets left for PRO MEN | Saturday at HYROX GDAŃSK!",
     "date": "2026-06-06",
     "priority": 2
   },
@@ -55,68 +103,20 @@
   },
   {
     "type": "soldout",
+    "message": "SOLD OUT: PRO MEN | Friday at Leapmotor HYROX Barcelona is gone.",
+    "date": "2026-06-06",
+    "priority": 0
+  },
+  {
+    "type": "soldout",
     "message": "SOLD OUT: PRO WOMEN | Saturday at HYROX Istanbul is gone.",
     "date": "2026-06-06",
     "priority": 0
   },
   {
-    "type": "restock",
-    "message": "RESTOCK: 2 tickets released for DOUBLES MEN | Sunday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 3 tickets released for PRO DOUBLES MEN | Saturday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 14 tickets released for WOMEN | Sunday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 7 tickets released for PRO MEN | Saturday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 8 tickets released for DOUBLES WOMEN | Sunday at AirAsia HYROX Jakarta!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for WOMEN | Saturday at HYROX Buenos Aires!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "restock",
-    "message": "RESTOCK: 1 tickets released for DOUBLES WOMEN | Saturday at BYD HYROX Sydney!",
-    "date": "2026-06-05",
-    "priority": 3
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 3 tickets left for DOUBLES WOMEN | Sunday at AirAsia HYROX Perth!",
-    "date": "2026-06-05",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 5 tickets left for ADAPTIVE MEN | Saturday at HYROX Denver!",
-    "date": "2026-06-05",
-    "priority": 2
-  },
-  {
-    "type": "low_stock",
-    "message": "HURRY UP: Only 1 tickets left for DOUBLES MIXED | Sunday at HYROX GDAŃSK!",
-    "date": "2026-06-05",
-    "priority": 2
+    "type": "soldout",
+    "message": "SOLD OUT: ADAPTIVE MEN | Saturday at HYROX Istanbul is gone.",
+    "date": "2026-06-06",
+    "priority": 0
   }
 ]
