@@ -3787,11 +3787,63 @@
     },
     {
       "date": "2026-06-09",
-      "fetched_at": "2026-06-09T13:50:52.238406+02:00",
-      "total_stock": 0,
+      "fetched_at": "2026-06-09T16:29:53.927362+02:00",
+      "total_stock": 8,
       "data": {
-        "tickets": [],
-        "by_parkur": {}
+        "tickets": [
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (8-9 Years) | Saturday",
+            "stock": 536
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (8-9 Years) | Saturday",
+            "stock": 550
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (10-11 Years) | Saturday",
+            "stock": 545
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (10-11 Years) | Saturday",
+            "stock": 550
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (12-13 Years) | Sunday",
+            "stock": 246
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (12-13 Years) | Sunday",
+            "stock": 258
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS BOYS (14-15 Years) | Sunday",
+            "stock": 230
+          },
+          {
+            "parkur": "HYROX YOUNGSTARS",
+            "ticket": "YOUNGSTARS GIRLS (14-15 Years) | Sunday",
+            "stock": 204
+          }
+        ],
+        "by_parkur": {
+          "HYROX YOUNGSTARS": {
+            "YOUNGSTARS BOYS (8-9 Years) | Saturday": 536,
+            "YOUNGSTARS GIRLS (8-9 Years) | Saturday": 550,
+            "YOUNGSTARS BOYS (10-11 Years) | Saturday": 545,
+            "YOUNGSTARS GIRLS (10-11 Years) | Saturday": 550,
+            "YOUNGSTARS BOYS (12-13 Years) | Sunday": 246,
+            "YOUNGSTARS GIRLS (12-13 Years) | Sunday": 258,
+            "YOUNGSTARS BOYS (14-15 Years) | Sunday": 230,
+            "YOUNGSTARS GIRLS (14-15 Years) | Sunday": 204
+          }
+        }
       }
     }
   ]
